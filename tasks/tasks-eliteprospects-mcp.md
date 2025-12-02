@@ -68,52 +68,52 @@ Update the file after completing each sub-task, not just after completing an ent
 
 ## Tasks
 
-- [ ] 0.0 Initialize Git Repository & Create GitHub Repo
-  - [ ] 0.1 Initialize git repository in project directory (`git init`)
-  - [ ] 0.2 Create `.gitignore` file for Node.js/TypeScript (node_modules, dist, .env, etc.)
-  - [ ] 0.3 Create initial commit with existing spec-driven and tasks folders
-  - [ ] 0.4 Create new GitHub repository named `ep-gql-mcp`
-  - [ ] 0.5 Add remote origin and push initial commit to GitHub
+- [x] 0.0 Initialize Git Repository & Create GitHub Repo
+  - [x] 0.1 Initialize git repository in project directory (`git init`)
+  - [x] 0.2 Create `.gitignore` file for Node.js/TypeScript (node_modules, dist, .env, etc.)
+  - [x] 0.3 Create initial commit with existing spec-driven and tasks folders
+  - [x] 0.4 Create new GitHub repository named `ep-gql-mcp`
+  - [x] 0.5 Add remote origin and push initial commit to GitHub
 
-- [ ] 1.0 Project Setup & Configuration
-  - [ ] 1.1 Initialize npm project with `npm init` (create package.json)
-  - [ ] 1.2 Install production dependencies: `@modelcontextprotocol/sdk`, `graphql-request`, `graphql`
-  - [ ] 1.3 Install dev dependencies: `typescript`, `@types/node`, `tsup`, `tsx`
-  - [ ] 1.4 Create `tsconfig.json` with ES module and strict TypeScript settings
-  - [ ] 1.5 Create `.env.example` with `EP_GQL_URL` variable
-  - [ ] 1.6 Add npm scripts: `build`, `dev`, `generate-schema`, `start`
-  - [ ] 1.7 Create `src/` directory structure matching PRD layout
-  - [ ] 1.8 Create placeholder `src/index.ts` MCP server entry point
+- [x] 1.0 Project Setup & Configuration
+  - [x] 1.1 Initialize npm project with `npm init` (create package.json)
+  - [x] 1.2 Install production dependencies: `@modelcontextprotocol/sdk`, `graphql-request`, `graphql`
+  - [x] 1.3 Install dev dependencies: `typescript`, `@types/node`, `tsup`, `tsx`
+  - [x] 1.4 Create `tsconfig.json` with ES module and strict TypeScript settings
+  - [x] 1.5 Create `.env.example` with `EP_GQL_URL` variable
+  - [x] 1.6 Add npm scripts: `build`, `dev`, `generate-schema`, `start`
+  - [x] 1.7 Create `src/` directory structure matching PRD layout
+  - [x] 1.8 Create placeholder `src/index.ts` MCP server entry point
 
-- [ ] 2.0 Schema Generation Script
-  - [ ] 2.1 Create `scripts/generate-schema.ts` file
-  - [ ] 2.2 Implement GraphQL introspection query to fetch full schema
-  - [ ] 2.3 Parse and save `src/generated/queries.json` (all 321 queries with args/return types)
-  - [ ] 2.4 Parse and save `src/generated/types.json` (Player, Team, League, Game, etc.)
-  - [ ] 2.5 Parse and save `src/generated/enums.json` (PlayerPosition, LeagueType, etc.)
-  - [ ] 2.6 Fetch and save `src/generated/reference-data.json` (popular leagues, countries list)
-  - [ ] 2.7 Add `generate-schema` script to package.json
-  - [ ] 2.8 Run schema generation and commit the generated files
+- [x] 2.0 Schema Generation Script
+  - [x] 2.1 Create `scripts/generate-schema.ts` file
+  - [x] 2.2 Implement GraphQL introspection query to fetch full schema
+  - [x] 2.3 Parse and save `src/generated/queries.json` (all 321 queries with args/return types)
+  - [x] 2.4 Parse and save `src/generated/types.json` (Player, Team, League, Game, etc.)
+  - [x] 2.5 Parse and save `src/generated/enums.json` (PlayerPosition, LeagueType, etc.)
+  - [x] 2.6 Fetch and save `src/generated/reference-data.json` (popular leagues, countries list)
+  - [x] 2.7 Add `generate-schema` script to package.json
+  - [x] 2.8 Run schema generation and commit the generated files
 
-- [ ] 3.0 GraphQL Client Infrastructure
-  - [ ] 3.1 Create `src/graphql/client.ts` with GraphQL client setup
-  - [ ] 3.2 Implement `executeQuery(query, variables)` function
-  - [ ] 3.3 Add error handling for network errors and GraphQL errors
-  - [ ] 3.4 Load `EP_GQL_URL` from environment with fallback to default endpoint
-  - [ ] 3.5 Create TypeScript types for common GraphQL response structures
+- [x] 3.0 GraphQL Client Infrastructure
+  - [x] 3.1 Create `src/graphql/client.ts` with GraphQL client setup
+  - [x] 3.2 Implement `executeQuery(query, variables)` function
+  - [x] 3.3 Add error handling for network errors and GraphQL errors
+  - [x] 3.4 Load `EP_GQL_URL` from environment with fallback to default endpoint
+  - [x] 3.5 Create TypeScript types for common GraphQL response structures
 
-- [ ] 4.0 Core Tools Implementation
-  - [ ] 4.1 Create `src/tools/execute-graphql.ts`
-  - [ ] 4.2 Implement `execute_graphql` tool: accepts query string and optional variables
-  - [ ] 4.3 Add input validation for GraphQL query format
-  - [ ] 4.4 Create `src/tools/introspect.ts`
-  - [ ] 4.5 Implement `introspect_schema` tool: reads from pre-generated JSON files
-  - [ ] 4.6 Support filtering by query name or type name
-  - [ ] 4.7 Create `src/tools/search.ts`
-  - [ ] 4.8 Implement `search_entities` tool: search players, teams, leagues, staff
-  - [ ] 4.9 Add entity type parameter (player/team/league/staff/all)
-  - [ ] 4.10 Return matched entities with IDs, names, and basic info
-  - [ ] 4.11 Register all three core tools in `src/index.ts`
+- [x] 4.0 Core Tools Implementation
+  - [x] 4.1 Create `src/tools/execute-graphql.ts`
+  - [x] 4.2 Implement `execute_graphql` tool: accepts query string and optional variables
+  - [x] 4.3 Add input validation for GraphQL query format
+  - [x] 4.4 Create `src/tools/introspect.ts`
+  - [x] 4.5 Implement `introspect_schema` tool: reads from pre-generated JSON files
+  - [x] 4.6 Support filtering by query name or type name
+  - [x] 4.7 Create `src/tools/search.ts`
+  - [x] 4.8 Implement `search_entities` tool: search players, teams, leagues, staff
+  - [x] 4.9 Add entity type parameter (player/team/league/staff/all)
+  - [x] 4.10 Return matched entities with IDs, names, and basic info
+  - [x] 4.11 Register all three core tools in `src/index.ts`
 
 - [ ] 5.0 Convenience Tools Implementation
   - [ ] 5.1 Create `src/tools/players.ts`

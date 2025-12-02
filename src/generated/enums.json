@@ -1,0 +1,824 @@
+[
+  {
+    "name": "CacheControlScope",
+    "description": null,
+    "values": [
+      "PUBLIC",
+      "PRIVATE"
+    ]
+  },
+  {
+    "name": "SocialAuthProviders",
+    "description": null,
+    "values": [
+      "google",
+      "facebook",
+      "apple"
+    ]
+  },
+  {
+    "name": "OriginSite",
+    "description": null,
+    "values": [
+      "web",
+      "ios",
+      "android"
+    ]
+  },
+  {
+    "name": "VerificationStatus",
+    "description": null,
+    "values": [
+      "pending",
+      "rejected",
+      "approved"
+    ]
+  },
+  {
+    "name": "SuggestedChatParticipantType",
+    "description": null,
+    "values": [
+      "all",
+      "players",
+      "staff"
+    ]
+  },
+  {
+    "name": "SuggestedVerificationTargetType",
+    "description": null,
+    "values": [
+      "all",
+      "players",
+      "staff"
+    ]
+  },
+  {
+    "name": "StatsType",
+    "description": null,
+    "values": [
+      "default",
+      "projected"
+    ]
+  },
+  {
+    "name": "DraftGuideType",
+    "description": null,
+    "values": [
+      "full",
+      "light",
+      "preview"
+    ]
+  },
+  {
+    "name": "RinksideArticlePrimaryType",
+    "description": null,
+    "values": [
+      "category",
+      "tag",
+      "league",
+      "player",
+      "staff",
+      "team"
+    ]
+  },
+  {
+    "name": "PlayerStatsTableLayout",
+    "description": null,
+    "values": [
+      "premium_stats_table_style_one",
+      "premium_stats_table_style_two",
+      "premium_stats_table_style_three"
+    ]
+  },
+  {
+    "name": "VerifiedStyles",
+    "description": null,
+    "values": [
+      "default",
+      "hidden",
+      "gold"
+    ]
+  },
+  {
+    "name": "EditModeStatuses",
+    "description": null,
+    "values": [
+      "unavailable",
+      "available",
+      "cta"
+    ]
+  },
+  {
+    "name": "PhotoUpdateStatuses",
+    "description": null,
+    "values": [
+      "enabled",
+      "disabled",
+      "paywall"
+    ]
+  },
+  {
+    "name": "LeagueType",
+    "description": null,
+    "values": [
+      "league",
+      "cup"
+    ]
+  },
+  {
+    "name": "VerificationTargetType",
+    "description": null,
+    "values": [
+      "player",
+      "staff"
+    ]
+  },
+  {
+    "name": "PlayerRole",
+    "description": null,
+    "values": [
+      "C",
+      "A"
+    ]
+  },
+  {
+    "name": "ContractType",
+    "description": null,
+    "values": [
+      "loan",
+      "lockout"
+    ]
+  },
+  {
+    "name": "TransferNotificationChannel",
+    "description": null,
+    "values": [
+      "phone",
+      "email"
+    ]
+  },
+  {
+    "name": "TransferSettingsType",
+    "description": null,
+    "values": [
+      "team",
+      "league"
+    ]
+  },
+  {
+    "name": "WidgetAndSectionName",
+    "description": null,
+    "values": [
+      "epRinksideNews",
+      "scoringLeaders",
+      "freeAgentFrenzy",
+      "popularLeaguePages"
+    ]
+  },
+  {
+    "name": "GraphType",
+    "description": null,
+    "values": [
+      "PIE_CHART",
+      "BAR_CHART",
+      "HORIZONTAL_BAR_CHART"
+    ]
+  },
+  {
+    "name": "Placement",
+    "description": null,
+    "values": [
+      "HEADER"
+    ]
+  },
+  {
+    "name": "ContractRights",
+    "description": null,
+    "values": [
+      "unsigned",
+      "signed"
+    ]
+  },
+  {
+    "name": "Continents",
+    "description": null,
+    "values": [
+      "INT",
+      "AF",
+      "AN",
+      "AS",
+      "EU",
+      "NA",
+      "OC",
+      "SA"
+    ]
+  },
+  {
+    "name": "TeamStatuses",
+    "description": null,
+    "values": [
+      "active",
+      "not_active"
+    ]
+  },
+  {
+    "name": "TeamTypes",
+    "description": null,
+    "values": [
+      "club",
+      "international"
+    ]
+  },
+  {
+    "name": "Classes",
+    "description": null,
+    "values": [
+      "men",
+      "women"
+    ]
+  },
+  {
+    "name": "MedalClass",
+    "description": null,
+    "values": [
+      "champion",
+      "gold",
+      "silver",
+      "bronze"
+    ]
+  },
+  {
+    "name": "PlayoffMedalClass",
+    "description": null,
+    "values": [
+      "gold",
+      "silver",
+      "bronze"
+    ]
+  },
+  {
+    "name": "ScheduleTypes",
+    "description": null,
+    "values": [
+      "default",
+      "summer"
+    ]
+  },
+  {
+    "name": "Gender",
+    "description": null,
+    "values": [
+      "male",
+      "female"
+    ]
+  },
+  {
+    "name": "TransferGender",
+    "description": null,
+    "values": [
+      "men",
+      "women"
+    ]
+  },
+  {
+    "name": "PlayerStatus",
+    "description": null,
+    "values": [
+      "active",
+      "inactive",
+      "retired",
+      "deceased"
+    ]
+  },
+  {
+    "name": "PlayerStatsStatus",
+    "description": null,
+    "values": [
+      "rostered",
+      "notActiveOnTeam",
+      "notActive"
+    ]
+  },
+  {
+    "name": "StaffStatsStatus",
+    "description": null,
+    "values": [
+      "rostered",
+      "notActiveOnTeam",
+      "notActive"
+    ]
+  },
+  {
+    "name": "PlayerType",
+    "description": null,
+    "values": [
+      "GOALTENDER",
+      "SKATER"
+    ]
+  },
+  {
+    "name": "PlayerPosition",
+    "description": null,
+    "values": [
+      "G",
+      "D",
+      "F"
+    ]
+  },
+  {
+    "name": "PlayerPositionDetailed",
+    "description": null,
+    "values": [
+      "G",
+      "D",
+      "F",
+      "C",
+      "W",
+      "LW",
+      "RW"
+    ]
+  },
+  {
+    "name": "PlayerHand",
+    "description": null,
+    "values": [
+      "L",
+      "R"
+    ]
+  },
+  {
+    "name": "PlayerAgeLimit",
+    "description": null,
+    "values": [
+      "U14",
+      "U15",
+      "U16",
+      "U17",
+      "U18",
+      "U19",
+      "U20",
+      "U21",
+      "U22",
+      "U23",
+      "U24",
+      "U25",
+      "U26",
+      "U27",
+      "U28",
+      "U29",
+      "U30",
+      "O30",
+      "O35",
+      "O40"
+    ]
+  },
+  {
+    "name": "PlayerGameStatus",
+    "description": null,
+    "values": [
+      "healthy",
+      "injured",
+      "suspended"
+    ]
+  },
+  {
+    "name": "MenuItemLockType",
+    "description": null,
+    "values": [
+      "FREE",
+      "PREMIUM"
+    ]
+  },
+  {
+    "name": "SeasonType",
+    "description": null,
+    "values": [
+      "PRESEASON",
+      "REGULAR_SEASON",
+      "POSTSEASON"
+    ]
+  },
+  {
+    "name": "GameStatus",
+    "description": null,
+    "values": [
+      "UPCOMING",
+      "COMPLETED",
+      "POSTPONED"
+    ]
+  },
+  {
+    "name": "ScoreType",
+    "description": null,
+    "values": [
+      "FT",
+      "OT",
+      "SO",
+      "WO"
+    ]
+  },
+  {
+    "name": "GameType",
+    "description": null,
+    "values": [
+      "home",
+      "away",
+      "neutral"
+    ]
+  },
+  {
+    "name": "GameLogOutcome",
+    "description": null,
+    "values": [
+      "W",
+      "T",
+      "L"
+    ]
+  },
+  {
+    "name": "AwardType",
+    "description": null,
+    "values": [
+      "player",
+      "staff"
+    ]
+  },
+  {
+    "name": "TransferType",
+    "description": null,
+    "values": [
+      "confirmed",
+      "rumour",
+      "doubtful",
+      "extension",
+      "upDown",
+      "loan"
+    ]
+  },
+  {
+    "name": "StaffStatus",
+    "description": null,
+    "values": [
+      "active",
+      "deceased"
+    ]
+  },
+  {
+    "name": "FavoriteType",
+    "description": null,
+    "values": [
+      "player",
+      "team",
+      "league"
+    ]
+  },
+  {
+    "name": "ExperienceCondition",
+    "description": null,
+    "values": [
+      "playing",
+      "hasPlayed",
+      "notPlaying",
+      "neverPlayed"
+    ]
+  },
+  {
+    "name": "PollTagType",
+    "description": null,
+    "values": [
+      "player",
+      "team",
+      "league",
+      "staff"
+    ]
+  },
+  {
+    "name": "PollOptionType",
+    "description": null,
+    "values": [
+      "player",
+      "team",
+      "league",
+      "staff",
+      "plaintext"
+    ]
+  },
+  {
+    "name": "PollType",
+    "description": null,
+    "values": [
+      "adminAll",
+      "adminDraft",
+      "myAll",
+      "myDraft",
+      "myActive",
+      "myArchive",
+      "active",
+      "archive",
+      "voted"
+    ]
+  },
+  {
+    "name": "WalletType",
+    "description": null,
+    "values": [
+      "amex_express_checkout",
+      "apple_pay",
+      "google_pay",
+      "link",
+      "masterpass",
+      "samsung_pay",
+      "visa_checkout"
+    ]
+  },
+  {
+    "name": "CouponDuration",
+    "description": null,
+    "values": [
+      "once",
+      "forever",
+      "repeating"
+    ]
+  },
+  {
+    "name": "TaxRateType",
+    "description": null,
+    "values": [
+      "flat_amount",
+      "percentage"
+    ]
+  },
+  {
+    "name": "TaxType",
+    "description": null,
+    "values": [
+      "amusement_tax",
+      "communications_tax",
+      "gst",
+      "hst",
+      "igst",
+      "jct",
+      "lease_tax",
+      "pst",
+      "qst",
+      "rst",
+      "sales_tax",
+      "service_tax",
+      "vat"
+    ]
+  },
+  {
+    "name": "JurisdictionLevel",
+    "description": null,
+    "values": [
+      "city",
+      "country",
+      "county",
+      "district",
+      "multiple",
+      "state"
+    ]
+  },
+  {
+    "name": "PlanPriceInterval",
+    "description": null,
+    "values": [
+      "monthly",
+      "yearly"
+    ]
+  },
+  {
+    "name": "PlanPriceDisplayInterval",
+    "description": null,
+    "values": [
+      "month",
+      "year"
+    ]
+  },
+  {
+    "name": "InvoiceStatus",
+    "description": null,
+    "values": [
+      "draft",
+      "open",
+      "paid",
+      "void",
+      "uncollectible"
+    ]
+  },
+  {
+    "name": "IntentType",
+    "description": null,
+    "values": [
+      "payment",
+      "setup"
+    ]
+  },
+  {
+    "name": "LivescoreStatus",
+    "description": null,
+    "values": [
+      "closed",
+      "postponed",
+      "cancelled",
+      "not_started",
+      "ended",
+      "live"
+    ]
+  },
+  {
+    "name": "LivescoreScoresCoverage",
+    "description": null,
+    "values": [
+      "post",
+      "live"
+    ]
+  },
+  {
+    "name": "LivescorePeriodScoreType",
+    "description": null,
+    "values": [
+      "regular_period",
+      "overtime",
+      "penalties"
+    ]
+  },
+  {
+    "name": "ReactionType",
+    "description": null,
+    "values": [
+      "like",
+      "sad",
+      "love",
+      "funny",
+      "fire",
+      "angry",
+      "cup"
+    ]
+  },
+  {
+    "name": "VideoType",
+    "description": null,
+    "values": [
+      "highlight",
+      "game",
+      "interview",
+      "training",
+      "other"
+    ]
+  },
+  {
+    "name": "VideoTagType",
+    "description": null,
+    "values": [
+      "general",
+      "highlight",
+      "training"
+    ]
+  },
+  {
+    "name": "VideoProvider",
+    "description": null,
+    "values": [
+      "youtube",
+      "mux"
+    ]
+  },
+  {
+    "name": "VideoSortBy",
+    "description": null,
+    "values": [
+      "views",
+      "publishedAt"
+    ]
+  },
+  {
+    "name": "SortOrder",
+    "description": null,
+    "values": [
+      "asc",
+      "desc"
+    ]
+  },
+  {
+    "name": "RankingType",
+    "description": null,
+    "values": [
+      "all",
+      "favorites",
+      "my",
+      "staff",
+      "ignored"
+    ]
+  },
+  {
+    "name": "PlayerStatisticsTotalsComparisonOption",
+    "description": null,
+    "values": [
+      "league",
+      "common_league"
+    ]
+  },
+  {
+    "name": "PlayerStatisticsComparisonOption",
+    "description": null,
+    "values": [
+      "season",
+      "common_season",
+      "age",
+      "common_age"
+    ]
+  },
+  {
+    "name": "SportsDataType",
+    "description": null,
+    "values": [
+      "player",
+      "staff"
+    ]
+  },
+  {
+    "name": "NationalityType",
+    "description": null,
+    "values": [
+      "first",
+      "any"
+    ]
+  },
+  {
+    "name": "DraftStatus",
+    "description": null,
+    "values": [
+      "draftedProspect",
+      "draftedPlayer",
+      "undraftedProspectU21",
+      "notDrafted"
+    ]
+  },
+  {
+    "name": "PlayerStatsType",
+    "description": null,
+    "values": [
+      "regularStats",
+      "postseasonStats",
+      "totalStats"
+    ]
+  },
+  {
+    "name": "ChatNotificationType",
+    "description": null,
+    "values": [
+      "ALL",
+      "NONE"
+    ]
+  },
+  {
+    "name": "ChatParticipantType",
+    "description": null,
+    "values": [
+      "MEMBER",
+      "PLAYER",
+      "STAFF"
+    ]
+  },
+  {
+    "name": "ChatMessageAttachmentType",
+    "description": null,
+    "values": [
+      "EP_VIDEO",
+      "EP_PLAYER",
+      "EP_STAFF",
+      "EP_LEAGUE",
+      "EP_TEAM"
+    ]
+  },
+  {
+    "name": "ChatType",
+    "description": null,
+    "values": [
+      "GROUP",
+      "PRIVATE"
+    ]
+  },
+  {
+    "name": "LiveGender",
+    "description": null,
+    "values": [
+      "male",
+      "female",
+      "mixed",
+      "other"
+    ]
+  },
+  {
+    "name": "IncidentSubType",
+    "description": null,
+    "values": [
+      "subst_in",
+      "subst",
+      "goal",
+      "assist",
+      "card"
+    ]
+  }
+]

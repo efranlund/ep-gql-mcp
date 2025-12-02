@@ -1,0 +1,5992 @@
+[
+  {
+    "name": "Query",
+    "kind": "OBJECT",
+    "description": null,
+    "fields": [
+      {
+        "name": "userById",
+        "description": null,
+        "type": "User"
+      },
+      {
+        "name": "agencies",
+        "description": null,
+        "type": "AgencyConnection"
+      },
+      {
+        "name": "agency",
+        "description": null,
+        "type": "Agency"
+      },
+      {
+        "name": "agencyAffiliates",
+        "description": null,
+        "type": "AgencyAffiliateConnection"
+      },
+      {
+        "name": "agencyClients",
+        "description": null,
+        "type": "AgencyClientConnection"
+      },
+      {
+        "name": "agencyCountries",
+        "description": null,
+        "type": "AgencyCountryConnection"
+      },
+      {
+        "name": "teams",
+        "description": null,
+        "type": "TeamConnection"
+      },
+      {
+        "name": "team",
+        "description": null,
+        "type": "Team"
+      },
+      {
+        "name": "teamRoster",
+        "description": null,
+        "type": "TeamPlayerConnection"
+      },
+      {
+        "name": "teamDepthChart",
+        "description": null,
+        "type": "PlayerStatsAllTimeConnection"
+      },
+      {
+        "name": "teamInTheSystemSkaterStats",
+        "description": null,
+        "type": "AggregatedSkaterStatsConnection"
+      },
+      {
+        "name": "teamInTheSystemGoalieStats",
+        "description": null,
+        "type": "AggregatedGoalieStatsConnection"
+      },
+      {
+        "name": "teamInTheSystemLeagues",
+        "description": null,
+        "type": "LeaguePlayersConnection"
+      },
+      {
+        "name": "teamInTheSystemTeams",
+        "description": null,
+        "type": "TeamPlayersConnection"
+      },
+      {
+        "name": "teamInTheSystemPlayerNationalities",
+        "description": null,
+        "type": "NationalityPlayersConnection"
+      },
+      {
+        "name": "teamAffiliates",
+        "description": null,
+        "type": "TeamConnection"
+      },
+      {
+        "name": "teamDraftSelections",
+        "description": null,
+        "type": "TeamDraftSelectionConnection"
+      },
+      {
+        "name": "teamStarsAndCultPlayers",
+        "description": null,
+        "type": "TeamStarsAndCultPlayersConnection"
+      },
+      {
+        "name": "teamStaff",
+        "description": null,
+        "type": "TeamStaffConnection"
+      },
+      {
+        "name": "teamNhlRights",
+        "description": null,
+        "type": "TeamNhlRightsConnection"
+      },
+      {
+        "name": "teamRetiredNumbers",
+        "description": null,
+        "type": "TeamRetiredNumbersConnection"
+      },
+      {
+        "name": "teamStaffHistory",
+        "description": null,
+        "type": "[TeamStaffSeason]"
+      },
+      {
+        "name": "teamCaptaincyHistory",
+        "description": null,
+        "type": "[TeamCaptaincySeason]"
+      },
+      {
+        "name": "teamScoringLeaders",
+        "description": null,
+        "type": "TeamScoringLeadersConnection"
+      },
+      {
+        "name": "teamSkaterStatsAllTime",
+        "description": null,
+        "type": "SkaterStatsAllTimeConnection"
+      },
+      {
+        "name": "teamGoalieStatsAllTime",
+        "description": null,
+        "type": "GoalieStatsAllTimeConnection"
+      },
+      {
+        "name": "teamClubTeamSkaterStats",
+        "description": null,
+        "type": "AggregatedSkaterStatsConnection"
+      },
+      {
+        "name": "teamClubTeamGoalieStats",
+        "description": null,
+        "type": "AggregatedGoalieStatsConnection"
+      },
+      {
+        "name": "teamCanSubmitRoster",
+        "description": null,
+        "type": "TeamCanSubmitRosterResponse"
+      },
+      {
+        "name": "teamLeagueExperiences",
+        "description": null,
+        "type": "[LeagueExperience]"
+      },
+      {
+        "name": "teamTeamExperience",
+        "description": null,
+        "type": "TeamExperience"
+      },
+      {
+        "name": "teamDemographics",
+        "description": null,
+        "type": "[Demographics]"
+      },
+      {
+        "name": "teamSeasonComparison",
+        "description": null,
+        "type": "TeamSeasonComparisonConnection"
+      },
+      {
+        "name": "teamSeasons",
+        "description": null,
+        "type": "[TeamSeason]"
+      },
+      {
+        "name": "teamPostseasonTypes",
+        "description": null,
+        "type": "[PostseasonType]"
+      },
+      {
+        "name": "teamCurrentGames",
+        "description": null,
+        "type": "[Game]"
+      },
+      {
+        "name": "teamWhereAreTheyNowSkaterStats",
+        "description": null,
+        "type": "PlayerStatsConnection"
+      },
+      {
+        "name": "teamWhereAreTheyNowGoalieStats",
+        "description": null,
+        "type": "PlayerStatsConnection"
+      },
+      {
+        "name": "teamWhereAreTheyNowMoreSkaterStats",
+        "description": null,
+        "type": "PlayerStatsWhereAreTheyNowConnection"
+      },
+      {
+        "name": "teamWhereAreTheyNowMoreGoalieStats",
+        "description": null,
+        "type": "PlayerStatsWhereAreTheyNowConnection"
+      },
+      {
+        "name": "teamWhereAreTheyNowSeasons",
+        "description": null,
+        "type": "[Season]"
+      },
+      {
+        "name": "arenas",
+        "description": null,
+        "type": "ArenaConnection"
+      },
+      {
+        "name": "arena",
+        "description": null,
+        "type": "Arena"
+      },
+      {
+        "name": "arenaTeams",
+        "description": null,
+        "type": "ArenaTeamConnection"
+      },
+      {
+        "name": "staff",
+        "description": null,
+        "type": "StaffConnection"
+      },
+      {
+        "name": "staffPlayerConnections",
+        "description": null,
+        "type": "PlayerConnectionsConnection"
+      },
+      {
+        "name": "staffConnections",
+        "description": null,
+        "type": "PlayerStaffConnectionsConnection"
+      },
+      {
+        "name": "staffPlayerConnectionsPlayerNationalities",
+        "description": null,
+        "type": "NationalityPlayersConnection"
+      },
+      {
+        "name": "staffConnectionsStaffNationalities",
+        "description": null,
+        "type": "NationalityPlayersStaffConnection"
+      },
+      {
+        "name": "staffPlayerConnectionsTeams",
+        "description": null,
+        "type": "TeamPlayersConnection"
+      },
+      {
+        "name": "staffConnectionsTeams",
+        "description": null,
+        "type": "TeamPlayersConnection"
+      },
+      {
+        "name": "staffConnectionsRoles",
+        "description": null,
+        "type": "ConnectionsStaffRolesConnection"
+      },
+      {
+        "name": "staffById",
+        "description": null,
+        "type": "Staff"
+      },
+      {
+        "name": "staffStats",
+        "description": null,
+        "type": "StaffStatsConnection"
+      },
+      {
+        "name": "staffStatsSeasons",
+        "description": null,
+        "type": "[Season]"
+      },
+      {
+        "name": "staffStatsStaffNationalities",
+        "description": null,
+        "type": "[NationalityStaffs]"
+      },
+      {
+        "name": "staffStatsTeams",
+        "description": null,
+        "type": "TeamStaffsConnection"
+      },
+      {
+        "name": "staffStatsLeagues",
+        "description": null,
+        "type": "LeagueStaffsConnection"
+      },
+      {
+        "name": "me",
+        "description": null,
+        "type": "User"
+      },
+      {
+        "name": "userBookmarks",
+        "description": null,
+        "type": "PlayerIdList"
+      },
+      {
+        "name": "userRosters",
+        "description": null,
+        "type": "[Roster]"
+      },
+      {
+        "name": "userCountry",
+        "description": null,
+        "type": "PremiumCountry"
+      },
+      {
+        "name": "userGender",
+        "description": null,
+        "type": "Gender"
+      },
+      {
+        "name": "popularFavorites",
+        "description": null,
+        "type": "PopularFavorites"
+      },
+      {
+        "name": "userFavorites",
+        "description": null,
+        "type": "[Favorite]"
+      },
+      {
+        "name": "userHockeyRelations",
+        "description": null,
+        "type": "[HockeyRelation]"
+      },
+      {
+        "name": "userContentInterests",
+        "description": null,
+        "type": "[ContentInterest]"
+      },
+      {
+        "name": "userCurrency",
+        "description": null,
+        "type": "Currency"
+      },
+      {
+        "name": "menus",
+        "description": null,
+        "type": "[Menu]"
+      },
+      {
+        "name": "menuItems",
+        "description": null,
+        "type": "[MenuItem]"
+      },
+      {
+        "name": "feedContents",
+        "description": null,
+        "type": "FeedContentConnection"
+      },
+      {
+        "name": "feedContent",
+        "description": null,
+        "type": "FeedContent"
+      },
+      {
+        "name": "customContent",
+        "description": null,
+        "type": "CustomContent"
+      },
+      {
+        "name": "customContents",
+        "description": null,
+        "type": "CustomContentConnection"
+      },
+      {
+        "name": "customContentCategory",
+        "description": null,
+        "type": "CustomContentCategory"
+      },
+      {
+        "name": "customContentCategories",
+        "description": null,
+        "type": "[CustomContentCategory]"
+      },
+      {
+        "name": "trendingPlayers",
+        "description": null,
+        "type": "[Player]"
+      },
+      {
+        "name": "validPlayerHeights",
+        "description": null,
+        "type": "[StringLabelIntegerValue]"
+      },
+      {
+        "name": "validPlayerWeights",
+        "description": null,
+        "type": "[StringLabelIntegerValue]"
+      },
+      {
+        "name": "players",
+        "description": null,
+        "type": "PlayerConnection"
+      },
+      {
+        "name": "player",
+        "description": null,
+        "type": "Player"
+      },
+      {
+        "name": "playerContracts",
+        "description": null,
+        "type": "PlayerContractConnection"
+      },
+      {
+        "name": "playerHighlights",
+        "description": null,
+        "type": "[PlayerHighlights]"
+      },
+      {
+        "name": "playerQuotes",
+        "description": null,
+        "type": "[Quote]"
+      },
+      {
+        "name": "playerMedia",
+        "description": null,
+        "type": "[Media]"
+      },
+      {
+        "name": "playerStatsPerGameAverage",
+        "description": null,
+        "type": "PlayerAverageStatsConnection"
+      },
+      {
+        "name": "playerStatsAllTimeTeam",
+        "description": null,
+        "type": "PlayerAllTimeTeamStatsConnection"
+      },
+      {
+        "name": "playerStatsAllTimeLeague",
+        "description": null,
+        "type": "PlayerAllTimeLeagueStatsConnection"
+      },
+      {
+        "name": "playerAwards",
+        "description": null,
+        "type": "PlayerAwardConnection"
+      },
+      {
+        "name": "playerConnections",
+        "description": null,
+        "type": "PlayerConnectionsConnection"
+      },
+      {
+        "name": "playerStaffConnections",
+        "description": null,
+        "type": "PlayerStaffConnectionsConnection"
+      },
+      {
+        "name": "playerConnectionsPlayerNationalities",
+        "description": null,
+        "type": "NationalityPlayersConnection"
+      },
+      {
+        "name": "playerStaffConnectionsStaffNationalities",
+        "description": null,
+        "type": "NationalityPlayersStaffConnection"
+      },
+      {
+        "name": "playerConnectionsTeams",
+        "description": null,
+        "type": "TeamPlayersConnection"
+      },
+      {
+        "name": "playerStaffConnectionsTeams",
+        "description": null,
+        "type": "TeamPlayersConnection"
+      },
+      {
+        "name": "playerStaffConnectionsRoles",
+        "description": null,
+        "type": "ConnectionsStaffRolesConnection"
+      },
+      {
+        "name": "playerSkillRatings",
+        "description": null,
+        "type": "SkillRatingConnection"
+      },
+      {
+        "name": "playerSkillRatingsPoweredBy",
+        "description": null,
+        "type": "SkillRatingsPoweredBy"
+      },
+      {
+        "name": "playerPostseasonTypes",
+        "description": null,
+        "type": "[PostseasonType]"
+      },
+      {
+        "name": "playerStats",
+        "description": null,
+        "type": "PlayerStatsConnection"
+      },
+      {
+        "name": "playerStatsSeasons",
+        "description": null,
+        "type": "[Season]"
+      },
+      {
+        "name": "playerStatsNationalities",
+        "description": null,
+        "type": "[NationalityPlayers]"
+      },
+      {
+        "name": "playerStatsPlayerNationalities",
+        "description": null,
+        "type": "[NationalityPlayersConnection]"
+      },
+      {
+        "name": "playerStatsTeams",
+        "description": null,
+        "type": "TeamPlayersConnection"
+      },
+      {
+        "name": "playerStatsLeagues",
+        "description": null,
+        "type": "LeaguePlayersConnection"
+      },
+      {
+        "name": "abroadPlayerFilters",
+        "description": null,
+        "type": "AbroadPlayerFilters"
+      },
+      {
+        "name": "skaterAbroadPlayerSeasons",
+        "description": null,
+        "type": "[Season]"
+      },
+      {
+        "name": "goalieAbroadPlayerSeasons",
+        "description": null,
+        "type": "[Season]"
+      },
+      {
+        "name": "playerPositions",
+        "description": null,
+        "type": "[PlayerPositionLabel]"
+      },
+      {
+        "name": "playerHeightsFilter",
+        "description": null,
+        "type": "[playerHeightsFilter]"
+      },
+      {
+        "name": "playerWeightsFilter",
+        "description": null,
+        "type": "[playerWeightsFilter]"
+      },
+      {
+        "name": "playerTypes",
+        "description": null,
+        "type": "[PlayerTypeLabel]"
+      },
+      {
+        "name": "playerStatuses",
+        "description": null,
+        "type": "[PlayerStatusLabel]"
+      },
+      {
+        "name": "playerAgeLimits",
+        "description": null,
+        "type": "[PlayerAgeLimit]"
+      },
+      {
+        "name": "playerTypeAndPositionFilter",
+        "description": null,
+        "type": "[Filter]"
+      },
+      {
+        "name": "nhlDraftProspectFilter",
+        "description": null,
+        "type": "[Filter]"
+      },
+      {
+        "name": "playerTrackerFilter",
+        "description": null,
+        "type": "[PlayerTrackerFilter]"
+      },
+      {
+        "name": "playerDraftSelections",
+        "description": null,
+        "type": "PlayerDraftSelectionConnection"
+      },
+      {
+        "name": "playerDraftRanking",
+        "description": null,
+        "type": "PlayerDraftRankingConnection"
+      },
+      {
+        "name": "playerStyles",
+        "description": null,
+        "type": "[PlayerStyle]"
+      },
+      {
+        "name": "games",
+        "description": null,
+        "type": "GameConnection"
+      },
+      {
+        "name": "groupedGames",
+        "description": null,
+        "type": "[GroupedGame]"
+      },
+      {
+        "name": "pagedGroupedGames",
+        "description": null,
+        "type": "GroupedGameConnection"
+      },
+      {
+        "name": "liveGroupedGames",
+        "description": null,
+        "type": "GroupedGameConnection"
+      },
+      {
+        "name": "groupedFollowsGames",
+        "description": null,
+        "type": "[GroupedGame]"
+      },
+      {
+        "name": "game",
+        "description": null,
+        "type": "Game"
+      },
+      {
+        "name": "gameLogs",
+        "description": null,
+        "type": "GameLogConnection"
+      },
+      {
+        "name": "gameLogsSeasons",
+        "description": null,
+        "type": "SeasonConnection"
+      },
+      {
+        "name": "gameLogsOpponents",
+        "description": null,
+        "type": "TeamConnection"
+      },
+      {
+        "name": "gameLogsLeagues",
+        "description": null,
+        "type": "LeagueConnection"
+      },
+      {
+        "name": "awards",
+        "description": null,
+        "type": "AwardConnection"
+      },
+      {
+        "name": "awardPlayers",
+        "description": null,
+        "type": "PlayerAwardConnection"
+      },
+      {
+        "name": "awardStaffs",
+        "description": null,
+        "type": "StaffAwardConnection"
+      },
+      {
+        "name": "awardPlayersAllTime",
+        "description": null,
+        "type": "PlayerConnectionsConnection"
+      },
+      {
+        "name": "awardStaffsAllTime",
+        "description": null,
+        "type": "StaffConnectionsConnection"
+      },
+      {
+        "name": "transfers",
+        "description": null,
+        "type": "TransferConnection"
+      },
+      {
+        "name": "transferYears",
+        "description": null,
+        "type": "[Int]"
+      },
+      {
+        "name": "teamStats",
+        "description": null,
+        "type": "TeamStatsConnection"
+      },
+      {
+        "name": "scoringLeaders",
+        "description": null,
+        "type": "PlayerStatsConnection"
+      },
+      {
+        "name": "scoringLeadersLeagues",
+        "description": null,
+        "type": "ScoringLeadersLeagues"
+      },
+      {
+        "name": "popularLeagues",
+        "description": null,
+        "type": "[League]"
+      },
+      {
+        "name": "popularLeaguesByCategory",
+        "description": null,
+        "type": "[LeagueByCategoryCollection]"
+      },
+      {
+        "name": "leagueRosters",
+        "description": null,
+        "type": "[LeagueTeams]"
+      },
+      {
+        "name": "transferLeagues",
+        "description": null,
+        "type": "[TransferLeagueCategory]"
+      },
+      {
+        "name": "leagues",
+        "description": null,
+        "type": "LeagueConnection"
+      },
+      {
+        "name": "league",
+        "description": null,
+        "type": "League"
+      },
+      {
+        "name": "leagueSeasons",
+        "description": null,
+        "type": "[LeagueSeason]"
+      },
+      {
+        "name": "leagueSeason",
+        "description": null,
+        "type": "LeagueSeason"
+      },
+      {
+        "name": "leagueStandings",
+        "description": null,
+        "type": "[TeamStats]"
+      },
+      {
+        "name": "leagueStandingsSeasons",
+        "description": null,
+        "type": "[LeagueSeason]"
+      },
+      {
+        "name": "leaguePostseasonTypes",
+        "description": null,
+        "type": "[PostseasonType]"
+      },
+      {
+        "name": "leagueSkaterStats",
+        "description": null,
+        "type": "PlayerStatsConnection"
+      },
+      {
+        "name": "leagueSkaterStatsAllTime",
+        "description": null,
+        "type": "SkaterStatsAllTimeConnection"
+      },
+      {
+        "name": "leagueSkaterStatsAllTimeSeason",
+        "description": null,
+        "type": "SkaterStatsLeagueAllTimeSeasonConnection"
+      },
+      {
+        "name": "leagueSkaterStatsAllTimeTeam",
+        "description": null,
+        "type": "SkaterStatsLeagueAllTimeTeamConnection"
+      },
+      {
+        "name": "leagueGoalieStats",
+        "description": null,
+        "type": "PlayerStatsConnection"
+      },
+      {
+        "name": "leagueGoalieStatsAllTime",
+        "description": null,
+        "type": "GoalieStatsAllTimeConnection"
+      },
+      {
+        "name": "leagueGoalieStatsAllTimeSeason",
+        "description": null,
+        "type": "GoalieStatsLeagueAllTimeSeasonConnection"
+      },
+      {
+        "name": "leagueGoalieStatsAllTimeTeam",
+        "description": null,
+        "type": "GoalieStatsLeagueAllTimeTeamConnection"
+      },
+      {
+        "name": "leagueCurrentGames",
+        "description": null,
+        "type": "[Game]"
+      },
+      {
+        "name": "leagueDemographics",
+        "description": null,
+        "type": "[Demographics]"
+      },
+      {
+        "name": "leagueTeamComparison",
+        "description": null,
+        "type": "[LeagueTeamComparison]"
+      },
+      {
+        "name": "leagueTeamCaptaincy",
+        "description": null,
+        "type": "LeagueTeamCaptaincyConnection"
+      },
+      {
+        "name": "leagueWhereAreTheyNowSkaterStats",
+        "description": null,
+        "type": "PlayerStatsConnection"
+      },
+      {
+        "name": "leagueWhereAreTheyNowGoalieStats",
+        "description": null,
+        "type": "PlayerStatsConnection"
+      },
+      {
+        "name": "leagueWhereAreTheyNowMoreSkaterStats",
+        "description": null,
+        "type": "PlayerStatsWhereAreTheyNowConnection"
+      },
+      {
+        "name": "leagueWhereAreTheyNowMoreGoalieStats",
+        "description": null,
+        "type": "PlayerStatsWhereAreTheyNowConnection"
+      },
+      {
+        "name": "leagueWhereAreTheyNowSeasons",
+        "description": null,
+        "type": "[Season]"
+      },
+      {
+        "name": "leagueWhereAreTheyNowPostseasonTypes",
+        "description": null,
+        "type": "[PostseasonType]"
+      },
+      {
+        "name": "currentDraftCoverage",
+        "description": null,
+        "type": "DraftCoverage"
+      },
+      {
+        "name": "nhlDraftEligibilitiesFilter",
+        "description": null,
+        "type": "[NHLDraftEligibilityFilter]"
+      },
+      {
+        "name": "internationalExperiencesFilter",
+        "description": null,
+        "type": "[InternationalExperienceFilter]"
+      },
+      {
+        "name": "playerContractsFilter",
+        "description": null,
+        "type": "[PlayerContractFilter]"
+      },
+      {
+        "name": "playerNHLDraftedFilter",
+        "description": null,
+        "type": "[PlayerNHLDraftedFilter]"
+      },
+      {
+        "name": "draftTypes",
+        "description": null,
+        "type": "DraftTypeConnection"
+      },
+      {
+        "name": "draftType",
+        "description": null,
+        "type": "DraftType"
+      },
+      {
+        "name": "draftTypeYears",
+        "description": null,
+        "type": "[Int]"
+      },
+      {
+        "name": "draftTypeDraftRankingsYears",
+        "description": null,
+        "type": "[Int]"
+      },
+      {
+        "name": "draftTypeDraftRankings",
+        "description": null,
+        "type": "[DraftRanking]"
+      },
+      {
+        "name": "draftFilters",
+        "description": null,
+        "type": "DraftFilters"
+      },
+      {
+        "name": "draftInterestingFacts",
+        "description": null,
+        "type": "DraftInterestingFacts"
+      },
+      {
+        "name": "draftPlayersPerNation",
+        "description": null,
+        "type": "[NationalityPlayers]"
+      },
+      {
+        "name": "draftTypeRankingScouts",
+        "description": null,
+        "type": "[RankingScout]"
+      },
+      {
+        "name": "draftTypeSelections",
+        "description": null,
+        "type": "DraftTypeSelectionConnection"
+      },
+      {
+        "name": "draftTypeSelectionsFilters",
+        "description": null,
+        "type": "DraftTypeSelectionsFilters"
+      },
+      {
+        "name": "draftTypeSelectionsByNationality",
+        "description": null,
+        "type": "DraftTypeSelectionsByNationalityConnection"
+      },
+      {
+        "name": "draftTypeSelectionsByTeam",
+        "description": null,
+        "type": "DraftTypeSelectionsByTeamConnection"
+      },
+      {
+        "name": "draftTypeSelectionsByYear",
+        "description": null,
+        "type": "DraftTypeSelectionsByYearConnection"
+      },
+      {
+        "name": "draftTypeTeams",
+        "description": null,
+        "type": "DraftTypeTeamConnection"
+      },
+      {
+        "name": "leagueFreeAgents",
+        "description": null,
+        "type": "FreeAgentPlayerStatsConnection"
+      },
+      {
+        "name": "leagueFreeAgentNationalityFilters",
+        "description": null,
+        "type": "[FreeAgentNationalityFilter]"
+      },
+      {
+        "name": "leagueFreeAgentSeasons",
+        "description": null,
+        "type": "[Season]"
+      },
+      {
+        "name": "freeAgentLeagues",
+        "description": null,
+        "type": "[League]"
+      },
+      {
+        "name": "leagueNavigation",
+        "description": null,
+        "type": "[TableNavigation]"
+      },
+      {
+        "name": "leagueNavigationTables",
+        "description": null,
+        "type": "[TableData]"
+      },
+      {
+        "name": "countries",
+        "description": null,
+        "type": "CountryConnection"
+      },
+      {
+        "name": "subscriptionOffer",
+        "description": null,
+        "type": "SubscriptionPlan"
+      },
+      {
+        "name": "subscriptionOffers",
+        "description": null,
+        "type": "[SubscriptionPlan]"
+      },
+      {
+        "name": "permissions",
+        "description": null,
+        "type": "[Permission]"
+      },
+      {
+        "name": "hockeyRelations",
+        "description": null,
+        "type": "[HockeyRelation]"
+      },
+      {
+        "name": "premiumCountries",
+        "description": null,
+        "type": "[PremiumCountry]"
+      },
+      {
+        "name": "contentInterests",
+        "description": null,
+        "type": "[ContentInterest]"
+      },
+      {
+        "name": "staffRoles",
+        "description": null,
+        "type": "[StaffRole]"
+      },
+      {
+        "name": "staffAwards",
+        "description": null,
+        "type": "StaffAwardConnection"
+      },
+      {
+        "name": "staffHighlights",
+        "description": null,
+        "type": "[StaffHighlights]"
+      },
+      {
+        "name": "proPlayerStyles",
+        "description": null,
+        "type": "[ProPlayerStyle]"
+      },
+      {
+        "name": "endorsements",
+        "description": null,
+        "type": "[Endorsement]"
+      },
+      {
+        "name": "images",
+        "description": null,
+        "type": "[Image]"
+      },
+      {
+        "name": "listVideos",
+        "description": null,
+        "type": "VideoConnection"
+      },
+      {
+        "name": "topVideo",
+        "description": null,
+        "type": "VideoConnection"
+      },
+      {
+        "name": "videoByFollowing",
+        "description": null,
+        "type": "VideoConnection"
+      },
+      {
+        "name": "videoByCategory",
+        "description": null,
+        "type": "VideoConnection"
+      },
+      {
+        "name": "videoByTag",
+        "description": null,
+        "type": "VideoConnection"
+      },
+      {
+        "name": "singleVideo",
+        "description": null,
+        "type": "Video"
+      },
+      {
+        "name": "getVideoInfoFromMux",
+        "description": null,
+        "type": "MuxVideoInfo"
+      },
+      {
+        "name": "videos",
+        "description": null,
+        "type": "[Video]"
+      },
+      {
+        "name": "videoTags",
+        "description": null,
+        "type": "[VideoTag]"
+      },
+      {
+        "name": "getMuxUploadUrl",
+        "description": null,
+        "type": "MuxUploadUrlResponse"
+      },
+      {
+        "name": "getMuxUploadInfo",
+        "description": null,
+        "type": "MuxVideoInfo"
+      },
+      {
+        "name": "education",
+        "description": null,
+        "type": "[Education]"
+      },
+      {
+        "name": "otherExperiences",
+        "description": null,
+        "type": "[OtherExperience]"
+      },
+      {
+        "name": "otherExperience",
+        "description": null,
+        "type": "OtherExperience"
+      },
+      {
+        "name": "institutions",
+        "description": null,
+        "type": "[Institution]"
+      },
+      {
+        "name": "equipmentTypes",
+        "description": null,
+        "type": "[EquipmentType]"
+      },
+      {
+        "name": "manufacturers",
+        "description": null,
+        "type": "[Manufacturer]"
+      },
+      {
+        "name": "equipment",
+        "description": null,
+        "type": "EquipmentPro"
+      },
+      {
+        "name": "profilePageLayout",
+        "description": null,
+        "type": "ProfilePageLayout"
+      },
+      {
+        "name": "fitness",
+        "description": null,
+        "type": "[Fitness]"
+      },
+      {
+        "name": "injuries",
+        "description": null,
+        "type": "[Injury]"
+      },
+      {
+        "name": "questionnaire",
+        "description": null,
+        "type": "[Questionnaire]"
+      },
+      {
+        "name": "contract",
+        "description": null,
+        "type": "Contract"
+      },
+      {
+        "name": "profileBlockStatus",
+        "description": null,
+        "type": "ProfileBlockStatus"
+      },
+      {
+        "name": "profileBlockPermissions",
+        "description": null,
+        "type": "[ProfileBlockPermission]"
+      },
+      {
+        "name": "profileBlockPermission",
+        "description": null,
+        "type": "ProfileBlockPermission"
+      },
+      {
+        "name": "descriptions",
+        "description": null,
+        "type": "[Description]"
+      },
+      {
+        "name": "certifications",
+        "description": null,
+        "type": "[Certification]"
+      },
+      {
+        "name": "comments",
+        "description": null,
+        "type": "CommentConnection"
+      },
+      {
+        "name": "getInteract",
+        "description": null,
+        "type": "Interact"
+      },
+      {
+        "name": "verifiedStyle",
+        "description": null,
+        "type": "VerifiedStyle"
+      },
+      {
+        "name": "endorsementEdit",
+        "description": null,
+        "type": "[EndorsementType]"
+      },
+      {
+        "name": "polls",
+        "description": null,
+        "type": "PollConnection"
+      },
+      {
+        "name": "poll",
+        "description": null,
+        "type": "Poll"
+      },
+      {
+        "name": "pollFeatured",
+        "description": null,
+        "type": "Poll"
+      },
+      {
+        "name": "pollCategories",
+        "description": null,
+        "type": "[PollCategory]"
+      },
+      {
+        "name": "feeds",
+        "description": null,
+        "type": "FeedsResponse"
+      },
+      {
+        "name": "getFeedReactions",
+        "description": null,
+        "type": "FeedReactionConnection"
+      },
+      {
+        "name": "getFeedReactionStats",
+        "description": null,
+        "type": "[FeedReactionByType]"
+      },
+      {
+        "name": "scoutingReports",
+        "description": null,
+        "type": "ScoutingReportConnection"
+      },
+      {
+        "name": "profileAnalytics",
+        "description": null,
+        "type": "ProfileAnalyticResponse"
+      },
+      {
+        "name": "popularRankings",
+        "description": null,
+        "type": "PopularRankingsResponse"
+      },
+      {
+        "name": "enterpriseOrganizations",
+        "description": null,
+        "type": "EnterpriseOrganizationConnection"
+      },
+      {
+        "name": "profileMemberVisit",
+        "description": null,
+        "type": "ProfileMemberVisitResponse"
+      },
+      {
+        "name": "streamToken",
+        "description": null,
+        "type": "StreamToken"
+      },
+      {
+        "name": "followersCount",
+        "description": null,
+        "type": "FollowerCount"
+      },
+      {
+        "name": "genders",
+        "description": null,
+        "type": "[PremiumGender]"
+      },
+      {
+        "name": "states",
+        "description": null,
+        "type": "[State]"
+      },
+      {
+        "name": "rinksideArticles",
+        "description": null,
+        "type": "RinksideArticleConnection"
+      },
+      {
+        "name": "rinksideArticle",
+        "description": null,
+        "type": "RinksideArticle"
+      },
+      {
+        "name": "rinksideNextArticle",
+        "description": null,
+        "type": "RinksideArticle"
+      },
+      {
+        "name": "rinksideInfographics",
+        "description": null,
+        "type": "[RinksideInfographic]"
+      },
+      {
+        "name": "rinksideQuizzes",
+        "description": null,
+        "type": "[RinksideQuiz]"
+      },
+      {
+        "name": "rinksideCategories",
+        "description": null,
+        "type": "RinksideCategoryConnection"
+      },
+      {
+        "name": "rinksideCategory",
+        "description": null,
+        "type": "RinksideCategory"
+      },
+      {
+        "name": "rinksideTags",
+        "description": null,
+        "type": "RinksideTagConnection"
+      },
+      {
+        "name": "rinksideTag",
+        "description": null,
+        "type": "RinksideTag"
+      },
+      {
+        "name": "rinksideAuthors",
+        "description": null,
+        "type": "RinksideAuthorConnection"
+      },
+      {
+        "name": "rinksideAuthor",
+        "description": null,
+        "type": "RinksideAuthor"
+      },
+      {
+        "name": "viaplayVideos",
+        "description": null,
+        "type": "ViaplayVideoConnection"
+      },
+      {
+        "name": "tournamentBanner",
+        "description": null,
+        "type": "TournamentBanner"
+      },
+      {
+        "name": "verificationRelations",
+        "description": null,
+        "type": "[VerificationRelation]"
+      },
+      {
+        "name": "subscriptionPlans",
+        "description": null,
+        "type": "[Plan]"
+      },
+      {
+        "name": "userPlans",
+        "description": null,
+        "type": "[UserPlan]"
+      },
+      {
+        "name": "userInvoices",
+        "description": null,
+        "type": "UserInvoiceConnection"
+      },
+      {
+        "name": "userInvoice",
+        "description": null,
+        "type": "Invoice"
+      },
+      {
+        "name": "userSubscription",
+        "description": null,
+        "type": "UserPlan"
+      },
+      {
+        "name": "stripePublicKey",
+        "description": null,
+        "type": "PublicKey"
+      },
+      {
+        "name": "rankings",
+        "description": null,
+        "type": "RankingConnection"
+      },
+      {
+        "name": "ranking",
+        "description": null,
+        "type": "Ranking"
+      },
+      {
+        "name": "currentMember",
+        "description": null,
+        "type": "Member"
+      },
+      {
+        "name": "member",
+        "description": null,
+        "type": "Member"
+      },
+      {
+        "name": "suggestChatParticipants",
+        "description": null,
+        "type": "[PlayerOrStaff]"
+      },
+      {
+        "name": "frontendContent",
+        "description": null,
+        "type": "FrontendContent"
+      },
+      {
+        "name": "contentCollection",
+        "description": null,
+        "type": "ContentCollection"
+      },
+      {
+        "name": "awardNavigationTables",
+        "description": null,
+        "type": "[AwardTableDataCategory]"
+      },
+      {
+        "name": "memberByIdBatch",
+        "description": null,
+        "type": "Member"
+      },
+      {
+        "name": "playerByIdBatch",
+        "description": null,
+        "type": "Player"
+      },
+      {
+        "name": "staffByIdBatch",
+        "description": null,
+        "type": "Staff"
+      },
+      {
+        "name": "comparePlayerAwards",
+        "description": null,
+        "type": "ComparePlayerAwardsResponse"
+      },
+      {
+        "name": "comparePlayerStatisticsTotals",
+        "description": null,
+        "type": "ComparePlayerStatisticsTotalsResponse"
+      },
+      {
+        "name": "comparePlayerStatistics",
+        "description": null,
+        "type": "ComparePlayerStatisticsResponse"
+      },
+      {
+        "name": "comparePlayerRecentGames",
+        "description": null,
+        "type": "ComparePlayerRecentGamesResponse"
+      },
+      {
+        "name": "comparePlayerRecentGamesOptions",
+        "description": null,
+        "type": "[ComparePlayerOption]"
+      },
+      {
+        "name": "comparePlayerStatisticsComparisonOptions",
+        "description": null,
+        "type": "[ComparePlayerOption]"
+      },
+      {
+        "name": "comparePlayerStatisticsTotalsComparisonOptions",
+        "description": null,
+        "type": "[ComparePlayerOption]"
+      },
+      {
+        "name": "userBookmarksSportsData",
+        "description": null,
+        "type": "UserBookmarksSportsData"
+      },
+      {
+        "name": "userRoster",
+        "description": null,
+        "type": "UserRoster"
+      },
+      {
+        "name": "publicUserRoster",
+        "description": null,
+        "type": "UserRoster"
+      },
+      {
+        "name": "submitTransferOptions",
+        "description": null,
+        "type": "SubmitTransferOptions"
+      },
+      {
+        "name": "suggestVerificationTargets",
+        "description": null,
+        "type": "[PlayerOrStaff]"
+      },
+      {
+        "name": "otherDrafts",
+        "description": null,
+        "type": "[OtherDraft]"
+      },
+      {
+        "name": "randomPlayer",
+        "description": null,
+        "type": "Player"
+      },
+      {
+        "name": "agencyInformation",
+        "description": null,
+        "type": "AgencyInformation"
+      },
+      {
+        "name": "chats",
+        "description": null,
+        "type": "Unknown!"
+      },
+      {
+        "name": "chatsPaginated",
+        "description": null,
+        "type": "ChatsResult!"
+      },
+      {
+        "name": "chat",
+        "description": null,
+        "type": "Chat"
+      },
+      {
+        "name": "chatsRemovedFrom",
+        "description": null,
+        "type": "Unknown!"
+      },
+      {
+        "name": "chatByParticipants",
+        "description": null,
+        "type": "Chat"
+      },
+      {
+        "name": "chatMessages",
+        "description": null,
+        "type": "Unknown!"
+      },
+      {
+        "name": "chatMessagesPaginated",
+        "description": null,
+        "type": "ChatMessagesResult!"
+      },
+      {
+        "name": "totalUnread",
+        "description": null,
+        "type": "Int!"
+      },
+      {
+        "name": "unfurl",
+        "description": null,
+        "type": "UrlMetadata!"
+      },
+      {
+        "name": "blockedUsers",
+        "description": null,
+        "type": "Unknown!"
+      },
+      {
+        "name": "chatPermissions",
+        "description": null,
+        "type": "ChatPermissions!"
+      },
+      {
+        "name": "invitationDetails",
+        "description": null,
+        "type": "ContactInvitationDetails!"
+      },
+      {
+        "name": "anyMinors",
+        "description": null,
+        "type": "Boolean!"
+      },
+      {
+        "name": "liveEvents",
+        "description": null,
+        "type": "Unknown!"
+      },
+      {
+        "name": "liveEvent",
+        "description": null,
+        "type": "LiveEvent"
+      },
+      {
+        "name": "liveEventByEPId",
+        "description": null,
+        "type": "LiveEvent"
+      },
+      {
+        "name": "liveEventsByEPIds",
+        "description": null,
+        "type": "Unknown!"
+      },
+      {
+        "name": "playerGameLineup",
+        "description": null,
+        "type": "LivePlayerLineup"
+      },
+      {
+        "name": "epIdsOfInProgressEvents",
+        "description": null,
+        "type": "Unknown!"
+      }
+    ]
+  },
+  {
+    "name": "Mutation",
+    "kind": "OBJECT",
+    "description": null,
+    "fields": [
+      {
+        "name": "login",
+        "description": null,
+        "type": "AuthOrGenericFormResponse"
+      },
+      {
+        "name": "cookieLogin",
+        "description": null,
+        "type": "AuthResponse"
+      },
+      {
+        "name": "logout",
+        "description": null,
+        "type": "String"
+      },
+      {
+        "name": "toggleWidget",
+        "description": null,
+        "type": "User"
+      },
+      {
+        "name": "playerAddRequest",
+        "description": null,
+        "type": "GenericFormResponse"
+      },
+      {
+        "name": "staffAddRequest",
+        "description": null,
+        "type": "GenericFormResponse"
+      },
+      {
+        "name": "premiumContact",
+        "description": null,
+        "type": "GenericFormResponse"
+      },
+      {
+        "name": "addTeamRosterOrStats",
+        "description": null,
+        "type": "GenericFormResponse"
+      },
+      {
+        "name": "endorsementUpvote",
+        "description": null,
+        "type": "GenericFormResponse"
+      },
+      {
+        "name": "addReferral",
+        "description": null,
+        "type": "GenericFormResponse"
+      },
+      {
+        "name": "addComment",
+        "description": null,
+        "type": "GenericFormResponse"
+      },
+      {
+        "name": "deleteComment",
+        "description": null,
+        "type": "GenericFormResponse"
+      },
+      {
+        "name": "addOrRemoveBookmark",
+        "description": null,
+        "type": "GenericFormResponse"
+      },
+      {
+        "name": "addOrRemoveFavorite",
+        "description": null,
+        "type": "GenericFormResponse"
+      },
+      {
+        "name": "updateFavoritesOrder",
+        "description": null,
+        "type": "GenericFormResponse"
+      },
+      {
+        "name": "addOrRemoveRosterPlayer",
+        "description": null,
+        "type": "GenericFormResponse"
+      },
+      {
+        "name": "userHockeyRelations",
+        "description": null,
+        "type": "GenericFormResponse"
+      },
+      {
+        "name": "userContentInterests",
+        "description": null,
+        "type": "GenericFormResponse"
+      },
+      {
+        "name": "interact",
+        "description": null,
+        "type": "GenericFormResponse"
+      },
+      {
+        "name": "updateInteract",
+        "description": null,
+        "type": "GenericFormResponse"
+      },
+      {
+        "name": "profilePhotoUpdate",
+        "description": null,
+        "type": "GenericFormResponse"
+      },
+      {
+        "name": "profileUpdate",
+        "description": null,
+        "type": "GenericFormResponse"
+      },
+      {
+        "name": "updateProfileBlockPermission",
+        "description": null,
+        "type": "GenericFormResponse"
+      },
+      {
+        "name": "updateProPlayerStyles",
+        "description": null,
+        "type": "GenericFormResponse"
+      },
+      {
+        "name": "endorsementUpdate",
+        "description": null,
+        "type": "GenericFormResponse"
+      },
+      {
+        "name": "pollAdd",
+        "description": null,
+        "type": "GenericFormResponse"
+      },
+      {
+        "name": "pollUpdate",
+        "description": null,
+        "type": "GenericFormResponse"
+      },
+      {
+        "name": "pollVote",
+        "description": null,
+        "type": "GenericFormResponse"
+      },
+      {
+        "name": "pollUndoVote",
+        "description": null,
+        "type": "GenericFormResponse"
+      },
+      {
+        "name": "pollDelete",
+        "description": null,
+        "type": "GenericFormResponse"
+      },
+      {
+        "name": "updateFavorites",
+        "description": null,
+        "type": "GenericFormResponse"
+      },
+      {
+        "name": "updateFitness",
+        "description": null,
+        "type": "GenericFormResponse"
+      },
+      {
+        "name": "updateQuestionnaire",
+        "description": null,
+        "type": "GenericFormResponse"
+      },
+      {
+        "name": "updateEquipments",
+        "description": null,
+        "type": "GenericFormResponse"
+      },
+      {
+        "name": "updateProfilePageLayout",
+        "description": null,
+        "type": "GenericFormResponse"
+      },
+      {
+        "name": "addEducation",
+        "description": null,
+        "type": "GenericFormResponse"
+      },
+      {
+        "name": "updateEducation",
+        "description": null,
+        "type": "GenericFormResponse"
+      },
+      {
+        "name": "deleteEducation",
+        "description": null,
+        "type": "GenericFormResponse"
+      },
+      {
+        "name": "addInjury",
+        "description": null,
+        "type": "GenericFormResponse"
+      },
+      {
+        "name": "updateInjury",
+        "description": null,
+        "type": "GenericFormResponse"
+      },
+      {
+        "name": "deleteInjury",
+        "description": null,
+        "type": "GenericFormResponse"
+      },
+      {
+        "name": "updateContract",
+        "description": null,
+        "type": "GenericFormResponse"
+      },
+      {
+        "name": "deleteContract",
+        "description": null,
+        "type": "GenericFormResponse"
+      },
+      {
+        "name": "deleteImage",
+        "description": null,
+        "type": "GenericFormResponse"
+      },
+      {
+        "name": "addVideo",
+        "description": null,
+        "type": "GenericFormResponse"
+      },
+      {
+        "name": "updateVideo",
+        "description": null,
+        "type": "GenericFormResponse"
+      },
+      {
+        "name": "deleteVideo",
+        "description": null,
+        "type": "GenericFormResponse"
+      },
+      {
+        "name": "addVideoV2",
+        "description": null,
+        "type": "GenericFormResponse"
+      },
+      {
+        "name": "updateVideoV2",
+        "description": null,
+        "type": "GenericFormResponse"
+      },
+      {
+        "name": "deleteVideoV2",
+        "description": null,
+        "type": "GenericFormResponse"
+      },
+      {
+        "name": "generateVideoTitle",
+        "description": null,
+        "type": "VideoTitleResponse"
+      },
+      {
+        "name": "verifyByAdmin",
+        "description": null,
+        "type": "GenericFormResponse"
+      },
+      {
+        "name": "confirmAccountVerifiedByAdmin",
+        "description": null,
+        "type": "GenericFormResponse"
+      },
+      {
+        "name": "activateIncompleteAccount",
+        "description": null,
+        "type": "AuthOrGenericFormResponse"
+      },
+      {
+        "name": "validateVerifiedByAdminCode",
+        "description": null,
+        "type": "GenericFormResponse"
+      },
+      {
+        "name": "register",
+        "description": null,
+        "type": "AuthOrGenericFormResponse"
+      },
+      {
+        "name": "socialAuthOrRegister",
+        "description": null,
+        "type": "AuthOrGenericFormResponse"
+      },
+      {
+        "name": "enterpriseVerifyByAdmin",
+        "description": null,
+        "type": "GenericFormResponse"
+      },
+      {
+        "name": "initCheckout",
+        "description": null,
+        "type": "InitCheckoutResponse"
+      },
+      {
+        "name": "updateSubscription",
+        "description": null,
+        "type": "GenericFormResponse"
+      },
+      {
+        "name": "previewSubscription",
+        "description": null,
+        "type": "InitCheckoutResponse"
+      },
+      {
+        "name": "cancelSubscription",
+        "description": null,
+        "type": "GenericFormResponse"
+      },
+      {
+        "name": "restoreSubscription",
+        "description": null,
+        "type": "GenericFormResponse"
+      },
+      {
+        "name": "validateIntent",
+        "description": null,
+        "type": "GenericFormResponse"
+      },
+      {
+        "name": "createSetupIntent",
+        "description": null,
+        "type": "ClientSecretResponse"
+      },
+      {
+        "name": "changePassword",
+        "description": null,
+        "type": "GenericFormResponse"
+      },
+      {
+        "name": "updateProfile",
+        "description": null,
+        "type": "GenericFormResponse"
+      },
+      {
+        "name": "updateAccount",
+        "description": null,
+        "type": "GenericFormResponse"
+      },
+      {
+        "name": "updateUserCompanyData",
+        "description": null,
+        "type": "GenericFormResponse"
+      },
+      {
+        "name": "updateProfileFull",
+        "description": null,
+        "type": "GenericFormResponse"
+      },
+      {
+        "name": "updateUserPlayerStatsTableStyle",
+        "description": null,
+        "type": "GenericFormResponse"
+      },
+      {
+        "name": "toggleStatsOrder",
+        "description": null,
+        "type": "GenericFormResponse"
+      },
+      {
+        "name": "toggleCustomStartPageTransfers",
+        "description": null,
+        "type": "GenericFormResponse"
+      },
+      {
+        "name": "toggleTransferNotificationSetting",
+        "description": null,
+        "type": "GenericFormResponse"
+      },
+      {
+        "name": "addTransferNotificationTarget",
+        "description": null,
+        "type": "GenericFormResponse"
+      },
+      {
+        "name": "removeTransferNotificationTarget",
+        "description": null,
+        "type": "GenericFormResponse"
+      },
+      {
+        "name": "addTransferStartPageTarget",
+        "description": null,
+        "type": "GenericFormResponse"
+      },
+      {
+        "name": "removeTransferStartPageTarget",
+        "description": null,
+        "type": "GenericFormResponse"
+      },
+      {
+        "name": "updateTransferNotificationTargets",
+        "description": null,
+        "type": "GenericFormResponse"
+      },
+      {
+        "name": "updateTransferStartPageTargets",
+        "description": null,
+        "type": "GenericFormResponse"
+      },
+      {
+        "name": "widgetAndSectionSettings",
+        "description": null,
+        "type": "GenericFormResponse"
+      },
+      {
+        "name": "requestPasswordReset",
+        "description": null,
+        "type": "GenericFormResponse"
+      },
+      {
+        "name": "passwordReset",
+        "description": null,
+        "type": "GenericFormResponse"
+      },
+      {
+        "name": "feedReactions",
+        "description": null,
+        "type": "GenericFormResponse"
+      },
+      {
+        "name": "removeFeedReactions",
+        "description": null,
+        "type": "GenericFormResponse"
+      },
+      {
+        "name": "draftGuideUrl",
+        "description": null,
+        "type": "UrlResponse"
+      },
+      {
+        "name": "rankingAddOrRemoveFavorite",
+        "description": null,
+        "type": "GenericFormResponse"
+      },
+      {
+        "name": "rankingAddOrRemoveIgnore",
+        "description": null,
+        "type": "GenericFormResponse"
+      },
+      {
+        "name": "rankingDelete",
+        "description": null,
+        "type": "GenericFormResponse"
+      },
+      {
+        "name": "rankingAdd",
+        "description": null,
+        "type": "GenericFormResponse"
+      },
+      {
+        "name": "rankingUpdate",
+        "description": null,
+        "type": "GenericFormResponse"
+      },
+      {
+        "name": "addOrUpdateDescription",
+        "description": null,
+        "type": "GenericFormResponse"
+      },
+      {
+        "name": "addCertification",
+        "description": null,
+        "type": "GenericFormResponse"
+      },
+      {
+        "name": "addOtherExperience",
+        "description": null,
+        "type": "GenericFormResponse"
+      },
+      {
+        "name": "updateOtherExperience",
+        "description": null,
+        "type": "GenericFormResponse"
+      },
+      {
+        "name": "deleteOtherExperience",
+        "description": null,
+        "type": "GenericFormResponse"
+      },
+      {
+        "name": "createUserRoster",
+        "description": null,
+        "type": "CreateUserRosterResponse"
+      },
+      {
+        "name": "updateUserRoster",
+        "description": null,
+        "type": "GenericFormResponse"
+      },
+      {
+        "name": "deleteUserRoster",
+        "description": null,
+        "type": "GenericFormResponse"
+      },
+      {
+        "name": "submitTransfer",
+        "description": null,
+        "type": "GenericFormResponse"
+      },
+      {
+        "name": "requestVerification",
+        "description": null,
+        "type": "RequestVerificationResponse"
+      },
+      {
+        "name": "unverify",
+        "description": null,
+        "type": "GenericFormResponse"
+      },
+      {
+        "name": "agencyVerify",
+        "description": null,
+        "type": "GenericFormResponse"
+      },
+      {
+        "name": "updateAgencyInformation",
+        "description": null,
+        "type": "GenericFormResponse"
+      },
+      {
+        "name": "createChat",
+        "description": null,
+        "type": "Chat!"
+      },
+      {
+        "name": "createGroupChat",
+        "description": null,
+        "type": "Chat!"
+      },
+      {
+        "name": "createPrivateChat",
+        "description": null,
+        "type": "Chat!"
+      },
+      {
+        "name": "sendMessage",
+        "description": null,
+        "type": "ID!"
+      },
+      {
+        "name": "deleteMessage",
+        "description": null,
+        "type": "Boolean!"
+      },
+      {
+        "name": "markChatAsRead",
+        "description": null,
+        "type": "Boolean!"
+      },
+      {
+        "name": "reportMessage",
+        "description": null,
+        "type": "Boolean!"
+      },
+      {
+        "name": "reportChat",
+        "description": null,
+        "type": "Boolean!"
+      },
+      {
+        "name": "blockUser",
+        "description": null,
+        "type": "Boolean!"
+      },
+      {
+        "name": "unblockUser",
+        "description": null,
+        "type": "Boolean!"
+      },
+      {
+        "name": "updateChat",
+        "description": null,
+        "type": "Chat!"
+      },
+      {
+        "name": "deleteChat",
+        "description": null,
+        "type": "Boolean!"
+      },
+      {
+        "name": "removeParticipant",
+        "description": null,
+        "type": "Boolean!"
+      },
+      {
+        "name": "removeParticipants",
+        "description": null,
+        "type": "Boolean!"
+      },
+      {
+        "name": "addParticipant",
+        "description": null,
+        "type": "Boolean!"
+      },
+      {
+        "name": "addParticipants",
+        "description": null,
+        "type": "Boolean!"
+      },
+      {
+        "name": "hideRemovedFromChat",
+        "description": null,
+        "type": "Boolean!"
+      },
+      {
+        "name": "inviteContact",
+        "description": null,
+        "type": "ContactInvitation!"
+      },
+      {
+        "name": "createUserContact",
+        "description": null,
+        "type": "Boolean!"
+      },
+      {
+        "name": "verifyUserContact",
+        "description": null,
+        "type": "Boolean!"
+      },
+      {
+        "name": "setMemberBirthDate",
+        "description": null,
+        "type": "Boolean!"
+      }
+    ]
+  },
+  {
+    "name": "Subscription",
+    "kind": "OBJECT",
+    "description": null,
+    "fields": [
+      {
+        "name": "gameTimeline",
+        "description": null,
+        "type": "TimelineEvent"
+      },
+      {
+        "name": "gameStats",
+        "description": null,
+        "type": "LivescoreStats"
+      },
+      {
+        "name": "gameStatus",
+        "description": null,
+        "type": "LivescoreGameStatus"
+      },
+      {
+        "name": "ping",
+        "description": null,
+        "type": "Pong"
+      },
+      {
+        "name": "chatMessageAdded",
+        "description": null,
+        "type": "ChatMessage"
+      },
+      {
+        "name": "chatMessageUpdated",
+        "description": null,
+        "type": "ChatMessage"
+      },
+      {
+        "name": "chatMessageDeleted",
+        "description": null,
+        "type": "ID!"
+      },
+      {
+        "name": "chatUpdated",
+        "description": null,
+        "type": "Chat"
+      },
+      {
+        "name": "totalUnreadChanged",
+        "description": null,
+        "type": "Int"
+      },
+      {
+        "name": "liveGames",
+        "description": null,
+        "type": "LiveGamesUpdate"
+      },
+      {
+        "name": "liveGame",
+        "description": null,
+        "type": "LiveEventUpdate"
+      }
+    ]
+  },
+  {
+    "name": "AgencyInformation",
+    "kind": "OBJECT",
+    "description": null,
+    "fields": [
+      {
+        "name": "agency",
+        "description": null,
+        "type": "SportAgency"
+      },
+      {
+        "name": "agencyCompany",
+        "description": null,
+        "type": "AgencyCompany"
+      }
+    ]
+  },
+  {
+    "name": "SportAgency",
+    "kind": "OBJECT",
+    "description": null,
+    "fields": [
+      {
+        "name": "id",
+        "description": null,
+        "type": "ID"
+      },
+      {
+        "name": "logo",
+        "description": null,
+        "type": "String"
+      },
+      {
+        "name": "name",
+        "description": null,
+        "type": "String"
+      },
+      {
+        "name": "website",
+        "description": null,
+        "type": "String"
+      },
+      {
+        "name": "email",
+        "description": null,
+        "type": "String"
+      },
+      {
+        "name": "countryId",
+        "description": null,
+        "type": "ID"
+      },
+      {
+        "name": "city",
+        "description": null,
+        "type": "String"
+      },
+      {
+        "name": "facebook",
+        "description": null,
+        "type": "String"
+      },
+      {
+        "name": "twitter",
+        "description": null,
+        "type": "String"
+      },
+      {
+        "name": "youtube",
+        "description": null,
+        "type": "String"
+      },
+      {
+        "name": "instagram",
+        "description": null,
+        "type": "String"
+      },
+      {
+        "name": "freeText",
+        "description": null,
+        "type": "String"
+      }
+    ]
+  },
+  {
+    "name": "AgencyCompany",
+    "kind": "OBJECT",
+    "description": null,
+    "fields": [
+      {
+        "name": "id",
+        "description": null,
+        "type": "ID"
+      },
+      {
+        "name": "vatNumber",
+        "description": null,
+        "type": "String"
+      },
+      {
+        "name": "name",
+        "description": null,
+        "type": "String"
+      },
+      {
+        "name": "taxNumberType",
+        "description": null,
+        "type": "String"
+      },
+      {
+        "name": "uid",
+        "description": null,
+        "type": "String"
+      },
+      {
+        "name": "stripeAccount",
+        "description": null,
+        "type": "String"
+      },
+      {
+        "name": "subscriptionEndsAt",
+        "description": null,
+        "type": "String"
+      },
+      {
+        "name": "subscriptionUid",
+        "description": null,
+        "type": "String"
+      },
+      {
+        "name": "isVerified",
+        "description": null,
+        "type": "Boolean"
+      },
+      {
+        "name": "countryId",
+        "description": null,
+        "type": "ID"
+      },
+      {
+        "name": "currencyId",
+        "description": null,
+        "type": "ID"
+      },
+      {
+        "name": "productId",
+        "description": null,
+        "type": "ID"
+      },
+      {
+        "name": "sportsAgencyId",
+        "description": null,
+        "type": "ID"
+      },
+      {
+        "name": "email",
+        "description": null,
+        "type": "String"
+      },
+      {
+        "name": "addressLine1",
+        "description": null,
+        "type": "String"
+      },
+      {
+        "name": "addressLine2",
+        "description": null,
+        "type": "String"
+      },
+      {
+        "name": "addressCity",
+        "description": null,
+        "type": "String"
+      },
+      {
+        "name": "addressPostalCode",
+        "description": null,
+        "type": "String"
+      },
+      {
+        "name": "addressState",
+        "description": null,
+        "type": "String"
+      },
+      {
+        "name": "createdAt",
+        "description": null,
+        "type": "String"
+      },
+      {
+        "name": "updatedAt",
+        "description": null,
+        "type": "String"
+      }
+    ]
+  },
+  {
+    "name": "FrontendContent",
+    "kind": "OBJECT",
+    "description": null,
+    "fields": [
+      {
+        "name": "id",
+        "description": null,
+        "type": "ID!"
+      },
+      {
+        "name": "name",
+        "description": null,
+        "type": "String"
+      },
+      {
+        "name": "slug",
+        "description": null,
+        "type": "String"
+      },
+      {
+        "name": "data",
+        "description": null,
+        "type": "JSON"
+      }
+    ]
+  },
+  {
+    "name": "OtherDraft",
+    "kind": "OBJECT",
+    "description": null,
+    "fields": [
+      {
+        "name": "groupLabel",
+        "description": null,
+        "type": "String"
+      },
+      {
+        "name": "draftTypeSlug",
+        "description": null,
+        "type": "String"
+      },
+      {
+        "name": "draftTypeName",
+        "description": null,
+        "type": "String"
+      },
+      {
+        "name": "eliteprospectsUrlPath",
+        "description": null,
+        "type": "String"
+      },
+      {
+        "name": "order",
+        "description": null,
+        "type": "Int"
+      }
+    ]
+  },
+  {
+    "name": "ContentCollection",
+    "kind": "OBJECT",
+    "description": null,
+    "fields": [
+      {
+        "name": "id",
+        "description": null,
+        "type": "ID!"
+      },
+      {
+        "name": "name",
+        "description": null,
+        "type": "String"
+      },
+      {
+        "name": "slug",
+        "description": null,
+        "type": "String"
+      },
+      {
+        "name": "label",
+        "description": null,
+        "type": "String"
+      },
+      {
+        "name": "style",
+        "description": null,
+        "type": "String"
+      },
+      {
+        "name": "frontendContents",
+        "description": null,
+        "type": "[FrontendContent]"
+      }
+    ]
+  },
+  {
+    "name": "DraftTypeConnection",
+    "kind": "OBJECT",
+    "description": null,
+    "fields": [
+      {
+        "name": "totalCount",
+        "description": null,
+        "type": "Int"
+      },
+      {
+        "name": "edges",
+        "description": null,
+        "type": "[DraftType]"
+      },
+      {
+        "name": "pageInfo",
+        "description": null,
+        "type": "PageInfo"
+      }
+    ]
+  },
+  {
+    "name": "DraftType",
+    "kind": "OBJECT",
+    "description": null,
+    "fields": [
+      {
+        "name": "slug",
+        "description": null,
+        "type": "String"
+      },
+      {
+        "name": "name",
+        "description": null,
+        "type": "String"
+      },
+      {
+        "name": "league",
+        "description": null,
+        "type": "League"
+      },
+      {
+        "name": "eliteprospectsUrlPath",
+        "description": null,
+        "type": "String"
+      }
+    ]
+  },
+  {
+    "name": "FeedReactionByType",
+    "kind": "OBJECT",
+    "description": null,
+    "fields": [
+      {
+        "name": "reactionType",
+        "description": null,
+        "type": "ReactionType"
+      },
+      {
+        "name": "count",
+        "description": null,
+        "type": "Int"
+      }
+    ]
+  },
+  {
+    "name": "FeedReactionConnection",
+    "kind": "OBJECT",
+    "description": null,
+    "fields": [
+      {
+        "name": "totalCount",
+        "description": null,
+        "type": "Int"
+      },
+      {
+        "name": "edges",
+        "description": null,
+        "type": "[FeedReaction]"
+      },
+      {
+        "name": "pageInfo",
+        "description": null,
+        "type": "PageInfo"
+      }
+    ]
+  },
+  {
+    "name": "FeedReaction",
+    "kind": "OBJECT",
+    "description": null,
+    "fields": [
+      {
+        "name": "id",
+        "description": null,
+        "type": "ID!"
+      },
+      {
+        "name": "reactionType",
+        "description": null,
+        "type": "ReactionType"
+      },
+      {
+        "name": "user",
+        "description": null,
+        "type": "User"
+      }
+    ]
+  },
+  {
+    "name": "PublicKey",
+    "kind": "OBJECT",
+    "description": null,
+    "fields": [
+      {
+        "name": "key",
+        "description": null,
+        "type": "String"
+      }
+    ]
+  },
+  {
+    "name": "Filter",
+    "kind": "OBJECT",
+    "description": null,
+    "fields": [
+      {
+        "name": "code",
+        "description": null,
+        "type": "String!"
+      },
+      {
+        "name": "label",
+        "description": null,
+        "type": "String!"
+      },
+      {
+        "name": "arguments",
+        "description": null,
+        "type": "[FilterArgument]"
+      }
+    ]
+  },
+  {
+    "name": "FilterArgument",
+    "kind": "OBJECT",
+    "description": null,
+    "fields": [
+      {
+        "name": "name",
+        "description": null,
+        "type": "String!"
+      },
+      {
+        "name": "value",
+        "description": null,
+        "type": "String"
+      }
+    ]
+  },
+  {
+    "name": "PlayerTrackerFilter",
+    "kind": "OBJECT",
+    "description": null,
+    "fields": [
+      {
+        "name": "code",
+        "description": null,
+        "type": "String!"
+      },
+      {
+        "name": "label",
+        "description": null,
+        "type": "String!"
+      },
+      {
+        "name": "filters",
+        "description": null,
+        "type": "[FilterArgument]"
+      }
+    ]
+  },
+  {
+    "name": "StreamToken",
+    "kind": "OBJECT",
+    "description": null,
+    "fields": [
+      {
+        "name": "token",
+        "description": null,
+        "type": "String"
+      }
+    ]
+  },
+  {
+    "name": "FollowerCount",
+    "kind": "OBJECT",
+    "description": null,
+    "fields": [
+      {
+        "name": "followers",
+        "description": null,
+        "type": "Int"
+      }
+    ]
+  },
+  {
+    "name": "FeedsResponse",
+    "kind": "OBJECT",
+    "description": null,
+    "fields": [
+      {
+        "name": "totalCount",
+        "description": null,
+        "type": "Int"
+      },
+      {
+        "name": "edges",
+        "description": null,
+        "type": "[Feed]"
+      },
+      {
+        "name": "pageInfo",
+        "description": null,
+        "type": "PageInfo"
+      }
+    ]
+  },
+  {
+    "name": "ProfileAnalyticResponse",
+    "kind": "OBJECT",
+    "description": null,
+    "fields": [
+      {
+        "name": "graphData",
+        "description": null,
+        "type": "[GraphDataItem]"
+      },
+      {
+        "name": "viewsPerCountry",
+        "description": null,
+        "type": "[ViewDataItem]"
+      },
+      {
+        "name": "viewsPerReferer",
+        "description": null,
+        "type": "[ViewDataItem]"
+      },
+      {
+        "name": "viewsPerHockeyRelation",
+        "description": null,
+        "type": "[ViewDataItem]"
+      }
+    ]
+  },
+  {
+    "name": "PopularRankingsResponse",
+    "kind": "OBJECT",
+    "description": null,
+    "fields": [
+      {
+        "name": "global",
+        "description": null,
+        "type": "PopularRankingGroup"
+      },
+      {
+        "name": "country",
+        "description": null,
+        "type": "PopularRankingGroup"
+      },
+      {
+        "name": "league",
+        "description": null,
+        "type": "PopularRankingGroup"
+      },
+      {
+        "name": "team",
+        "description": null,
+        "type": "PopularRankingGroup"
+      }
+    ]
+  },
+  {
+    "name": "PopularRankingGroup",
+    "kind": "OBJECT",
+    "description": null,
+    "fields": [
+      {
+        "name": "title",
+        "description": null,
+        "type": "String"
+      },
+      {
+        "name": "iconUrl",
+        "description": null,
+        "type": "String"
+      },
+      {
+        "name": "rankings",
+        "description": null,
+        "type": "[PopularRanking]"
+      }
+    ]
+  },
+  {
+    "name": "PopularRanking",
+    "kind": "OBJECT",
+    "description": null,
+    "fields": [
+      {
+        "name": "rankingType",
+        "description": null,
+        "type": "String"
+      },
+      {
+        "name": "contextType",
+        "description": null,
+        "type": "String"
+      },
+      {
+        "name": "label",
+        "description": null,
+        "type": "String"
+      },
+      {
+        "name": "group",
+        "description": null,
+        "type": "String"
+      },
+      {
+        "name": "groupLabel",
+        "description": null,
+        "type": "String"
+      },
+      {
+        "name": "eliteprospectsUrlPath",
+        "description": null,
+        "type": "String"
+      },
+      {
+        "name": "rankingValue",
+        "description": null,
+        "type": "String"
+      },
+      {
+        "name": "percentile",
+        "description": null,
+        "type": "String"
+      },
+      {
+        "name": "percentileGapToTop",
+        "description": null,
+        "type": "String"
+      },
+      {
+        "name": "currentPosition",
+        "description": null,
+        "type": "String"
+      },
+      {
+        "name": "previousPosition",
+        "description": null,
+        "type": "String"
+      },
+      {
+        "name": "totalPlayersInScope",
+        "description": null,
+        "type": "String"
+      }
+    ]
+  },
+  {
+    "name": "ProfileMemberVisitResponse",
+    "kind": "OBJECT",
+    "description": null,
+    "fields": [
+      {
+        "name": "totalCount",
+        "description": null,
+        "type": "Int"
+      },
+      {
+        "name": "edges",
+        "description": null,
+        "type": "[ProfileMemberVisit]"
+      },
+      {
+        "name": "pageInfo",
+        "description": null,
+        "type": "PageInfo"
+      }
+    ]
+  },
+  {
+    "name": "ProfileMemberVisit",
+    "kind": "OBJECT",
+    "description": null,
+    "fields": [
+      {
+        "name": "date",
+        "description": null,
+        "type": "String!"
+      },
+      {
+        "name": "hockeyRelation",
+        "description": null,
+        "type": "String"
+      },
+      {
+        "name": "country",
+        "description": null,
+        "type": "PremiumCountry"
+      },
+      {
+        "name": "timezone",
+        "description": null,
+        "type": "String"
+      }
+    ]
+  },
+  {
+    "name": "GraphDataItem",
+    "kind": "OBJECT",
+    "description": null,
+    "fields": [
+      {
+        "name": "date",
+        "description": null,
+        "type": "String"
+      },
+      {
+        "name": "yearWeek",
+        "description": null,
+        "type": "String"
+      },
+      {
+        "name": "yearMonth",
+        "description": null,
+        "type": "String"
+      },
+      {
+        "name": "year",
+        "description": null,
+        "type": "Int!"
+      },
+      {
+        "name": "views",
+        "description": null,
+        "type": "Int!"
+      }
+    ]
+  },
+  {
+    "name": "DraftFilters",
+    "kind": "OBJECT",
+    "description": null,
+    "fields": [
+      {
+        "name": "positions",
+        "description": null,
+        "type": "[DraftFilter]"
+      },
+      {
+        "name": "nationalities",
+        "description": null,
+        "type": "[DraftFilter]"
+      },
+      {
+        "name": "leagueRegions",
+        "description": null,
+        "type": "[DraftFilter]"
+      },
+      {
+        "name": "leagues",
+        "description": null,
+        "type": "[DraftFilter]"
+      }
+    ]
+  },
+  {
+    "name": "DraftFilter",
+    "kind": "OBJECT",
+    "description": null,
+    "fields": [
+      {
+        "name": "label",
+        "description": null,
+        "type": "String"
+      },
+      {
+        "name": "value",
+        "description": null,
+        "type": "String"
+      }
+    ]
+  },
+  {
+    "name": "ViewDataItem",
+    "kind": "OBJECT",
+    "description": null,
+    "fields": [
+      {
+        "name": "name",
+        "description": null,
+        "type": "String!"
+      },
+      {
+        "name": "views",
+        "description": null,
+        "type": "Int!"
+      },
+      {
+        "name": "percent",
+        "description": null,
+        "type": "Float!"
+      }
+    ]
+  },
+  {
+    "name": "Feed",
+    "kind": "OBJECT",
+    "description": null,
+    "fields": [
+      {
+        "name": "id",
+        "description": null,
+        "type": "ID!"
+      },
+      {
+        "name": "category",
+        "description": null,
+        "type": "FeedCategory"
+      },
+      {
+        "name": "type",
+        "description": null,
+        "type": "String"
+      },
+      {
+        "name": "body",
+        "description": null,
+        "type": "FeedBody"
+      },
+      {
+        "name": "liked",
+        "description": null,
+        "type": "Boolean!"
+      },
+      {
+        "name": "impressionsCount",
+        "description": null,
+        "type": "Int"
+      },
+      {
+        "name": "reachesCount",
+        "description": null,
+        "type": "Int"
+      },
+      {
+        "name": "likesCount",
+        "description": null,
+        "type": "Int"
+      },
+      {
+        "name": "commentsCount",
+        "description": null,
+        "type": "Int"
+      },
+      {
+        "name": "score",
+        "description": null,
+        "type": "Float"
+      },
+      {
+        "name": "publishedAt",
+        "description": null,
+        "type": "String"
+      },
+      {
+        "name": "expiredAt",
+        "description": null,
+        "type": "String"
+      }
+    ]
+  },
+  {
+    "name": "FeedCategory",
+    "kind": "OBJECT",
+    "description": null,
+    "fields": [
+      {
+        "name": "id",
+        "description": null,
+        "type": "ID!"
+      },
+      {
+        "name": "name",
+        "description": null,
+        "type": "String!"
+      }
+    ]
+  },
+  {
+    "name": "FeedBody",
+    "kind": "OBJECT",
+    "description": null,
+    "fields": [
+      {
+        "name": "arguments",
+        "description": null,
+        "type": "FeedArguments"
+      },
+      {
+        "name": "messageType",
+        "description": null,
+        "type": "String"
+      },
+      {
+        "name": "message",
+        "description": null,
+        "type": "String!"
+      }
+    ]
+  },
+  {
+    "name": "FeedArguments",
+    "kind": "OBJECT",
+    "description": null,
+    "fields": [
+      {
+        "name": "player",
+        "description": null,
+        "type": "Int"
+      },
+      {
+        "name": "height",
+        "description": null,
+        "type": "Float"
+      },
+      {
+        "name": "weight",
+        "description": null,
+        "type": "Float"
+      },
+      {
+        "name": "previousSpell",
+        "description": null,
+        "type": "String"
+      },
+      {
+        "name": "newBirthday",
+        "description": null,
+        "type": "String"
+      },
+      {
+        "name": "newPlaceOfBirth",
+        "description": null,
+        "type": "String"
+      },
+      {
+        "name": "newPosition",
+        "description": null,
+        "type": "String"
+      },
+      {
+        "name": "from",
+        "description": null,
+        "type": "String"
+      },
+      {
+        "name": "to",
+        "description": null,
+        "type": "String"
+      },
+      {
+        "name": "agencyName",
+        "description": null,
+        "type": "String"
+      },
+      {
+        "name": "newContractDate",
+        "description": null,
+        "type": "String"
+      },
+      {
+        "name": "newYouthClub",
+        "description": null,
+        "type": "String"
+      },
+      {
+        "name": "nationality",
+        "description": null,
+        "type": "String"
+      },
+      {
+        "name": "awardName",
+        "description": null,
+        "type": "String"
+      },
+      {
+        "name": "rosterName",
+        "description": null,
+        "type": "String"
+      },
+      {
+        "name": "rankingPosition",
+        "description": null,
+        "type": "String"
+      },
+      {
+        "name": "draftedBy",
+        "description": null,
+        "type": "String"
+      },
+      {
+        "name": "round",
+        "description": null,
+        "type": "Int"
+      },
+      {
+        "name": "position",
+        "description": null,
+        "type": "String"
+      },
+      {
+        "name": "draftName",
+        "description": null,
+        "type": "String"
+      },
+      {
+        "name": "socialName",
+        "description": null,
+        "type": "String"
+      },
+      {
+        "name": "socialLink",
+        "description": null,
+        "type": "String"
+      },
+      {
+        "name": "rankingName",
+        "description": null,
+        "type": "String"
+      },
+      {
+        "name": "commentator",
+        "description": null,
+        "type": "String"
+      },
+      {
+        "name": "yearOld",
+        "description": null,
+        "type": "Int"
+      },
+      {
+        "name": "season",
+        "description": null,
+        "type": "String"
+      },
+      {
+        "name": "viewCount",
+        "description": null,
+        "type": "Int"
+      },
+      {
+        "name": "month",
+        "description": null,
+        "type": "String"
+      },
+      {
+        "name": "rankingPortalLink",
+        "description": null,
+        "type": "String"
+      },
+      {
+        "name": "comment",
+        "description": null,
+        "type": "String"
+      },
+      {
+        "name": "firstTeam",
+        "description": null,
+        "type": "Int"
+      },
+      {
+        "name": "secondTeam",
+        "description": null,
+        "type": "Int"
+      },
+      {
+        "name": "firstTeamScore",
+        "description": null,
+        "type": "Int"
+      },
+      {
+        "name": "secondTeamScore",
+        "description": null,
+        "type": "Int"
+      },
+      {
+        "name": "playerGoal",
+        "description": null,
+        "type": "Int"
+      },
+      {
+        "name": "goal",
+        "description": null,
+        "type": "Int"
+      },
+      {
+        "name": "team",
+        "description": null,
+        "type": "Int"
+      },
+      {
+        "name": "time",
+        "description": null,
+        "type": "String"
+      },
+      {
+        "name": "league",
+        "description": null,
+        "type": "String"
+      },
+      {
+        "name": "teamPageLink",
+        "description": null,
+        "type": "String"
+      },
+      {
+        "name": "rankName",
+        "description": null,
+        "type": "String"
+      },
+      {
+        "name": "rankLink",
+        "description": null,
+        "type": "String"
+      },
+      {
+        "name": "user",
+        "description": null,
+        "type": "Int"
+      },
+      {
+        "name": "factName",
+        "description": null,
+        "type": "String"
+      },
+      {
+        "name": "newFactValue",
+        "description": null,
+        "type": "String"
+      },
+      {
+        "name": "endorsementType",
+        "description": null,
+        "type": "String"
+      },
+      {
+        "name": "profileLink",
+        "description": null,
+        "type": "String"
+      },
+      {
+        "name": "advantagesLink",
+        "description": null,
+        "type": "String"
+      },
+      {
+        "name": "total",
+        "description": null,
+        "type": "Int"
+      },
+      {
+        "name": "firstUser",
+        "description": null,
+        "type": "Int"
+      },
+      {
+        "name": "secondUser",
+        "description": null,
+        "type": "Int"
+      }
+    ]
+  },
+  {
+    "name": "Interact",
+    "kind": "OBJECT",
+    "description": null,
+    "fields": [
+      {
+        "name": "id",
+        "description": null,
+        "type": "ID!"
+      },
+      {
+        "name": "facebookUrl",
+        "description": null,
+        "type": "String"
+      },
+      {
+        "name": "twitterUrl",
+        "description": null,
+        "type": "String"
+      },
+      {
+        "name": "instagramUrl",
+        "description": null,
+        "type": "String"
+      },
+      {
+        "name": "linkedinUrl",
+        "description": null,
+        "type": "String"
+      },
+      {
+        "name": "youtubeUrl",
+        "description": null,
+        "type": "String"
+      },
+      {
+        "name": "email",
+        "description": null,
+        "type": "String"
+      },
+      {
+        "name": "allowContact",
+        "description": null,
+        "type": "Boolean"
+      }
+    ]
+  },
+  {
+    "name": "PlayerIdList",
+    "kind": "OBJECT",
+    "description": null,
+    "fields": [
+      {
+        "name": "playerIds",
+        "description": null,
+        "type": "[ID]"
+      }
+    ]
+  },
+  {
+    "name": "Poll",
+    "kind": "OBJECT",
+    "description": null,
+    "fields": [
+      {
+        "name": "id",
+        "description": null,
+        "type": "ID!"
+      },
+      {
+        "name": "question",
+        "description": null,
+        "type": "String"
+      },
+      {
+        "name": "startsAt",
+        "description": null,
+        "type": "String"
+      },
+      {
+        "name": "endsAt",
+        "description": null,
+        "type": "String"
+      },
+      {
+        "name": "voteCount",
+        "description": null,
+        "type": "Int"
+      },
+      {
+        "name": "category",
+        "description": null,
+        "type": "PollCategory"
+      },
+      {
+        "name": "tags",
+        "description": null,
+        "type": "[PollTag]"
+      },
+      {
+        "name": "options",
+        "description": null,
+        "type": "[PollOption]"
+      },
+      {
+        "name": "currentUserHasVoted",
+        "description": null,
+        "type": "Boolean"
+      },
+      {
+        "name": "currentUserCanUndoVote",
+        "description": null,
+        "type": "Boolean"
+      },
+      {
+        "name": "isFeatured",
+        "description": null,
+        "type": "Boolean"
+      },
+      {
+        "name": "isDraft",
+        "description": null,
+        "type": "Boolean"
+      },
+      {
+        "name": "createdAt",
+        "description": null,
+        "type": "String"
+      },
+      {
+        "name": "updatedAt",
+        "description": null,
+        "type": "String"
+      }
+    ]
+  },
+  {
+    "name": "PollTag",
+    "kind": "OBJECT",
+    "description": null,
+    "fields": [
+      {
+        "name": "id",
+        "description": null,
+        "type": "ID!"
+      },
+      {
+        "name": "type",
+        "description": null,
+        "type": "PollTagType"
+      },
+      {
+        "name": "name",
+        "description": null,
+        "type": "String"
+      },
+      {
+        "name": "imageUrl",
+        "description": null,
+        "type": "String"
+      },
+      {
+        "name": "slug",
+        "description": null,
+        "type": "String"
+      },
+      {
+        "name": "eliteprospectsUrlPath",
+        "description": null,
+        "type": "String"
+      }
+    ]
+  },
+  {
+    "name": "PollOption",
+    "kind": "OBJECT",
+    "description": null,
+    "fields": [
+      {
+        "name": "id",
+        "description": null,
+        "type": "ID!"
+      },
+      {
+        "name": "value",
+        "description": null,
+        "type": "String"
+      },
+      {
+        "name": "sportsDbId",
+        "description": null,
+        "type": "Int"
+      },
+      {
+        "name": "type",
+        "description": null,
+        "type": "PollOptionType"
+      },
+      {
+        "name": "voteCount",
+        "description": null,
+        "type": "Int"
+      },
+      {
+        "name": "currentUserVote",
+        "description": null,
+        "type": "Boolean"
+      }
+    ]
+  },
+  {
+    "name": "PollCategory",
+    "kind": "OBJECT",
+    "description": null,
+    "fields": [
+      {
+        "name": "id",
+        "description": null,
+        "type": "ID!"
+      },
+      {
+        "name": "name",
+        "description": null,
+        "type": "String"
+      }
+    ]
+  },
+  {
+    "name": "PollConnection",
+    "kind": "OBJECT",
+    "description": null,
+    "fields": [
+      {
+        "name": "totalCount",
+        "description": null,
+        "type": "Int"
+      },
+      {
+        "name": "edges",
+        "description": null,
+        "type": "[Poll]"
+      },
+      {
+        "name": "pageInfo",
+        "description": null,
+        "type": "PageInfo"
+      }
+    ]
+  },
+  {
+    "name": "UserInvoiceConnection",
+    "kind": "OBJECT",
+    "description": null,
+    "fields": [
+      {
+        "name": "totalCount",
+        "description": null,
+        "type": "Int"
+      },
+      {
+        "name": "edges",
+        "description": null,
+        "type": "[Invoice]"
+      },
+      {
+        "name": "pageInfo",
+        "description": null,
+        "type": "PageInfo"
+      }
+    ]
+  },
+  {
+    "name": "EnterpriseOrganizationConnection",
+    "kind": "OBJECT",
+    "description": null,
+    "fields": [
+      {
+        "name": "totalCount",
+        "description": null,
+        "type": "Int"
+      },
+      {
+        "name": "edges",
+        "description": null,
+        "type": "[EnterpriseOrganization]"
+      },
+      {
+        "name": "pageInfo",
+        "description": null,
+        "type": "PageInfo"
+      }
+    ]
+  },
+  {
+    "name": "LeagueByCategoryCollection",
+    "kind": "OBJECT",
+    "description": null,
+    "fields": [
+      {
+        "name": "category",
+        "description": null,
+        "type": "String"
+      },
+      {
+        "name": "leagues",
+        "description": null,
+        "type": "[League]"
+      }
+    ]
+  },
+  {
+    "name": "VerifiedStyle",
+    "kind": "OBJECT",
+    "description": null,
+    "fields": [
+      {
+        "name": "layout",
+        "description": null,
+        "type": "VerifiedStyles"
+      }
+    ]
+  },
+  {
+    "name": "ProfileBlockStatus",
+    "kind": "OBJECT",
+    "description": null,
+    "fields": [
+      {
+        "name": "blocks",
+        "description": null,
+        "type": "[ProfileBlock]"
+      },
+      {
+        "name": "containsPublisherNotResponsibleBlocks",
+        "description": null,
+        "type": "Boolean"
+      },
+      {
+        "name": "showNotActivatedSection",
+        "description": null,
+        "type": "Boolean"
+      },
+      {
+        "name": "notActivatedBlockSlugs",
+        "description": null,
+        "type": "[String]"
+      },
+      {
+        "name": "visibleBlockSlugs",
+        "description": null,
+        "type": "[String]"
+      },
+      {
+        "name": "editModeStatus",
+        "description": null,
+        "type": "EditModeStatuses"
+      },
+      {
+        "name": "photoUpdateStatus",
+        "description": null,
+        "type": "PhotoUpdateStatuses"
+      }
+    ]
+  },
+  {
+    "name": "ProfileBlockPermission",
+    "kind": "OBJECT",
+    "description": null,
+    "fields": [
+      {
+        "name": "block",
+        "description": null,
+        "type": "ProfileBlock"
+      },
+      {
+        "name": "profileBlockPermissionSlug",
+        "description": null,
+        "type": "String!"
+      }
+    ]
+  },
+  {
+    "name": "ProfileBlock",
+    "kind": "OBJECT",
+    "description": null,
+    "fields": [
+      {
+        "name": "name",
+        "description": null,
+        "type": "String"
+      },
+      {
+        "name": "slug",
+        "description": null,
+        "type": "String"
+      },
+      {
+        "name": "hasData",
+        "description": null,
+        "type": "Boolean"
+      },
+      {
+        "name": "isPremiumBlock",
+        "description": null,
+        "type": "Boolean"
+      },
+      {
+        "name": "isVisible",
+        "description": null,
+        "type": "Boolean"
+      }
+    ]
+  },
+  {
+    "name": "PopularFavorites",
+    "kind": "OBJECT",
+    "description": null,
+    "fields": [
+      {
+        "name": "leagues",
+        "description": null,
+        "type": "[PopularFavorite]"
+      },
+      {
+        "name": "teams",
+        "description": null,
+        "type": "[PopularFavorite]"
+      },
+      {
+        "name": "players",
+        "description": null,
+        "type": "[PopularFavorite]"
+      }
+    ]
+  },
+  {
+    "name": "PopularFavorite",
+    "kind": "OBJECT",
+    "description": null,
+    "fields": [
+      {
+        "name": "id",
+        "description": null,
+        "type": "ID!"
+      },
+      {
+        "name": "slug",
+        "description": null,
+        "type": "String"
+      },
+      {
+        "name": "name",
+        "description": null,
+        "type": "String"
+      },
+      {
+        "name": "logoUrl",
+        "description": null,
+        "type": "String"
+      }
+    ]
+  },
+  {
+    "name": "Attachment",
+    "kind": "OBJECT",
+    "description": null,
+    "fields": [
+      {
+        "name": "id",
+        "description": null,
+        "type": "ID!"
+      },
+      {
+        "name": "url",
+        "description": null,
+        "type": "String"
+      },
+      {
+        "name": "type",
+        "description": null,
+        "type": "AttachmentType"
+      },
+      {
+        "name": "isAgencyEdit",
+        "description": null,
+        "type": "Boolean"
+      }
+    ]
+  },
+  {
+    "name": "AttachmentType",
+    "kind": "OBJECT",
+    "description": null,
+    "fields": [
+      {
+        "name": "id",
+        "description": null,
+        "type": "ID!"
+      },
+      {
+        "name": "name",
+        "description": null,
+        "type": "String"
+      },
+      {
+        "name": "slug",
+        "description": null,
+        "type": "String"
+      }
+    ]
+  },
+  {
+    "name": "Description",
+    "kind": "OBJECT",
+    "description": null,
+    "fields": [
+      {
+        "name": "id",
+        "description": null,
+        "type": "ID!"
+      },
+      {
+        "name": "info",
+        "description": null,
+        "type": "String"
+      }
+    ]
+  },
+  {
+    "name": "Certification",
+    "kind": "OBJECT",
+    "description": null,
+    "fields": [
+      {
+        "name": "id",
+        "description": null,
+        "type": "ID!"
+      },
+      {
+        "name": "info",
+        "description": null,
+        "type": "String"
+      }
+    ]
+  },
+  {
+    "name": "StaffRole",
+    "kind": "OBJECT",
+    "description": null,
+    "fields": [
+      {
+        "name": "slug",
+        "description": null,
+        "type": "String"
+      },
+      {
+        "name": "name",
+        "description": null,
+        "type": "String"
+      }
+    ]
+  },
+  {
+    "name": "ConnectionsStaffRole",
+    "kind": "OBJECT",
+    "description": null,
+    "fields": [
+      {
+        "name": "role",
+        "description": null,
+        "type": "String"
+      },
+      {
+        "name": "count",
+        "description": null,
+        "type": "Int"
+      }
+    ]
+  },
+  {
+    "name": "StaffAwardConnection",
+    "kind": "OBJECT",
+    "description": null,
+    "fields": [
+      {
+        "name": "totalCount",
+        "description": null,
+        "type": "Int!"
+      },
+      {
+        "name": "edges",
+        "description": null,
+        "type": "[StaffAward]"
+      },
+      {
+        "name": "pageInfo",
+        "description": null,
+        "type": "PageInfo"
+      }
+    ]
+  },
+  {
+    "name": "StaffAward",
+    "kind": "OBJECT",
+    "description": null,
+    "fields": [
+      {
+        "name": "id",
+        "description": null,
+        "type": "ID!"
+      },
+      {
+        "name": "awardType",
+        "description": null,
+        "type": "PlayerAwardType"
+      },
+      {
+        "name": "awardTypeName",
+        "description": null,
+        "type": "String"
+      },
+      {
+        "name": "awardTypeLeague",
+        "description": null,
+        "type": "String"
+      },
+      {
+        "name": "season",
+        "description": null,
+        "type": "Season"
+      },
+      {
+        "name": "extra",
+        "description": null,
+        "type": "String"
+      },
+      {
+        "name": "staff",
+        "description": null,
+        "type": "Staff"
+      }
+    ]
+  },
+  {
+    "name": "StaffHighlights",
+    "kind": "OBJECT",
+    "description": null,
+    "fields": [
+      {
+        "name": "name",
+        "description": null,
+        "type": "String"
+      },
+      {
+        "name": "iconUrl",
+        "description": null,
+        "type": "String"
+      },
+      {
+        "name": "count",
+        "description": null,
+        "type": "Int"
+      }
+    ]
+  },
+  {
+    "name": "Plan",
+    "kind": "OBJECT",
+    "description": null,
+    "fields": [
+      {
+        "name": "id",
+        "description": null,
+        "type": "ID!"
+      },
+      {
+        "name": "name",
+        "description": null,
+        "type": "String!"
+      },
+      {
+        "name": "slug",
+        "description": null,
+        "type": "String!"
+      },
+      {
+        "name": "description",
+        "description": null,
+        "type": "String"
+      },
+      {
+        "name": "tier",
+        "description": null,
+        "type": "Int!"
+      },
+      {
+        "name": "isPurchasable",
+        "description": null,
+        "type": "Boolean!"
+      },
+      {
+        "name": "isApp",
+        "description": null,
+        "type": "Boolean!"
+      },
+      {
+        "name": "paywallTitle",
+        "description": null,
+        "type": "String"
+      },
+      {
+        "name": "paywallDescription",
+        "description": null,
+        "type": "String"
+      },
+      {
+        "name": "prices",
+        "description": null,
+        "type": "[PlanPrice]"
+      }
+    ]
+  },
+  {
+    "name": "PlanPrice",
+    "kind": "OBJECT",
+    "description": null,
+    "fields": [
+      {
+        "name": "id",
+        "description": null,
+        "type": "ID!"
+      },
+      {
+        "name": "name",
+        "description": null,
+        "type": "String!"
+      },
+      {
+        "name": "slug",
+        "description": null,
+        "type": "String!"
+      },
+      {
+        "name": "interval",
+        "description": null,
+        "type": "PlanPriceInterval"
+      },
+      {
+        "name": "displayInterval",
+        "description": null,
+        "type": "PlanPriceDisplayInterval"
+      },
+      {
+        "name": "price",
+        "description": null,
+        "type": "Int!"
+      },
+      {
+        "name": "monthlyPrice",
+        "description": null,
+        "type": "Int!"
+      },
+      {
+        "name": "currency",
+        "description": null,
+        "type": "Currency"
+      },
+      {
+        "name": "plan",
+        "description": null,
+        "type": "Plan"
+      }
+    ]
+  },
+  {
+    "name": "Invoice",
+    "kind": "OBJECT",
+    "description": null,
+    "fields": [
+      {
+        "name": "id",
+        "description": null,
+        "type": "ID!"
+      },
+      {
+        "name": "number",
+        "description": null,
+        "type": "String!"
+      },
+      {
+        "name": "isPaid",
+        "description": null,
+        "type": "Boolean!"
+      },
+      {
+        "name": "createdAt",
+        "description": null,
+        "type": "String!"
+      },
+      {
+        "name": "periodStart",
+        "description": null,
+        "type": "String!"
+      },
+      {
+        "name": "periodEnd",
+        "description": null,
+        "type": "String!"
+      },
+      {
+        "name": "amountPaid",
+        "description": null,
+        "type": "Int!"
+      },
+      {
+        "name": "amountDue",
+        "description": null,
+        "type": "Int!"
+      },
+      {
+        "name": "currency",
+        "description": null,
+        "type": "Currency"
+      },
+      {
+        "name": "status",
+        "description": null,
+        "type": "InvoiceStatus"
+      },
+      {
+        "name": "subTotal",
+        "description": null,
+        "type": "Int"
+      },
+      {
+        "name": "subtotalExcludingTax",
+        "description": null,
+        "type": "Int"
+      },
+      {
+        "name": "tax",
+        "description": null,
+        "type": "Int"
+      },
+      {
+        "name": "total",
+        "description": null,
+        "type": "Int"
+      },
+      {
+        "name": "totalExcludingTax",
+        "description": null,
+        "type": "Int"
+      },
+      {
+        "name": "totalTaxAmounts",
+        "description": null,
+        "type": "[InvoiceTaxAmount]"
+      },
+      {
+        "name": "lineItems",
+        "description": null,
+        "type": "[InvoiceLineItem]"
+      },
+      {
+        "name": "startingBalance",
+        "description": null,
+        "type": "Int"
+      },
+      {
+        "name": "endingBalance",
+        "description": null,
+        "type": "Int"
+      },
+      {
+        "name": "clientSecret",
+        "description": null,
+        "type": "String"
+      },
+      {
+        "name": "paymentMethod",
+        "description": null,
+        "type": "PaymentMethod"
+      },
+      {
+        "name": "companyName",
+        "description": null,
+        "type": "String"
+      },
+      {
+        "name": "companyAddress",
+        "description": null,
+        "type": "String"
+      },
+      {
+        "name": "companyOtherInformation",
+        "description": null,
+        "type": "String"
+      }
+    ]
+  },
+  {
+    "name": "InvoiceTaxAmount",
+    "kind": "OBJECT",
+    "description": null,
+    "fields": [
+      {
+        "name": "amount",
+        "description": null,
+        "type": "Int"
+      },
+      {
+        "name": "inclusive",
+        "description": null,
+        "type": "Boolean"
+      },
+      {
+        "name": "taxableAmount",
+        "description": null,
+        "type": "Int"
+      },
+      {
+        "name": "taxRate",
+        "description": null,
+        "type": "TaxRate"
+      }
+    ]
+  },
+  {
+    "name": "InvoiceLineItem",
+    "kind": "OBJECT",
+    "description": null,
+    "fields": [
+      {
+        "name": "amount",
+        "description": null,
+        "type": "Int"
+      },
+      {
+        "name": "amountExcludingTax",
+        "description": null,
+        "type": "Int"
+      },
+      {
+        "name": "currency",
+        "description": null,
+        "type": "Currency"
+      },
+      {
+        "name": "description",
+        "description": null,
+        "type": "String"
+      },
+      {
+        "name": "discountAmounts",
+        "description": null,
+        "type": "[InvoiceDiscountAmount]"
+      },
+      {
+        "name": "periodStart",
+        "description": null,
+        "type": "String"
+      },
+      {
+        "name": "periodEnd",
+        "description": null,
+        "type": "String"
+      },
+      {
+        "name": "quantity",
+        "description": null,
+        "type": "Int"
+      },
+      {
+        "name": "taxAmounts",
+        "description": null,
+        "type": "[InvoiceTaxAmount]"
+      },
+      {
+        "name": "planPrice",
+        "description": null,
+        "type": "PlanPrice"
+      }
+    ]
+  },
+  {
+    "name": "InvoiceDiscountAmount",
+    "kind": "OBJECT",
+    "description": null,
+    "fields": [
+      {
+        "name": "amount",
+        "description": null,
+        "type": "Int"
+      },
+      {
+        "name": "discount",
+        "description": null,
+        "type": "Discount"
+      }
+    ]
+  },
+  {
+    "name": "Discount",
+    "kind": "OBJECT",
+    "description": null,
+    "fields": [
+      {
+        "name": "coupon",
+        "description": null,
+        "type": "Coupon"
+      },
+      {
+        "name": "start",
+        "description": null,
+        "type": "String"
+      },
+      {
+        "name": "end",
+        "description": null,
+        "type": "String"
+      },
+      {
+        "name": "promotionCode",
+        "description": null,
+        "type": "PromotionCode"
+      }
+    ]
+  },
+  {
+    "name": "PromotionCode",
+    "kind": "OBJECT",
+    "description": null,
+    "fields": [
+      {
+        "name": "code",
+        "description": null,
+        "type": "String"
+      },
+      {
+        "name": "coupon",
+        "description": null,
+        "type": "Coupon"
+      }
+    ]
+  },
+  {
+    "name": "Coupon",
+    "kind": "OBJECT",
+    "description": null,
+    "fields": [
+      {
+        "name": "amountOff",
+        "description": null,
+        "type": "Int"
+      },
+      {
+        "name": "duration",
+        "description": null,
+        "type": "CouponDuration"
+      },
+      {
+        "name": "durationInMonths",
+        "description": null,
+        "type": "Int"
+      },
+      {
+        "name": "name",
+        "description": null,
+        "type": "String"
+      },
+      {
+        "name": "percentOff",
+        "description": null,
+        "type": "Float"
+      }
+    ]
+  },
+  {
+    "name": "TaxRate",
+    "kind": "OBJECT",
+    "description": null,
+    "fields": [
+      {
+        "name": "country",
+        "description": null,
+        "type": "String"
+      },
+      {
+        "name": "displayName",
+        "description": null,
+        "type": "String"
+      },
+      {
+        "name": "effectivePercentage",
+        "description": null,
+        "type": "Float"
+      },
+      {
+        "name": "inclusive",
+        "description": null,
+        "type": "Boolean"
+      },
+      {
+        "name": "flatAmount",
+        "description": null,
+        "type": "FlatAmountTaxRate"
+      },
+      {
+        "name": "jurisdiction",
+        "description": null,
+        "type": "String"
+      },
+      {
+        "name": "jurisdictionLevel",
+        "description": null,
+        "type": "JurisdictionLevel"
+      },
+      {
+        "name": "percentage",
+        "description": null,
+        "type": "Float"
+      },
+      {
+        "name": "rateType",
+        "description": null,
+        "type": "TaxRateType"
+      },
+      {
+        "name": "state",
+        "description": null,
+        "type": "String"
+      },
+      {
+        "name": "taxType",
+        "description": null,
+        "type": "TaxType"
+      }
+    ]
+  },
+  {
+    "name": "FlatAmountTaxRate",
+    "kind": "OBJECT",
+    "description": null,
+    "fields": [
+      {
+        "name": "amount",
+        "description": null,
+        "type": "Int"
+      },
+      {
+        "name": "currency",
+        "description": null,
+        "type": "String"
+      }
+    ]
+  },
+  {
+    "name": "UserPlan",
+    "kind": "OBJECT",
+    "description": null,
+    "fields": [
+      {
+        "name": "expiresAt",
+        "description": null,
+        "type": "String"
+      },
+      {
+        "name": "periodStart",
+        "description": null,
+        "type": "String"
+      },
+      {
+        "name": "periodEnd",
+        "description": null,
+        "type": "String"
+      },
+      {
+        "name": "isCancelled",
+        "description": null,
+        "type": "Boolean"
+      },
+      {
+        "name": "isActive",
+        "description": null,
+        "type": "Boolean"
+      },
+      {
+        "name": "plan",
+        "description": null,
+        "type": "Plan"
+      },
+      {
+        "name": "planPrice",
+        "description": null,
+        "type": "PlanPrice"
+      },
+      {
+        "name": "organization",
+        "description": null,
+        "type": "EnterpriseOrganization"
+      },
+      {
+        "name": "paymentMethod",
+        "description": null,
+        "type": "PaymentMethod"
+      },
+      {
+        "name": "createdAt",
+        "description": null,
+        "type": "String"
+      }
+    ]
+  },
+  {
+    "name": "PaymentMethod",
+    "kind": "OBJECT",
+    "description": null,
+    "fields": [
+      {
+        "name": "type",
+        "description": null,
+        "type": "String"
+      },
+      {
+        "name": "card",
+        "description": null,
+        "type": "PaymentMethodCard"
+      }
+    ]
+  },
+  {
+    "name": "PaymentMethodCard",
+    "kind": "OBJECT",
+    "description": null,
+    "fields": [
+      {
+        "name": "last4",
+        "description": null,
+        "type": "String"
+      },
+      {
+        "name": "expMonth",
+        "description": null,
+        "type": "Int"
+      },
+      {
+        "name": "expYear",
+        "description": null,
+        "type": "Int"
+      },
+      {
+        "name": "countryCode",
+        "description": null,
+        "type": "String"
+      },
+      {
+        "name": "brand",
+        "description": null,
+        "type": "String"
+      },
+      {
+        "name": "displayBrand",
+        "description": null,
+        "type": "String"
+      },
+      {
+        "name": "wallet",
+        "description": null,
+        "type": "WalletType"
+      }
+    ]
+  },
+  {
+    "name": "DraftRanking",
+    "kind": "OBJECT",
+    "description": null,
+    "fields": [
+      {
+        "name": "rank",
+        "description": null,
+        "type": "Int"
+      },
+      {
+        "name": "player",
+        "description": null,
+        "type": "Player"
+      },
+      {
+        "name": "topProspect",
+        "description": null,
+        "type": "Boolean"
+      },
+      {
+        "name": "rankings",
+        "description": null,
+        "type": "[DraftRankingRank]"
+      },
+      {
+        "name": "team",
+        "description": null,
+        "type": "Team"
+      },
+      {
+        "name": "playerStats",
+        "description": null,
+        "type": "PlayerStats"
+      }
+    ]
+  },
+  {
+    "name": "DraftInterestingFacts",
+    "kind": "OBJECT",
+    "description": null,
+    "fields": [
+      {
+        "name": "oldest",
+        "description": null,
+        "type": "[DraftInterestingFact]"
+      },
+      {
+        "name": "youngest",
+        "description": null,
+        "type": "[DraftInterestingFact]"
+      },
+      {
+        "name": "tallest",
+        "description": null,
+        "type": "[DraftInterestingFact]"
+      },
+      {
+        "name": "shortest",
+        "description": null,
+        "type": "[DraftInterestingFact]"
+      },
+      {
+        "name": "heaviest",
+        "description": null,
+        "type": "[DraftInterestingFact]"
+      },
+      {
+        "name": "lightest",
+        "description": null,
+        "type": "[DraftInterestingFact]"
+      }
+    ]
+  },
+  {
+    "name": "DraftInterestingFact",
+    "kind": "OBJECT",
+    "description": null,
+    "fields": [
+      {
+        "name": "player",
+        "description": null,
+        "type": "Player"
+      },
+      {
+        "name": "playerStats",
+        "description": null,
+        "type": "PlayerStats"
+      }
+    ]
+  },
+  {
+    "name": "ClientSecretResponse",
+    "kind": "OBJECT",
+    "description": null,
+    "fields": [
+      {
+        "name": "clientSecret",
+        "description": null,
+        "type": "String!"
+      }
+    ]
+  },
+  {
+    "name": "UrlResponse",
+    "kind": "OBJECT",
+    "description": null,
+    "fields": [
+      {
+        "name": "url",
+        "description": null,
+        "type": "String"
+      }
+    ]
+  },
+  {
+    "name": "RankingConnection",
+    "kind": "OBJECT",
+    "description": null,
+    "fields": [
+      {
+        "name": "totalCount",
+        "description": null,
+        "type": "Int"
+      },
+      {
+        "name": "edges",
+        "description": null,
+        "type": "[Ranking]"
+      },
+      {
+        "name": "pageInfo",
+        "description": null,
+        "type": "PageInfo"
+      }
+    ]
+  },
+  {
+    "name": "RankingPlayer",
+    "kind": "OBJECT",
+    "description": null,
+    "fields": [
+      {
+        "name": "id",
+        "description": null,
+        "type": "Int"
+      },
+      {
+        "name": "firstName",
+        "description": null,
+        "type": "String"
+      },
+      {
+        "name": "lastName",
+        "description": null,
+        "type": "String"
+      },
+      {
+        "name": "dateOfBirth",
+        "description": null,
+        "type": "String"
+      },
+      {
+        "name": "eliteprospectsUrlPath",
+        "description": null,
+        "type": "String"
+      },
+      {
+        "name": "height",
+        "description": null,
+        "type": "Height"
+      },
+      {
+        "name": "weight",
+        "description": null,
+        "type": "Weight"
+      },
+      {
+        "name": "position",
+        "description": null,
+        "type": "String"
+      },
+      {
+        "name": "shoots",
+        "description": null,
+        "type": "String"
+      },
+      {
+        "name": "catches",
+        "description": null,
+        "type": "String"
+      },
+      {
+        "name": "teamName",
+        "description": null,
+        "type": "String"
+      },
+      {
+        "name": "teamEliteprospectsUrlPath",
+        "description": null,
+        "type": "String"
+      },
+      {
+        "name": "leagueName",
+        "description": null,
+        "type": "String"
+      },
+      {
+        "name": "leagueEliteprospectsUrlPath",
+        "description": null,
+        "type": "String"
+      }
+    ]
+  },
+  {
+    "name": "Ranking",
+    "kind": "OBJECT",
+    "description": null,
+    "fields": [
+      {
+        "name": "id",
+        "description": null,
+        "type": "String"
+      },
+      {
+        "name": "createdAt",
+        "description": null,
+        "type": "String"
+      },
+      {
+        "name": "name",
+        "description": null,
+        "type": "String"
+      },
+      {
+        "name": "slug",
+        "description": null,
+        "type": "String"
+      },
+      {
+        "name": "playerCount",
+        "description": null,
+        "type": "Int"
+      },
+      {
+        "name": "authorName",
+        "description": null,
+        "type": "String"
+      },
+      {
+        "name": "views",
+        "description": null,
+        "type": "Int"
+      },
+      {
+        "name": "isIgnored",
+        "description": null,
+        "type": "Boolean"
+      },
+      {
+        "name": "isAnon",
+        "description": null,
+        "type": "Boolean"
+      },
+      {
+        "name": "visibility",
+        "description": null,
+        "type": "Int"
+      },
+      {
+        "name": "visibilityName",
+        "description": null,
+        "type": "String"
+      },
+      {
+        "name": "isUserFavorite",
+        "description": null,
+        "type": "Boolean"
+      },
+      {
+        "name": "players",
+        "description": null,
+        "type": "[RankingPlayer]"
+      }
+    ]
+  },
+  {
+    "name": "FormFieldError",
+    "kind": "OBJECT",
+    "description": null,
+    "fields": [
+      {
+        "name": "field",
+        "description": null,
+        "type": "String"
+      },
+      {
+        "name": "messages",
+        "description": null,
+        "type": "[String]"
+      }
+    ]
+  },
+  {
+    "name": "GenericFormResponse",
+    "kind": "OBJECT",
+    "description": null,
+    "fields": [
+      {
+        "name": "message",
+        "description": null,
+        "type": "String"
+      },
+      {
+        "name": "success",
+        "description": null,
+        "type": "Boolean"
+      },
+      {
+        "name": "errors",
+        "description": null,
+        "type": "[FormFieldError]"
+      }
+    ]
+  },
+  {
+    "name": "TransferLeagueCategory",
+    "kind": "OBJECT",
+    "description": null,
+    "fields": [
+      {
+        "name": "label",
+        "description": null,
+        "type": "String"
+      },
+      {
+        "name": "leagues",
+        "description": null,
+        "type": "[TransferLeague]"
+      }
+    ]
+  },
+  {
+    "name": "Quote",
+    "kind": "OBJECT",
+    "description": null,
+    "fields": [
+      {
+        "name": "id",
+        "description": null,
+        "type": "ID!"
+      },
+      {
+        "name": "sourceUrl",
+        "description": null,
+        "type": "String"
+      },
+      {
+        "name": "source",
+        "description": null,
+        "type": "String"
+      },
+      {
+        "name": "quote",
+        "description": null,
+        "type": "String"
+      },
+      {
+        "name": "year",
+        "description": null,
+        "type": "Int"
+      }
+    ]
+  },
+  {
+    "name": "Media",
+    "kind": "OBJECT",
+    "description": null,
+    "fields": [
+      {
+        "name": "id",
+        "description": null,
+        "type": "ID!"
+      },
+      {
+        "name": "url",
+        "description": null,
+        "type": "String"
+      },
+      {
+        "name": "publishedAt",
+        "description": null,
+        "type": "String"
+      },
+      {
+        "name": "country",
+        "description": null,
+        "type": "Country"
+      },
+      {
+        "name": "title",
+        "description": null,
+        "type": "String"
+      },
+      {
+        "name": "source",
+        "description": null,
+        "type": "String"
+      },
+      {
+        "name": "isScoutingReport",
+        "description": null,
+        "type": "Boolean"
+      }
+    ]
+  },
+  {
+    "name": "TransferLeague",
+    "kind": "OBJECT",
+    "description": null,
+    "fields": [
+      {
+        "name": "slug",
+        "description": null,
+        "type": "String"
+      },
+      {
+        "name": "labelPrefix",
+        "description": null,
+        "type": "String"
+      },
+      {
+        "name": "label",
+        "description": null,
+        "type": "String"
+      }
+    ]
+  },
+  {
+    "name": "ScoringLeadersLeagues",
+    "kind": "OBJECT",
+    "description": null,
+    "fields": [
+      {
+        "name": "leagues",
+        "description": null,
+        "type": "Unknown!"
+      },
+      {
+        "name": "default",
+        "description": null,
+        "type": "League"
+      }
+    ]
+  },
+  {
+    "name": "AuthResponse",
+    "kind": "OBJECT",
+    "description": null,
+    "fields": [
+      {
+        "name": "token",
+        "description": null,
+        "type": "String"
+      },
+      {
+        "name": "isNew",
+        "description": null,
+        "type": "Boolean"
+      },
+      {
+        "name": "user",
+        "description": null,
+        "type": "User"
+      },
+      {
+        "name": "streamToken",
+        "description": null,
+        "type": "String"
+      }
+    ]
+  },
+  {
+    "name": "Award",
+    "kind": "OBJECT",
+    "description": null,
+    "fields": [
+      {
+        "name": "name",
+        "description": null,
+        "type": "String"
+      },
+      {
+        "name": "slug",
+        "description": null,
+        "type": "String"
+      },
+      {
+        "name": "league",
+        "description": null,
+        "type": "String"
+      },
+      {
+        "name": "types",
+        "description": null,
+        "type": "[AwardType]"
+      },
+      {
+        "name": "links",
+        "description": null,
+        "type": "AwardLinks"
+      },
+      {
+        "name": "eliteprospectsUrlPath",
+        "description": null,
+        "type": "String"
+      },
+      {
+        "name": "updatedAt",
+        "description": null,
+        "type": "String"
+      }
+    ]
+  },
+  {
+    "name": "AwardLinks",
+    "kind": "OBJECT",
+    "description": null,
+    "fields": [
+      {
+        "name": "eliteprospectsUrl",
+        "description": null,
+        "type": "String"
+      }
+    ]
+  },
+  {
+    "name": "Game",
+    "kind": "OBJECT",
+    "description": null,
+    "fields": [
+      {
+        "name": "id",
+        "description": null,
+        "type": "ID"
+      },
+      {
+        "name": "date",
+        "description": null,
+        "type": "String"
+      },
+      {
+        "name": "dateTime",
+        "description": null,
+        "type": "String"
+      },
+      {
+        "name": "season",
+        "description": null,
+        "type": "Season"
+      },
+      {
+        "name": "seasonType",
+        "description": null,
+        "type": "SeasonType"
+      },
+      {
+        "name": "league",
+        "description": null,
+        "type": "League"
+      },
+      {
+        "name": "homeTeam",
+        "description": null,
+        "type": "Team"
+      },
+      {
+        "name": "homeTeamName",
+        "description": null,
+        "type": "String"
+      },
+      {
+        "name": "homeTeamLogo",
+        "description": null,
+        "type": "TeamLogo"
+      },
+      {
+        "name": "homeTeamLogoUrl",
+        "description": null,
+        "type": "String"
+      },
+      {
+        "name": "visitingTeam",
+        "description": null,
+        "type": "Team"
+      },
+      {
+        "name": "visitingTeamName",
+        "description": null,
+        "type": "String"
+      },
+      {
+        "name": "visitingTeamLogo",
+        "description": null,
+        "type": "TeamLogo"
+      },
+      {
+        "name": "visitingTeamLogoUrl",
+        "description": null,
+        "type": "String"
+      },
+      {
+        "name": "status",
+        "description": null,
+        "type": "GameStatus"
+      },
+      {
+        "name": "scoreType",
+        "description": null,
+        "type": "ScoreType"
+      },
+      {
+        "name": "homeTeamScore",
+        "description": null,
+        "type": "Int"
+      },
+      {
+        "name": "visitingTeamScore",
+        "description": null,
+        "type": "Int"
+      },
+      {
+        "name": "homeTeamScoreSo",
+        "description": null,
+        "type": "Int"
+      },
+      {
+        "name": "visitingTeamScoreSo",
+        "description": null,
+        "type": "Int"
+      },
+      {
+        "name": "totalTime",
+        "description": null,
+        "type": "String"
+      },
+      {
+        "name": "starsOfTheGame",
+        "description": null,
+        "type": "[GameLog]"
+      },
+      {
+        "name": "links",
+        "description": null,
+        "type": "GameLinks"
+      },
+      {
+        "name": "eliteprospectsUrlPath",
+        "description": null,
+        "type": "String"
+      },
+      {
+        "name": "updatedAt",
+        "description": null,
+        "type": "String"
+      },
+      {
+        "name": "livescore",
+        "description": null,
+        "type": "Livescore"
+      },
+      {
+        "name": "live",
+        "description": null,
+        "type": "LiveEvent"
+      }
+    ]
+  },
+  {
+    "name": "GroupedGame",
+    "kind": "OBJECT",
+    "description": null,
+    "fields": [
+      {
+        "name": "league",
+        "description": null,
+        "type": "League"
+      },
+      {
+        "name": "items",
+        "description": null,
+        "type": "[Game]"
+      }
+    ]
+  },
+  {
+    "name": "GroupedGameConnection",
+    "kind": "OBJECT",
+    "description": null,
+    "fields": [
+      {
+        "name": "totalCount",
+        "description": null,
+        "type": "Int"
+      },
+      {
+        "name": "edges",
+        "description": null,
+        "type": "[GroupedGame]"
+      },
+      {
+        "name": "pageInfo",
+        "description": null,
+        "type": "GroupedGamePageInfo"
+      }
+    ]
+  },
+  {
+    "name": "GameLinks",
+    "kind": "OBJECT",
+    "description": null,
+    "fields": [
+      {
+        "name": "eliteprospectsUrl",
+        "description": null,
+        "type": "String"
+      }
+    ]
+  },
+  {
+    "name": "GameLog",
+    "kind": "OBJECT",
+    "description": null,
+    "fields": [
+      {
+        "name": "id",
+        "description": null,
+        "type": "ID"
+      },
+      {
+        "name": "game",
+        "description": null,
+        "type": "Game"
+      },
+      {
+        "name": "team",
+        "description": null,
+        "type": "Team"
+      },
+      {
+        "name": "teamName",
+        "description": null,
+        "type": "String"
+      },
+      {
+        "name": "teamLogo",
+        "description": null,
+        "type": "TeamLogo"
+      },
+      {
+        "name": "teamLogoUrl",
+        "description": null,
+        "type": "String"
+      },
+      {
+        "name": "opponent",
+        "description": null,
+        "type": "Team"
+      },
+      {
+        "name": "opponentName",
+        "description": null,
+        "type": "String"
+      },
+      {
+        "name": "opponentLogo",
+        "description": null,
+        "type": "TeamLogo"
+      },
+      {
+        "name": "opponentLogoUrl",
+        "description": null,
+        "type": "String"
+      },
+      {
+        "name": "gameType",
+        "description": null,
+        "type": "GameType"
+      },
+      {
+        "name": "teamScore",
+        "description": null,
+        "type": "Int"
+      },
+      {
+        "name": "opponentScore",
+        "description": null,
+        "type": "Int"
+      },
+      {
+        "name": "outcome",
+        "description": null,
+        "type": "GameLogOutcome"
+      },
+      {
+        "name": "teamScoreSo",
+        "description": null,
+        "type": "Int"
+      },
+      {
+        "name": "opponentScoreSo",
+        "description": null,
+        "type": "Int"
+      },
+      {
+        "name": "player",
+        "description": null,
+        "type": "Player"
+      },
+      {
+        "name": "jerseyNumber",
+        "description": null,
+        "type": "Int"
+      },
+      {
+        "name": "playerRole",
+        "description": null,
+        "type": "PlayerRole"
+      },
+      {
+        "name": "stats",
+        "description": null,
+        "type": "GameLogStats"
+      },
+      {
+        "name": "updatedAt",
+        "description": null,
+        "type": "String"
+      }
+    ]
+  },
+  {
+    "name": "GameLogStats",
+    "kind": "OBJECT",
+    "description": null,
+    "fields": [
+      {
+        "name": "TOI",
+        "description": null,
+        "type": "String"
+      },
+      {
+        "name": "SOG",
+        "description": null,
+        "type": "Int"
+      },
+      {
+        "name": "G",
+        "description": null,
+        "type": "Int"
+      },
+      {
+        "name": "A",
+        "description": null,
+        "type": "Int"
+      },
+      {
+        "name": "PTS",
+        "description": null,
+        "type": "Int"
+      },
+      {
+        "name": "PIM",
+        "description": null,
+        "type": "Int"
+      },
+      {
+        "name": "PM",
+        "description": null,
+        "type": "Int"
+      },
+      {
+        "name": "PPG",
+        "description": null,
+        "type": "Int"
+      },
+      {
+        "name": "SHG",
+        "description": null,
+        "type": "Int"
+      },
+      {
+        "name": "SA",
+        "description": null,
+        "type": "Int"
+      },
+      {
+        "name": "SV",
+        "description": null,
+        "type": "Int"
+      },
+      {
+        "name": "GA",
+        "description": null,
+        "type": "Int"
+      },
+      {
+        "name": "SVP",
+        "description": null,
+        "type": "String"
+      }
+    ]
+  },
+  {
+    "name": "User",
+    "kind": "OBJECT",
+    "description": null,
+    "fields": [
+      {
+        "name": "id",
+        "description": null,
+        "type": "ID"
+      },
+      {
+        "name": "publicId",
+        "description": null,
+        "type": "ID"
+      },
+      {
+        "name": "rcId",
+        "description": null,
+        "type": "String"
+      },
+      {
+        "name": "email",
+        "description": null,
+        "type": "String"
+      },
+      {
+        "name": "gender",
+        "description": null,
+        "type": "PremiumGender"
+      },
+      {
+        "name": "phoneNumber",
+        "description": null,
+        "type": "String"
+      },
+      {
+        "name": "originalPhoneNumber",
+        "description": null,
+        "type": "String"
+      },
+      {
+        "name": "phonePrefixCountry",
+        "description": null,
+        "type": "PremiumCountry"
+      },
+      {
+        "name": "isBanned",
+        "description": null,
+        "type": "Boolean"
+      },
+      {
+        "name": "dateOfBirth",
+        "description": null,
+        "type": "String"
+      },
+      {
+        "name": "firstName",
+        "description": null,
+        "type": "String"
+      },
+      {
+        "name": "lastName",
+        "description": null,
+        "type": "String"
+      },
+      {
+        "name": "fullName",
+        "description": null,
+        "type": "String"
+      },
+      {
+        "name": "imageUrl",
+        "description": null,
+        "type": "String"
+      },
+      {
+        "name": "frontPageTransfersEnabled",
+        "description": null,
+        "type": "Boolean"
+      },
+      {
+        "name": "playerStatsTableStyle",
+        "description": null,
+        "type": "String"
+      },
+      {
+        "name": "customLeftMenuEnabled",
+        "description": null,
+        "type": "Boolean"
+      },
+      {
+        "name": "companyName",
+        "description": null,
+        "type": "String"
+      },
+      {
+        "name": "companyAddress",
+        "description": null,
+        "type": "String"
+      },
+      {
+        "name": "companyOtherInformation",
+        "description": null,
+        "type": "String"
+      },
+      {
+        "name": "transferEmailNotificationLeaguesEnabled",
+        "description": null,
+        "type": "Boolean"
+      },
+      {
+        "name": "transferPhoneNotificationLeaguesEnabled",
+        "description": null,
+        "type": "Boolean"
+      },
+      {
+        "name": "transferEmailNotificationTeamsEnabled",
+        "description": null,
+        "type": "Boolean"
+      },
+      {
+        "name": "transferPhoneNotificationTeamsEnabled",
+        "description": null,
+        "type": "Boolean"
+      },
+      {
+        "name": "transferSettings",
+        "description": null,
+        "type": "TransferSettings"
+      },
+      {
+        "name": "about",
+        "description": null,
+        "type": "String"
+      },
+      {
+        "name": "youtubeUrl",
+        "description": null,
+        "type": "String"
+      },
+      {
+        "name": "facebookUrl",
+        "description": null,
+        "type": "String"
+      },
+      {
+        "name": "twitterUrl",
+        "description": null,
+        "type": "String"
+      },
+      {
+        "name": "instagramUrl",
+        "description": null,
+        "type": "String"
+      },
+      {
+        "name": "scoringLeaderWidgetEnabled",
+        "description": null,
+        "type": "Boolean"
+      },
+      {
+        "name": "popularLeaguePagesWidgetEnabled",
+        "description": null,
+        "type": "Boolean"
+      },
+      {
+        "name": "freeAgentFrenzyWidgetEnabled",
+        "description": null,
+        "type": "Boolean"
+      },
+      {
+        "name": "eprinksideWidgetEnabled",
+        "description": null,
+        "type": "Boolean"
+      },
+      {
+        "name": "mostClickedProfilesWidgetEnabled",
+        "description": null,
+        "type": "Boolean"
+      },
+      {
+        "name": "featuredProfileWidgetEnabled",
+        "description": null,
+        "type": "Boolean"
+      },
+      {
+        "name": "isStatsOrderReversed",
+        "description": null,
+        "type": "Boolean"
+      },
+      {
+        "name": "isFavoritesEnabled",
+        "description": null,
+        "type": "Boolean"
+      },
+      {
+        "name": "isVerified",
+        "description": null,
+        "type": "Boolean"
+      },
+      {
+        "name": "verification",
+        "description": null,
+        "type": "Verification"
+      },
+      {
+        "name": "verifications",
+        "description": null,
+        "type": "[Verification]"
+      },
+      {
+        "name": "permissionCodes",
+        "description": null,
+        "type": "[String]"
+      },
+      {
+        "name": "isPremium",
+        "description": null,
+        "type": "Boolean"
+      },
+      {
+        "name": "isAdmin",
+        "description": null,
+        "type": "Boolean"
+      },
+      {
+        "name": "isEnterpriseUser",
+        "description": null,
+        "type": "Boolean"
+      },
+      {
+        "name": "country",
+        "description": null,
+        "type": "PremiumCountry"
+      },
+      {
+        "name": "state",
+        "description": null,
+        "type": "State"
+      },
+      {
+        "name": "hasRcSubscription",
+        "description": null,
+        "type": "Boolean"
+      },
+      {
+        "name": "customerBalance",
+        "description": null,
+        "type": "Int"
+      },
+      {
+        "name": "plans",
+        "description": null,
+        "type": "[Plan]"
+      },
+      {
+        "name": "subscriptionPlan",
+        "description": null,
+        "type": "Plan"
+      },
+      {
+        "name": "createdAt",
+        "description": null,
+        "type": "String"
+      },
+      {
+        "name": "hasLegacyInvoices",
+        "description": null,
+        "type": "Boolean"
+      },
+      {
+        "name": "eliteprospectsUrlPath",
+        "description": null,
+        "type": "String"
+      },
+      {
+        "name": "hockeyRelations",
+        "description": null,
+        "type": "[HockeyRelation]"
+      },
+      {
+        "name": "offerToVerify",
+        "description": null,
+        "type": "Boolean"
+      }
+    ]
+  },
+  {
+    "name": "Roster",
+    "kind": "OBJECT",
+    "description": null,
+    "fields": [
+      {
+        "name": "id",
+        "description": null,
+        "type": "ID!"
+      },
+      {
+        "name": "name",
+        "description": null,
+        "type": "String"
+      },
+      {
+        "name": "slug",
+        "description": null,
+        "type": "String"
+      },
+      {
+        "name": "isPublic",
+        "description": null,
+        "type": "Boolean"
+      },
+      {
+        "name": "playerIds",
+        "description": null,
+        "type": "[ID]"
+      }
+    ]
+  }
+]
