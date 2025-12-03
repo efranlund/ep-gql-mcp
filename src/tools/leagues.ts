@@ -162,12 +162,26 @@ export async function handleGetLeagueStandings(args: {
 export const getLeagueLeadersTool: Tool = {
   name: "get_league_leaders",
   description: `Get scoring leaders for skaters and goalies in a league.
+
+**When to use this tool:**
+- For top scorers in a league (points leaders)
+- For top goalies (wins leaders)
+- Quick access to league leaders without complex queries
+
+**Use execute_graphql instead when:**
+- You need rookie leaders (filter by age/GP)
+- You need leaders by specific stats (goals, assists, shots, hits, blocks)
+- You need more than the default limit
+- You need custom sorting
   
-Returns top players sorted by:
+**Returns top players sorted by:**
 - Skaters: Points (PTS = Goals + Assists)
 - Goalies: Wins
 
-League slugs examples: "nhl", "ahl", "shl", "khl"`,
+**For rookie leaders:** Use execute_graphql with leagueSkaterStats, filtering by playerAge and regularStatsGPMax.
+Example: leagueSkaterStats(slug: "nhl", playerAge: 25, regularStatsGPMax: 82, sort: "-regularStats.PTS")
+
+**League slugs examples:** "nhl", "ahl", "shl", "khl"`,
   inputSchema: {
     type: "object",
     properties: {

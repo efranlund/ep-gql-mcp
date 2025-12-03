@@ -18,11 +18,12 @@ import { getPlayerTool, handleGetPlayer, getPlayerStatsTool, handleGetPlayerStat
 import { getTeamTool, handleGetTeam } from "./tools/teams.js";
 import { getLeagueStandingsTool, handleGetLeagueStandings, getLeagueLeadersTool, handleGetLeagueLeaders } from "./tools/leagues.js";
 import { getGamesTool, handleGetGames } from "./tools/games.js";
+import { getGameLogsTool, handleGetGameLogs } from "./tools/game-logs.js";
 import { getDraftPicksTool, handleGetDraftPicks } from "./tools/drafts.js";
 import { listLeaguesTool, handleListLeagues, listSeasonsTool, handleListSeasons, listDraftTypesTool, handleListDraftTypes, getCurrentSeasonTool, handleGetCurrentSeason } from "./tools/reference.js";
 import { getSchemaQueriesResource, getSchemaTypesResource, getSchemaEnumsResource } from "./resources/schema.js";
 import { getReferenceLeaguesResource, getReferenceCountriesResource, getReferencePositionsResource, getReferenceSeasonsResource } from "./resources/reference.js";
-import { getCommonQueriesGuide, getHockeyTerminologyGuide } from "./resources/guides.js";
+import { getCommonQueriesGuide, getHockeyTerminologyGuide, getQueryPatternsGuide, getAntiPatternsGuide, getAdvancedQueriesGuide, getFieldReferenceGuide } from "./resources/guides.js";
 import { fileURLToPath } from "url";
 import { dirname, resolve } from "path";
 
@@ -53,6 +54,7 @@ function createMcpServer() {
       getLeagueStandingsTool,
       getLeagueLeadersTool,
       getGamesTool,
+      getGameLogsTool,
       getDraftPicksTool,
       listLeaguesTool,
       listSeasonsTool,
@@ -165,6 +167,27 @@ function createMcpServer() {
           ],
         };
 
+      case "get_game_logs":
+        return {
+          content: [
+            {
+              type: "text",
+              text: await handleGetGameLogs(args as {
+                id?: string;
+                player?: string;
+                game?: string;
+                team?: string;
+                opponent?: string;
+                gameLeague?: string;
+                gameSeason?: string;
+                gameDateFrom?: string;
+                gameDateTo?: string;
+                limit?: number;
+              }),
+            },
+          ],
+        };
+
       case "get_draft_picks":
         return {
           content: [
@@ -268,13 +291,37 @@ function createMcpServer() {
       {
         uri: "guide://common-queries",
         name: "Common Query Examples",
-        description: "Examples of common GraphQL queries",
+        description: "Examples of common GraphQL queries organized by use case",
         mimeType: "application/json",
       },
       {
         uri: "guide://hockey-terminology",
         name: "Hockey Terminology",
         description: "Hockey stats abbreviations and terminology",
+        mimeType: "application/json",
+      },
+      {
+        uri: "guide://query-patterns",
+        name: "Query Pattern Templates",
+        description: "Reusable query templates with placeholders and filter options",
+        mimeType: "application/json",
+      },
+      {
+        uri: "guide://anti-patterns",
+        name: "Common Query Mistakes",
+        description: "Queries that DON'T exist and their correct alternatives",
+        mimeType: "application/json",
+      },
+      {
+        uri: "guide://advanced-queries",
+        name: "Advanced Query Examples",
+        description: "Complex queries for head-to-head, rookies, and advanced stats",
+        mimeType: "application/json",
+      },
+      {
+        uri: "guide://field-reference",
+        name: "Field Reference Guide",
+        description: "Documentation of field types and requirements",
         mimeType: "application/json",
       },
     ],
@@ -379,6 +426,50 @@ function createMcpServer() {
               uri,
               mimeType: "application/json",
               text: getHockeyTerminologyGuide(),
+            },
+          ],
+        };
+
+      case "guide://query-patterns":
+        return {
+          contents: [
+            {
+              uri,
+              mimeType: "application/json",
+              text: getQueryPatternsGuide(),
+            },
+          ],
+        };
+
+      case "guide://anti-patterns":
+        return {
+          contents: [
+            {
+              uri,
+              mimeType: "application/json",
+              text: getAntiPatternsGuide(),
+            },
+          ],
+        };
+
+      case "guide://advanced-queries":
+        return {
+          contents: [
+            {
+              uri,
+              mimeType: "application/json",
+              text: getAdvancedQueriesGuide(),
+            },
+          ],
+        };
+
+      case "guide://field-reference":
+        return {
+          contents: [
+            {
+              uri,
+              mimeType: "application/json",
+              text: getFieldReferenceGuide(),
             },
           ],
         };

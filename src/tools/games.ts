@@ -53,17 +53,6 @@ const GET_GAMES_QUERY = `
         season {
           slug
         }
-        gameLogs {
-          edges {
-            player {
-              id
-            }
-            team {
-              id
-            }
-            SOG
-          }
-        }
       }
     }
   }
@@ -72,19 +61,35 @@ const GET_GAMES_QUERY = `
 export const getGamesTool: Tool = {
   name: "get_games",
   description: `Get game schedules and results with enhanced filtering. Results are sorted by most recent games first by default.
+
+**When to use this tool:**
+- For game schedules and results
+- For head-to-head matchups between teams (use teamIds array)
+- For team home/away records
+- For recent games or games in a date range
+
+**Use execute_graphql instead when:**
+- You need more complex filtering
+- You need specific fields not returned by this tool
   
-Filter by:
+**Filter Options:**
 - playerId: Single player ID to filter games
 - playerIds: Array of player IDs (returns games with any of these players)
 - teamId: Single team ID to filter games
-- teamIds: Array of team IDs (returns games with any of these teams)
+- teamIds: Array of team IDs (returns games with any of these teams) - USE THIS FOR HEAD-TO-HEAD
 - league: League slug (e.g., "nhl", "ahl")
 - season: Season string (e.g., "2023-2024")
 - dateFrom/dateTo: Date range (YYYY-MM-DD format)
+- limit: Maximum games to return (default: 50)
 
-Returns: game details including teams, scores, shots data (when available), status, and date/time, sorted with most recent games first.
+**Head-to-Head Example:**
+To get last 10 games between Bruins and Senators:
+1. Use search_entities to find team IDs
+2. Call get_games with teamIds: ["<BRUINS_ID>", "<SENATORS_ID>"], limit: 10
 
-Note: Shots data (homeTeamShots, visitingTeamShots) is calculated from player-level SOG (Shots on Goal) statistics and may be null for games/leagues where this data is not tracked.`,
+**Returns:** Game details including teams, scores, status, and date/time, sorted with most recent games first.
+
+**Note:** For detailed player-level statistics including shots on goal (SOG), use the get_game_logs tool instead.`,
   inputSchema: {
     type: "object",
     properties: {
@@ -130,63 +135,6 @@ Note: Shots data (homeTeamShots, visitingTeamShots) is calculated from player-le
     },
   },
 };
-
-/**
- * GameLog interface matching GraphQL GameLog type
- */
-interface GameLog {
-  player: {
-    id: string;
-  };
-  team: {
-    id: string;
-  };
-  SOG: number | null;
-}
-
-/**
- * Calculate total shots for both teams from GameLogs data
- * @param gameLogs - Array of game log entries with player SOG data
- * @param homeTeamId - ID of the home team
- * @param visitingTeamId - ID of the visiting team
- * @returns Object with homeTeamShots and visitingTeamShots (null if no data)
- */
-function calculateShotsFromGameLogs(
-  gameLogs: GameLog[] | undefined | null,
-  homeTeamId: string,
-  visitingTeamId: string
-): { homeTeamShots: number | null; visitingTeamShots: number | null } {
-  // Return null for both if no gameLogs data
-  if (!gameLogs || gameLogs.length === 0) {
-    return { homeTeamShots: null, visitingTeamShots: null };
-  }
-
-  let homeTeamSOG = 0;
-  let visitingTeamSOG = 0;
-  let hasHomeTeamData = false;
-  let hasVisitingTeamData = false;
-
-  // Sum SOG values for each team
-  for (const log of gameLogs) {
-    if (!log.team?.id) continue;
-
-    const sogValue = log.SOG ?? 0; // Treat null/undefined as 0
-
-    if (log.team.id === homeTeamId) {
-      homeTeamSOG += sogValue;
-      hasHomeTeamData = true;
-    } else if (log.team.id === visitingTeamId) {
-      visitingTeamSOG += sogValue;
-      hasVisitingTeamData = true;
-    }
-    // Ignore entries with team IDs that don't match either team
-  }
-
-  return {
-    homeTeamShots: hasHomeTeamData ? homeTeamSOG : null,
-    visitingTeamShots: hasVisitingTeamData ? visitingTeamSOG : null,
-  };
-}
 
 /**
  * Get teams that a player played for during a specific period
@@ -321,21 +269,8 @@ async function queryGamesForMultipleTeams(
       }
     }
 
-    // Convert map to array and calculate shots for each game
-    const games = Array.from(gamesMap.values()).map((game) => {
-      const gameLogs = game.gameLogs?.edges;
-      const shots = calculateShotsFromGameLogs(
-        gameLogs,
-        game.homeTeam?.id,
-        game.visitingTeam?.id
-      );
-      
-      return {
-        ...game,
-        homeTeamShots: shots.homeTeamShots,
-        visitingTeamShots: shots.visitingTeamShots,
-      };
-    });
+    // Convert map to array
+    const games = Array.from(gamesMap.values());
 
     // Sort by dateTime descending
     games.sort((a, b) => {
@@ -511,21 +446,7 @@ export async function handleGetGames(args: {
       }
     );
 
-    // Calculate shots for each game in fallback results
-    const gamesWithShots = (result.games?.edges || []).map((game) => {
-      const gameLogs = game.gameLogs?.edges;
-      const shots = calculateShotsFromGameLogs(
-        gameLogs,
-        game.homeTeam?.id,
-        game.visitingTeam?.id
-      );
-      
-      return {
-        ...game,
-        homeTeamShots: shots.homeTeamShots,
-        visitingTeamShots: shots.visitingTeamShots,
-      };
-    });
+    const games = result.games?.edges || [];
 
     return JSON.stringify(
       {
@@ -535,8 +456,8 @@ export async function handleGetGames(args: {
           dateFrom,
           dateTo,
         },
-        games: gamesWithShots,
-        totalGames: gamesWithShots.length,
+        games,
+        totalGames: games.length,
       },
       null,
       2

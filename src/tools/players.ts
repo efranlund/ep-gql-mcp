@@ -181,14 +181,26 @@ export async function handleGetPlayer(args: {
 export const getPlayerStatsTool: Tool = {
   name: "get_player_stats",
   description: `Get player statistics with flexible filtering.
+
+**When to use this tool:**
+- For player career statistics
+- For player stats in a specific season or league
+- Quick access to player stats without complex queries
+
+**Use execute_graphql instead when:**
+- You need more specific fields
+- You need to compare multiple players
+- You need advanced filtering
   
-Supports:
+**Supports:**
 - Career totals (no filters)
 - By season (e.g., "2023-2024")
 - By league (e.g., "nhl", "ahl")
-- Game logs (if available)
+- By player name (automatically searches for player ID)
 
-Returns: regular season stats (GP, G, A, PTS, PIM, etc.) and postseason stats if available.`,
+**Returns:** Regular season stats (GP, G, A, PTS, PIM, etc.) and postseason stats if available.
+
+**Note:** All stat field names are UPPERCASE (GP, G, A, PTS, not gp, g, a, pts).`,
   inputSchema: {
     type: "object",
     properties: {
