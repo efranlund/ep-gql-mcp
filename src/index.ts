@@ -2,6 +2,12 @@
 
 import { Server } from "@modelcontextprotocol/sdk/server/index.js";
 import { StdioServerTransport } from "@modelcontextprotocol/sdk/server/stdio.js";
+import {
+  ListToolsRequestSchema,
+  CallToolRequestSchema,
+  ListResourcesRequestSchema,
+  ReadResourceRequestSchema,
+} from "@modelcontextprotocol/sdk/types.js";
 import { executeGraphQLTool, handleExecuteGraphQL } from "./tools/execute-graphql.js";
 import { introspectSchemaTool, handleIntrospectSchema } from "./tools/introspect.js";
 import { searchEntitiesTool, handleSearchEntities } from "./tools/search.js";
@@ -30,8 +36,7 @@ const server = new Server(
 );
 
 // Register core tools
-// @ts-expect-error - MCP SDK type definitions may be incomplete
-server.setRequestHandler("tools/list", async () => ({
+server.setRequestHandler(ListToolsRequestSchema, async () => ({
   tools: [
     executeGraphQLTool,
     introspectSchemaTool,
@@ -50,8 +55,7 @@ server.setRequestHandler("tools/list", async () => ({
   ],
 }));
 
-// @ts-expect-error - MCP SDK type definitions may be incomplete
-server.setRequestHandler("tools/call", async (request) => {
+server.setRequestHandler(CallToolRequestSchema, async (request) => {
   const { name, arguments: args } = request.params;
 
   switch (name) {
@@ -201,8 +205,7 @@ server.setRequestHandler("tools/call", async (request) => {
 });
 
 // Register resources
-// @ts-expect-error - MCP SDK type definitions may be incomplete
-server.setRequestHandler("resources/list", async () => ({
+server.setRequestHandler(ListResourcesRequestSchema, async () => ({
   resources: [
     {
       uri: "schema://queries",
@@ -261,8 +264,7 @@ server.setRequestHandler("resources/list", async () => ({
   ],
 }));
 
-// @ts-expect-error - MCP SDK type definitions may be incomplete
-server.setRequestHandler("resources/read", async (request) => {
+server.setRequestHandler(ReadResourceRequestSchema, async (request) => {
   const { uri } = request.params;
 
   switch (uri) {
