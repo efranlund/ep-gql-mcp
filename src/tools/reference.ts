@@ -8,35 +8,16 @@
  */
 
 import { Tool } from "@modelcontextprotocol/sdk/types.js";
-import { readFileSync } from "fs";
-import { join, dirname } from "path";
-import { fileURLToPath } from "url";
+import referenceData from "../generated/reference-data.json";
 import { executeQuery } from "../graphql/client.js";
 
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = dirname(__filename);
-const GENERATED_DIR = join(__dirname, "./generated");
-
-function loadReferenceData(): {
+const refData = referenceData as {
   leagues: unknown[];
   countries: unknown[];
   positions: string[];
   seasonFormat: string;
   currentSeason: string;
-} {
-  try {
-    const content = readFileSync(join(GENERATED_DIR, "reference-data.json"), "utf-8");
-    return JSON.parse(content);
-  } catch (error) {
-    return {
-      leagues: [],
-      countries: [],
-      positions: ["C", "LW", "RW", "D", "G"],
-      seasonFormat: "YYYY-YYYY (e.g., 2023-2024)",
-      currentSeason: "2024-2025",
-    };
-  }
-}
+};
 
 const GET_LEAGUE_SEASONS_QUERY = `
   query GetLeagueSeasons($slug: String!) {
@@ -92,7 +73,6 @@ Returns: list of leagues with id, slug, name, country, and league level.`,
 
 export async function handleListLeagues(args: { limit?: number }): Promise<string> {
   const { limit = 100 } = args;
-  const refData = loadReferenceData();
   const leagues = (refData.leagues as Array<unknown>).slice(0, limit);
 
   return JSON.stringify(
@@ -223,7 +203,6 @@ This is useful for queries that need the current season when not specified.`,
 };
 
 export async function handleGetCurrentSeason(): Promise<string> {
-  const refData = loadReferenceData();
   const currentSeason = refData.currentSeason || "2024-2025";
 
   return JSON.stringify(
@@ -236,4 +215,3 @@ export async function handleGetCurrentSeason(): Promise<string> {
     2
   );
 }
-

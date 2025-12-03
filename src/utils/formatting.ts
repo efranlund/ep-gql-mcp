@@ -19,6 +19,7 @@ export interface FormattedResponse {
   pagination?: PaginationInfo;
   truncated?: boolean;
   note?: string;
+  url?: string;
 }
 
 /**
