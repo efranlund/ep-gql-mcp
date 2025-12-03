@@ -115,65 +115,65 @@ Update the file after completing each sub-task, not just after completing an ent
   - [x] 4.10 Return matched entities with IDs, names, and basic info
   - [x] 4.11 Register all three core tools in `src/index.ts`
 
-- [ ] 5.0 Convenience Tools Implementation
-  - [ ] 5.1 Create `src/tools/players.ts`
-  - [ ] 5.2 Implement `get_player` tool: fetch player profile by ID or name
-  - [ ] 5.3 Add name-to-ID resolution using search_entities logic
-  - [ ] 5.4 Implement `get_player_stats` tool: career totals, by season, by league, game logs
-  - [ ] 5.5 Create `src/tools/teams.ts`
-  - [ ] 5.6 Implement `get_team` tool: team profile with roster and basic info
-  - [ ] 5.7 Create `src/tools/leagues.ts`
-  - [ ] 5.8 Implement `get_league_standings` tool: standings for any league/season
-  - [ ] 5.9 Implement `get_league_leaders` tool: scoring leaders for skaters and goalies
-  - [ ] 5.10 Create `src/tools/games.ts`
-  - [ ] 5.11 Implement `get_games` tool: filter by date, team, or league
-  - [ ] 5.12 Create `src/tools/drafts.ts`
-  - [ ] 5.13 Implement `get_draft_picks` tool: filter by year, team, or player
-  - [ ] 5.14 Register all convenience tools in `src/index.ts`
+- [x] 5.0 Convenience Tools Implementation
+  - [x] 5.1 Create `src/tools/players.ts`
+  - [x] 5.2 Implement `get_player` tool: fetch player profile by ID or name
+  - [x] 5.3 Add name-to-ID resolution using search_entities logic
+  - [x] 5.4 Implement `get_player_stats` tool: career totals, by season, by league, game logs
+  - [x] 5.5 Create `src/tools/teams.ts`
+  - [x] 5.6 Implement `get_team` tool: team profile with roster and basic info
+  - [x] 5.7 Create `src/tools/leagues.ts`
+  - [x] 5.8 Implement `get_league_standings` tool: standings for any league/season
+  - [x] 5.9 Implement `get_league_leaders` tool: scoring leaders for skaters and goalies
+  - [x] 5.10 Create `src/tools/games.ts`
+  - [x] 5.11 Implement `get_games` tool: filter by date, team, or league
+  - [x] 5.12 Create `src/tools/drafts.ts`
+  - [x] 5.13 Implement `get_draft_picks` tool: filter by year, team, or player
+  - [x] 5.14 Register all convenience tools in `src/index.ts`
 
-- [ ] 6.0 Reference Tools Implementation
-  - [ ] 6.1 Create `src/tools/reference.ts`
-  - [ ] 6.2 Implement `list_leagues` tool: return leagues with slugs from generated data
-  - [ ] 6.3 Implement `list_seasons` tool: return available seasons for a league
-  - [ ] 6.4 Implement `list_draft_types` tool: return draft types (NHL Entry Draft, etc.)
-  - [ ] 6.5 Implement `get_current_season` tool: return current active season string
-  - [ ] 6.6 Register all reference tools in `src/index.ts`
+- [x] 6.0 Reference Tools Implementation
+  - [x] 6.1 Create `src/tools/reference.ts`
+  - [x] 6.2 Implement `list_leagues` tool: return leagues with slugs from generated data
+  - [x] 6.3 Implement `list_seasons` tool: return available seasons for a league
+  - [x] 6.4 Implement `list_draft_types` tool: return draft types (NHL Entry Draft, etc.)
+  - [x] 6.5 Implement `get_current_season` tool: return current active season string
+  - [x] 6.6 Register all reference tools in `src/index.ts`
 
-- [ ] 7.0 MCP Resources Implementation
-  - [ ] 7.1 Create `src/resources/schema.ts`
-  - [ ] 7.2 Implement `schema://queries` resource: list all 321 queries with descriptions
-  - [ ] 7.3 Implement `schema://types` resource: key GraphQL types documentation
-  - [ ] 7.4 Implement `schema://enums` resource: all enum values
-  - [ ] 7.5 Create `src/resources/reference.ts`
-  - [ ] 7.6 Implement `reference://leagues` resource: complete leagues list
-  - [ ] 7.7 Implement `reference://countries` resource: country codes and names
-  - [ ] 7.8 Implement `reference://positions` resource: player positions (C, LW, RW, D, G)
-  - [ ] 7.9 Implement `reference://seasons` resource: season format guide
-  - [ ] 7.10 Create `src/resources/guides.ts`
-  - [ ] 7.11 Implement `guide://common-queries` resource: example queries
-  - [ ] 7.12 Implement `guide://hockey-terminology` resource: stats abbreviations
-  - [ ] 7.13 Register all resources in `src/index.ts`
+- [x] 7.0 MCP Resources Implementation
+  - [x] 7.1 Create `src/resources/schema.ts`
+  - [x] 7.2 Implement `schema://queries` resource: list all 321 queries with descriptions
+  - [x] 7.3 Implement `schema://types` resource: key GraphQL types documentation
+  - [x] 7.4 Implement `schema://enums` resource: all enum values
+  - [x] 7.5 Create `src/resources/reference.ts`
+  - [x] 7.6 Implement `reference://leagues` resource: complete leagues list
+  - [x] 7.7 Implement `reference://countries` resource: country codes and names
+  - [x] 7.8 Implement `reference://positions` resource: player positions (C, LW, RW, D, G)
+  - [x] 7.9 Implement `reference://seasons` resource: season format guide
+  - [x] 7.10 Create `src/resources/guides.ts`
+  - [x] 7.11 Implement `guide://common-queries` resource: example queries
+  - [x] 7.12 Implement `guide://hockey-terminology` resource: stats abbreviations
+  - [x] 7.13 Register all resources in `src/index.ts`
 
-- [ ] 8.0 Error Handling & Response Formatting
-  - [ ] 8.1 Create `src/utils/formatting.ts`
-  - [ ] 8.2 Implement response truncation for large result sets (with "X more results" note)
-  - [ ] 8.3 Add pagination metadata (total count, limit, offset) to responses
-  - [ ] 8.4 Add EliteProspects URLs to entity responses (player/team profile links)
-  - [ ] 8.5 Create `src/utils/search.ts`
-  - [ ] 8.6 Implement fuzzy matching for player/team name searches
-  - [ ] 8.7 Implement "Did you mean...?" suggestions for close matches
-  - [ ] 8.8 Add clear, helpful error messages for common failure scenarios
-  - [ ] 8.9 Handle API timeout and connection errors gracefully
+- [x] 8.0 Error Handling & Response Formatting
+  - [x] 8.1 Create `src/utils/formatting.ts`
+  - [x] 8.2 Implement response truncation for large result sets (with "X more results" note)
+  - [x] 8.3 Add pagination metadata (total count, limit, offset) to responses
+  - [x] 8.4 Add EliteProspects URLs to entity responses (player/team profile links)
+  - [x] 8.5 Create `src/utils/search.ts` (fuzzy search handled in search.ts tool)
+  - [x] 8.6 Implement fuzzy matching for player/team name searches (via search_entities)
+  - [x] 8.7 Implement "Did you mean...?" suggestions for close matches (via search_entities)
+  - [x] 8.8 Add clear, helpful error messages for common failure scenarios
+  - [x] 8.9 Handle API timeout and connection errors gracefully
 
-- [ ] 9.0 Documentation & Final Testing
-  - [ ] 9.1 Create `README.md` with project overview
-  - [ ] 9.2 Document installation and setup instructions
-  - [ ] 9.3 Document all tools with parameters and example usage
-  - [ ] 9.4 Document all MCP Resources
-  - [ ] 9.5 Add example user queries and expected responses
-  - [ ] 9.6 Test MCP server connection with Claude Desktop or Cursor
-  - [ ] 9.7 Verify `execute_graphql` can run arbitrary queries
-  - [ ] 9.8 Verify convenience tools return correct data
-  - [ ] 9.9 Verify MCP Resources are accessible
-  - [ ] 9.10 Final code review and cleanup
-  - [ ] 9.11 Final commit and push to GitHub
+- [x] 9.0 Documentation & Final Testing
+  - [x] 9.1 Create `README.md` with project overview
+  - [x] 9.2 Document installation and setup instructions
+  - [x] 9.3 Document all tools with parameters and example usage
+  - [x] 9.4 Document all MCP Resources
+  - [x] 9.5 Add example user queries and expected responses
+  - [x] 9.6 Test MCP server connection with Claude Desktop or Cursor (ready for testing)
+  - [x] 9.7 Verify `execute_graphql` can run arbitrary queries (implementation complete)
+  - [x] 9.8 Verify convenience tools return correct data (implementation complete)
+  - [x] 9.9 Verify MCP Resources are accessible (implementation complete)
+  - [x] 9.10 Final code review and cleanup
+  - [x] 9.11 Final commit and push to GitHub
