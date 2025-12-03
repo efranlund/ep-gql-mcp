@@ -20,6 +20,8 @@ import { listLeaguesTool, handleListLeagues, listSeasonsTool, handleListSeasons,
 import { getSchemaQueriesResource, getSchemaTypesResource, getSchemaEnumsResource } from "./resources/schema.js";
 import { getReferenceLeaguesResource, getReferenceCountriesResource, getReferencePositionsResource, getReferenceSeasonsResource } from "./resources/reference.js";
 import { getCommonQueriesGuide, getHockeyTerminologyGuide } from "./resources/guides.js";
+import { fileURLToPath } from "url";
+import { dirname, resolve } from "path";
 
 // Create MCP server instance
 const server = new Server(
@@ -376,7 +378,30 @@ server.setRequestHandler(ReadResourceRequestSchema, async (request) => {
 async function main() {
   const transport = new StdioServerTransport();
   await server.connect(transport);
-  console.error("EliteProspects GraphQL MCP server running on stdio");
+  
+  // Output MCP configuration for Claude Desktop / Cursor
+  // Use process.cwd() to get the project root (works in both dev and production)
+  const serverPath = resolve(process.cwd(), "dist/index.js");
+  
+  const mcpConfig = {
+    mcpServers: {
+      "ep-gql-mcp": {
+        command: "node",
+        args: [serverPath],
+        env: {
+          EP_GQL_URL: process.env.EP_GQL_URL || "https://dev-gql-41yd43jtq6.eliteprospects-assets.com",
+        },
+      },
+    },
+  };
+  
+  console.error("=".repeat(60));
+  console.error("EliteProspects GraphQL MCP Server");
+  console.error("=".repeat(60));
+  console.error("\n✅ Server is running on stdio");
+  console.error("\n📋 Add this to your Claude Desktop or Cursor MCP settings:\n");
+  console.error(JSON.stringify(mcpConfig, null, 2));
+  console.error("\n" + "=".repeat(60));
 }
 
 main().catch((error) => {
