@@ -42,9 +42,15 @@ npm run generate-schema
 
 ## Usage
 
-### With Claude Desktop
+The server supports two modes:
+- **stdio mode** (default): For local use with Claude Desktop, Cursor, etc.
+- **HTTP mode**: For remote/cloud deployment (e.g., Fly.io)
 
-Add to your Claude Desktop MCP configuration:
+### Local Usage (stdio mode)
+
+#### With Claude Desktop
+
+Add to your Claude Desktop MCP configuration (`~/Library/Application Support/Claude/claude_desktop_config.json`):
 
 ```json
 {
@@ -57,9 +63,75 @@ Add to your Claude Desktop MCP configuration:
 }
 ```
 
-### With Cursor
+#### With Cursor
 
-Configure in Cursor's MCP settings to use this server.
+Add to your project's `.cursor/mcp.json`:
+
+```json
+{
+  "mcpServers": {
+    "ep-gql-mcp": {
+      "command": "node",
+      "args": ["/path/to/ep-gql-mcp/dist/index.js"]
+    }
+  }
+}
+```
+
+### Remote Usage (HTTP mode)
+
+When deployed to a cloud service like Fly.io, the server automatically runs in HTTP mode.
+
+#### With Cursor (Remote)
+
+Add to your project's `.cursor/mcp.json`:
+
+```json
+{
+  "mcpServers": {
+    "ep-gql-mcp": {
+      "url": "https://ep-gql-mcp.fly.dev/mcp"
+    }
+  }
+}
+```
+
+#### With Claude Desktop (Remote)
+
+Claude Desktop doesn't natively support remote MCP servers yet. Use a proxy like [supergateway](https://github.com/supercorp-ai/supergateway):
+
+```json
+{
+  "mcpServers": {
+    "ep-gql-mcp": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "supergateway",
+        "--streamableHttp",
+        "https://ep-gql-mcp.fly.dev/mcp"
+      ]
+    }
+  }
+}
+```
+
+### Running Locally in HTTP Mode
+
+```bash
+# Run in HTTP mode on port 3000
+PORT=3000 node dist/index.js
+
+# Or use the --http flag
+node dist/index.js --http
+```
+
+### Endpoints (HTTP mode)
+
+- `GET /health` - Health check endpoint
+- `POST /mcp` - MCP protocol endpoint (Streamable HTTP transport)
+- `GET /mcp` - SSE stream for server notifications
+- `DELETE /mcp` - Session termination
 
 ## Available Tools
 
