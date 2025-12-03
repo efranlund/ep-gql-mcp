@@ -125,7 +125,7 @@ export async function handleGetTeam(args: {
 
     return JSON.stringify(
       {
-        ...teamResult.team,
+        ...(teamResult.team as Record<string, unknown>),
         roster: includeRoster ? rosterResult.teamRoster?.edges || [] : undefined,
         rosterCount: includeRoster ? rosterResult.teamRoster?.edges?.length || 0 : undefined,
       },

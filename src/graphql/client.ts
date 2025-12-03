@@ -4,8 +4,8 @@
 
 import { GraphQLClient } from "graphql-request";
 
-const EP_GQL_URL =
-  process.env.EP_GQL_URL || "https://dev-gql-41yd43jtq6.eliteprospects-assets.com";
+// Default URL - overridden by wrangler.toml [vars] section
+const EP_GQL_URL = "https://dev-gql-41yd43jtq6.eliteprospects-assets.com";
 
 export const graphqlClient = new GraphQLClient(EP_GQL_URL, {
   headers: {

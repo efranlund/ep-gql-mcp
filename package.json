@@ -3,15 +3,10 @@
   "version": "1.0.0",
   "description": "MCP server for EliteProspects GraphQL API - enables natural language hockey data queries",
   "type": "module",
-  "main": "dist/index.js",
-  "bin": {
-    "ep-gql-mcp": "./dist/index.js"
-  },
   "scripts": {
-    "build": "tsup src/index.ts --format esm --dts --clean && npm run copy-generated",
-    "copy-generated": "mkdir -p dist/generated && cp -r src/generated/* dist/generated/",
-    "dev": "tsx watch src/index.ts",
-    "start": "node dist/index.js",
+    "dev": "wrangler dev",
+    "build": "tsc --noEmit",
+    "deploy": "wrangler deploy",
     "generate-schema": "tsx scripts/generate-schema.ts",
     "typecheck": "tsc --noEmit"
   },
@@ -27,18 +22,15 @@
   "license": "MIT",
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1.24.1",
-    "@types/express": "^5.0.6",
-    "express": "^5.2.1",
+    "agents": "^0.2.26",
     "graphql": "^16.12.0",
     "graphql-request": "^7.3.5"
   },
   "devDependencies": {
+    "@cloudflare/workers-types": "^4.20241127.0",
     "@types/node": "^24.10.1",
-    "tsup": "^8.5.1",
     "tsx": "^4.21.0",
-    "typescript": "^5.9.3"
-  },
-  "engines": {
-    "node": ">=18.0.0"
+    "typescript": "^5.9.3",
+    "wrangler": "^4.51.0"
   }
 }

@@ -6,13 +6,9 @@
  */
 
 import { Tool } from "@modelcontextprotocol/sdk/types.js";
-import { readFileSync } from "fs";
-import { join, dirname } from "path";
-import { fileURLToPath } from "url";
-
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = dirname(__filename);
-const GENERATED_DIR = join(__dirname, "./generated");
+import queriesData from "../generated/queries.json";
+import typesData from "../generated/types.json";
+import enumsData from "../generated/enums.json";
 
 interface Query {
   name: string;
@@ -26,32 +22,9 @@ interface Query {
   returnType: string;
 }
 
-function loadQueries(): Query[] {
-  try {
-    const content = readFileSync(join(GENERATED_DIR, "queries.json"), "utf-8");
-    return JSON.parse(content);
-  } catch (error) {
-    throw new Error("Failed to load queries.json. Run 'npm run generate-schema' first.");
-  }
-}
-
-function loadTypes(): unknown[] {
-  try {
-    const content = readFileSync(join(GENERATED_DIR, "types.json"), "utf-8");
-    return JSON.parse(content);
-  } catch (error) {
-    throw new Error("Failed to load types.json. Run 'npm run generate-schema' first.");
-  }
-}
-
-function loadEnums(): unknown[] {
-  try {
-    const content = readFileSync(join(GENERATED_DIR, "enums.json"), "utf-8");
-    return JSON.parse(content);
-  } catch (error) {
-    throw new Error("Failed to load enums.json. Run 'npm run generate-schema' first.");
-  }
-}
+const queries = queriesData as Query[];
+const types = typesData as unknown[];
+const enums = enumsData as unknown[];
 
 export const introspectSchemaTool: Tool = {
   name: "introspect_schema",
@@ -86,7 +59,6 @@ export async function handleIntrospectSchema(args: {
   const { queryName, typeName } = args;
 
   if (queryName) {
-    const queries = loadQueries();
     const query = queries.find((q) => q.name === queryName);
     if (!query) {
       return JSON.stringify(
@@ -102,7 +74,6 @@ export async function handleIntrospectSchema(args: {
   }
 
   if (typeName) {
-    const types = loadTypes();
     const type = (types as Array<{ name: string }>).find((t) => t.name === typeName);
     if (!type) {
       return JSON.stringify(
@@ -118,10 +89,6 @@ export async function handleIntrospectSchema(args: {
   }
 
   // Return summary
-  const queries = loadQueries();
-  const types = loadTypes();
-  const enums = loadEnums();
-
   return JSON.stringify(
     {
       summary: {

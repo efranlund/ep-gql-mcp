@@ -7,37 +7,17 @@
  * reference://seasons - Season format guide
  */
 
-import { readFileSync } from "fs";
-import { join, dirname } from "path";
-import { fileURLToPath } from "url";
+import referenceData from "../generated/reference-data.json";
 
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = dirname(__filename);
-const GENERATED_DIR = join(__dirname, "./generated");
-
-function loadReferenceData(): {
+const refData = referenceData as {
   leagues: unknown[];
   countries: unknown[];
   positions: string[];
   seasonFormat: string;
   currentSeason: string;
-} {
-  try {
-    const content = readFileSync(join(GENERATED_DIR, "reference-data.json"), "utf-8");
-    return JSON.parse(content);
-  } catch (error) {
-    return {
-      leagues: [],
-      countries: [],
-      positions: ["C", "LW", "RW", "D", "G"],
-      seasonFormat: "YYYY-YYYY (e.g., 2023-2024)",
-      currentSeason: "2024-2025",
-    };
-  }
-}
+};
 
 export function getReferenceLeaguesResource(): string {
-  const refData = loadReferenceData();
   return JSON.stringify(
     {
       leagues: refData.leagues,
@@ -50,7 +30,6 @@ export function getReferenceLeaguesResource(): string {
 }
 
 export function getReferenceCountriesResource(): string {
-  const refData = loadReferenceData();
   return JSON.stringify(
     {
       countries: refData.countries,
@@ -63,7 +42,6 @@ export function getReferenceCountriesResource(): string {
 }
 
 export function getReferencePositionsResource(): string {
-  const refData = loadReferenceData();
   return JSON.stringify(
     {
       positions: refData.positions,
@@ -84,7 +62,6 @@ export function getReferencePositionsResource(): string {
 }
 
 export function getReferenceSeasonsResource(): string {
-  const refData = loadReferenceData();
   return JSON.stringify(
     {
       seasonFormat: refData.seasonFormat,
@@ -96,4 +73,3 @@ export function getReferenceSeasonsResource(): string {
     2
   );
 }
-

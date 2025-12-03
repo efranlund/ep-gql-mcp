@@ -2,15 +2,18 @@
 
 A Model Context Protocol (MCP) server that interfaces with the EliteProspects.com GraphQL API, enabling natural language queries about hockey statistics, players, teams, leagues, drafts, and more.
 
+**Deployed on Cloudflare Workers** for global edge performance and automatic GitHub integration.
+
 ## Features
 
 - **321 GraphQL Queries**: Access to all EliteProspects data via flexible `execute_graphql` tool
-- **Convenience Tools**: Pre-built tools for common queries (players, teams, leagues, games, drafts)
+- **15 MCP Tools**: Pre-built tools for common queries (players, teams, leagues, games, drafts, reference data)
+- **13 MCP Resources**: Schema documentation, reference data, and comprehensive usage guides
 - **Player-Based Game Filtering**: Query games by player ID(s) with automatic team resolution
 - **Multi-Entity Filtering**: Support for multiple players and teams in game queries
 - **Entity Search**: Universal search across players, teams, leagues, and staff
 - **Schema Introspection**: Explore available queries and types (uses pre-generated schema)
-- **MCP Resources**: Access to schema documentation, reference data, and usage guides
+- **Enhanced Error Messages**: Helpful suggestions for common query mistakes
 
 ## Installation
 
@@ -20,50 +23,57 @@ npm install
 
 ## Configuration
 
-Create a `.env` file (or use the default):
+Environment variables are configured in `wrangler.toml`:
 
-```bash
-EP_GQL_URL=https://dev-gql-41yd43jtq6.eliteprospects-assets.com
+```toml
+[vars]
+EP_GQL_URL = "https://dev-gql-41yd43jtq6.eliteprospects-assets.com"
 ```
+
+For local development, you can also use a `.env` file (automatically loaded by Wrangler).
 
 ## Development
 
 ```bash
-# Build the project
-npm run build
-
-# Run in development mode (with watch)
+# Run local development server (Cloudflare Workers)
 npm run dev
 
 # Type check
 npm run typecheck
 
+# Deploy to Cloudflare Workers
+npm run deploy
+
 # Generate schema data (run manually when API schema changes)
 npm run generate-schema
 ```
 
-## Usage
+## Deployment
 
-The server supports two modes:
-- **stdio mode** (default): For local use with Claude Desktop, Cursor, etc.
-- **HTTP mode**: For remote/cloud deployment (e.g., Fly.io)
+This server runs on **Cloudflare Workers** with automatic deployment via GitHub integration.
 
-### Local Usage (stdio mode)
+### Local Development
 
-#### With Claude Desktop
-
-Add to your Claude Desktop MCP configuration (`~/Library/Application Support/Claude/claude_desktop_config.json`):
-
-```json
-{
-  "mcpServers": {
-    "ep-gql-mcp": {
-      "command": "node",
-      "args": ["/path/to/ep-gql-mcp/dist/index.js"]
-    }
-  }
-}
+```bash
+npm run dev
 ```
+
+This starts a local Cloudflare Workers development server at `http://localhost:8787`.
+
+### Production Deployment
+
+```bash
+npm run deploy
+```
+
+Or configure automatic deployment via GitHub:
+1. Connect your repository to Cloudflare Pages/Workers
+2. Push to main branch triggers automatic deployment
+3. Access your deployed server at `https://ep-gql-mcp.<your-subdomain>.workers.dev`
+
+### Usage with MCP Clients
+
+The server runs on Cloudflare Workers and is accessible via HTTP.
 
 #### With Cursor
 
@@ -73,32 +83,13 @@ Add to your project's `.cursor/mcp.json`:
 {
   "mcpServers": {
     "ep-gql-mcp": {
-      "command": "node",
-      "args": ["/path/to/ep-gql-mcp/dist/index.js"]
+      "url": "https://ep-gql-mcp.<your-subdomain>.workers.dev/mcp"
     }
   }
 }
 ```
 
-### Remote Usage (HTTP mode)
-
-When deployed to a cloud service like Fly.io, the server automatically runs in HTTP mode.
-
-#### With Cursor (Remote)
-
-Add to your project's `.cursor/mcp.json`:
-
-```json
-{
-  "mcpServers": {
-    "ep-gql-mcp": {
-      "url": "https://ep-gql-mcp.fly.dev/mcp"
-    }
-  }
-}
-```
-
-#### With Claude Desktop (Remote)
+#### With Claude Desktop
 
 Claude Desktop doesn't natively support remote MCP servers yet. Use a proxy like [supergateway](https://github.com/supercorp-ai/supergateway):
 
@@ -111,26 +102,16 @@ Claude Desktop doesn't natively support remote MCP servers yet. Use a proxy like
         "-y",
         "supergateway",
         "--streamableHttp",
-        "https://ep-gql-mcp.fly.dev/mcp"
+        "https://ep-gql-mcp.<your-subdomain>.workers.dev/mcp"
       ]
     }
   }
 }
 ```
 
-### Running Locally in HTTP Mode
+### Endpoints
 
-```bash
-# Run in HTTP mode on port 3000
-PORT=3000 node dist/index.js
-
-# Or use the --http flag
-node dist/index.js --http
-```
-
-### Endpoints (HTTP mode)
-
-- `GET /health` - Health check endpoint
+- `GET /` or `GET /health` - Health check endpoint
 - `POST /mcp` - MCP protocol endpoint (Streamable HTTP transport)
 - `GET /mcp` - SSE stream for server notifications
 - `DELETE /mcp` - Session termination
@@ -396,7 +377,9 @@ This creates files in `src/generated/`:
 ```
 ep-gql-mcp/
 ├── src/
-│   ├── index.ts              # MCP server entry point
+│   ├── index.ts              # Cloudflare Workers entry point (fetch handler)
+│   ├── register-tools.ts     # Tool registration (all 15 MCP tools)
+│   ├── register-resources.ts # Resource registration (all 13 MCP resources)
 │   ├── tools/                # Tool implementations
 │   │   ├── execute-graphql.ts
 │   │   ├── introspect.ts
@@ -409,13 +392,53 @@ ep-gql-mcp/
 │   │   ├── drafts.ts
 │   │   └── reference.ts
 │   ├── resources/            # MCP Resource providers
+│   │   ├── schema.ts         # Schema documentation resources
+│   │   ├── reference.ts      # Reference data resources
+│   │   └── guides.ts         # Usage guide resources
 │   ├── generated/            # Pre-generated schema data
 │   ├── graphql/              # GraphQL client
 │   └── utils/                # Utilities
 ├── scripts/
 │   └── generate-schema.ts    # Schema generation script
+├── wrangler.toml             # Cloudflare Workers configuration
 └── package.json
 ```
+
+## Architecture
+
+### Cloudflare Workers Runtime
+
+This server runs on Cloudflare Workers, providing:
+- **Global edge deployment**: Low latency worldwide
+- **Automatic scaling**: Handles traffic spikes seamlessly
+- **Zero cold starts**: Sub-10ms startup times
+- **GitHub integration**: Automatic deployment on push
+
+### Key Technical Details
+
+- **Runtime**: Cloudflare Workers (V8 isolate, not Node.js)
+- **Transport**: Streamable HTTP (MCP over HTTP with SSE)
+- **Session Management**: In-memory Map (stateless, per-worker instance)
+- **Environment Variables**: Configured in `wrangler.toml`
+- **Build**: TypeScript compiled by Wrangler's built-in bundler
+- **Tool Registration**: Modular registration via `registerTools()` function
+- **Resource Registration**: Modular registration via `registerResources()` function
+
+### Code Organization
+
+The server uses a modular architecture:
+- **`src/index.ts`**: Entry point with fetch handler and routing
+- **`src/register-tools.ts`**: Centralized tool registration (15 tools)
+- **`src/register-resources.ts`**: Centralized resource registration (13 resources)
+- **`src/tools/*.ts`**: Individual tool implementations
+- **`src/resources/*.ts`**: Resource provider functions
+
+### Differences from Node.js
+
+- Uses Web Standard APIs (fetch, Request, Response, crypto.randomUUID)
+- No Node.js-specific modules (http, fs, path)
+- No stdio transport (HTTP only)
+- Environment variables accessed via `env` binding, not `process.env`
 
 ## License
 

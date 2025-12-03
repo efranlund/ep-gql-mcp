@@ -40,3 +40,7 @@ coverage/
 # Optional eslint cache
 .eslintcache
 
+# Cloudflare Workers
+.wrangler/
+worker-configuration.d.ts
+

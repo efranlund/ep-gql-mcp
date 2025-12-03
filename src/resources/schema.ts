@@ -6,43 +6,12 @@
  * schema://enums - Enumeration values
  */
 
-import { readFileSync } from "fs";
-import { join, dirname } from "path";
-import { fileURLToPath } from "url";
-
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = dirname(__filename);
-const GENERATED_DIR = join(__dirname, "./generated");
-
-function loadQueries(): unknown[] {
-  try {
-    const content = readFileSync(join(GENERATED_DIR, "queries.json"), "utf-8");
-    return JSON.parse(content);
-  } catch (error) {
-    return [];
-  }
-}
-
-function loadTypes(): unknown[] {
-  try {
-    const content = readFileSync(join(GENERATED_DIR, "types.json"), "utf-8");
-    return JSON.parse(content);
-  } catch (error) {
-    return [];
-  }
-}
-
-function loadEnums(): unknown[] {
-  try {
-    const content = readFileSync(join(GENERATED_DIR, "enums.json"), "utf-8");
-    return JSON.parse(content);
-  } catch (error) {
-    return [];
-  }
-}
+import queriesData from "../generated/queries.json";
+import typesData from "../generated/types.json";
+import enumsData from "../generated/enums.json";
 
 export function getSchemaQueriesResource(): string {
-  const queries = loadQueries();
+  const queries = queriesData as unknown[];
   return JSON.stringify(
     {
       totalQueries: queries.length,
@@ -55,7 +24,7 @@ export function getSchemaQueriesResource(): string {
 }
 
 export function getSchemaTypesResource(): string {
-  const types = loadTypes();
+  const types = typesData as unknown[];
   return JSON.stringify(
     {
       totalTypes: types.length,
@@ -68,7 +37,7 @@ export function getSchemaTypesResource(): string {
 }
 
 export function getSchemaEnumsResource(): string {
-  const enums = loadEnums();
+  const enums = enumsData as unknown[];
   return JSON.stringify(
     {
       totalEnums: enums.length,
@@ -79,4 +48,3 @@ export function getSchemaEnumsResource(): string {
     2
   );
 }
-
