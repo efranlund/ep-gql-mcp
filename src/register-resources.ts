@@ -6,8 +6,8 @@ import { getCommonQueriesGuide, getHockeyTerminologyGuide, getQueryPatternsGuide
 export function registerResources(server: McpServer) {
   server.registerResource(
     "schema://queries",
+    "schema://queries",
     {
-      name: "GraphQL Queries",
       description: "List of all 321 available GraphQL queries",
       mimeType: "application/json",
     },
@@ -18,8 +18,8 @@ export function registerResources(server: McpServer) {
 
   server.registerResource(
     "schema://types",
+    "schema://types",
     {
-      name: "GraphQL Types",
       description: "Key GraphQL types (Player, Team, League, etc.)",
       mimeType: "application/json",
     },
@@ -30,8 +30,8 @@ export function registerResources(server: McpServer) {
 
   server.registerResource(
     "schema://enums",
+    "schema://enums",
     {
-      name: "GraphQL Enums",
       description: "All enumeration values (positions, statuses, etc.)",
       mimeType: "application/json",
     },
@@ -42,8 +42,8 @@ export function registerResources(server: McpServer) {
 
   server.registerResource(
     "reference://leagues",
+    "reference://leagues",
     {
-      name: "Leagues Reference",
       description: "Complete list of leagues with slugs",
       mimeType: "application/json",
     },
@@ -54,8 +54,8 @@ export function registerResources(server: McpServer) {
 
   server.registerResource(
     "reference://countries",
+    "reference://countries",
     {
-      name: "Countries Reference",
       description: "Country codes and names",
       mimeType: "application/json",
     },
@@ -66,8 +66,8 @@ export function registerResources(server: McpServer) {
 
   server.registerResource(
     "reference://positions",
+    "reference://positions",
     {
-      name: "Player Positions",
       description: "Valid player positions (C, LW, RW, D, G, etc.)",
       mimeType: "application/json",
     },
@@ -78,8 +78,8 @@ export function registerResources(server: McpServer) {
 
   server.registerResource(
     "reference://seasons",
+    "reference://seasons",
     {
-      name: "Season Format Guide",
       description: "Season format guide (YYYY-YYYY)",
       mimeType: "application/json",
     },
@@ -90,8 +90,8 @@ export function registerResources(server: McpServer) {
 
   server.registerResource(
     "guide://common-queries",
+    "guide://common-queries",
     {
-      name: "Common Query Examples",
       description: "Examples of common GraphQL queries organized by use case",
       mimeType: "application/json",
     },
@@ -102,8 +102,8 @@ export function registerResources(server: McpServer) {
 
   server.registerResource(
     "guide://hockey-terminology",
+    "guide://hockey-terminology",
     {
-      name: "Hockey Terminology",
       description: "Hockey stats abbreviations and terminology",
       mimeType: "application/json",
     },
@@ -114,8 +114,8 @@ export function registerResources(server: McpServer) {
 
   server.registerResource(
     "guide://query-patterns",
+    "guide://query-patterns",
     {
-      name: "Query Pattern Templates",
       description: "Reusable query templates with placeholders and filter options",
       mimeType: "application/json",
     },
@@ -126,8 +126,8 @@ export function registerResources(server: McpServer) {
 
   server.registerResource(
     "guide://anti-patterns",
+    "guide://anti-patterns",
     {
-      name: "Common Query Mistakes",
       description: "Queries that DON'T exist and their correct alternatives",
       mimeType: "application/json",
     },
@@ -138,8 +138,8 @@ export function registerResources(server: McpServer) {
 
   server.registerResource(
     "guide://advanced-queries",
+    "guide://advanced-queries",
     {
-      name: "Advanced Query Examples",
       description: "Complex queries for head-to-head, rookies, and advanced stats",
       mimeType: "application/json",
     },
@@ -150,8 +150,8 @@ export function registerResources(server: McpServer) {
 
   server.registerResource(
     "guide://field-reference",
+    "guide://field-reference",
     {
-      name: "Field Reference Guide",
       description: "Documentation of field types and requirements",
       mimeType: "application/json",
     },
