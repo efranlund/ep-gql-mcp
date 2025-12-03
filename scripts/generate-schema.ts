@@ -104,7 +104,10 @@ const LEAGUES_QUERY = `
         id
         slug
         name
-        country
+        country {
+          name
+          slug
+        }
         teamClass
         leagueLevel
       }

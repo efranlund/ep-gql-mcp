@@ -6,6 +6,8 @@ A Model Context Protocol (MCP) server that interfaces with the EliteProspects.co
 
 - **321 GraphQL Queries**: Access to all EliteProspects data via flexible `execute_graphql` tool
 - **Convenience Tools**: Pre-built tools for common queries (players, teams, leagues, games, drafts)
+- **Player-Based Game Filtering**: Query games by player ID(s) with automatic team resolution
+- **Multi-Entity Filtering**: Support for multiple players and teams in game queries
 - **Entity Search**: Universal search across players, teams, leagues, and staff
 - **Schema Introspection**: Explore available queries and types (uses pre-generated schema)
 - **MCP Resources**: Access to schema documentation, reference data, and usage guides
@@ -157,7 +159,7 @@ node dist/index.js --http
 
 ### Game Tools
 
-- **`get_games`** - Get game schedules and results (filter by date, team, league)
+- **`get_games`** - Get game schedules and results with shots data (filter by player, team, date, league, season)
 
 ### Draft Tools
 
@@ -190,6 +192,31 @@ node dist/index.js --http
 - **`guide://common-queries`** - Examples of common GraphQL queries
 - **`guide://hockey-terminology`** - Hockey stats abbreviations
 
+## Enhanced Game Filtering
+
+The `get_games` tool now supports advanced filtering options:
+
+### Filter by Player(s)
+- **Single player**: `playerId: "296251"` - Returns games where Connor McDavid participated
+- **Multiple players**: `playerIds: ["296251", "123456"]` - Returns games where any of these players participated
+
+### Filter by Team(s)
+- **Single team**: `teamId: "52"` - Returns games for Toronto Maple Leafs
+- **Multiple teams**: `teamIds: ["52", "53"]` - Returns games involving any of these teams
+
+### Combined Filters
+All filters use AND logic (except multiple players/teams which use OR within their group):
+- `playerId + season + league` - Player's games in a specific season and league
+- `teamIds + dateFrom + dateTo` - Multiple teams' games within a date range
+- `playerIds + league` - Multiple players' games in a specific league
+
+### Automatic Features
+- **Team Resolution**: When filtering by player, the system automatically queries player stats to determine which teams they played for
+- **Shots Data**: Automatically calculates shots on goal for both teams from player-level GameLogs data when available
+- **Default Sorting**: Games are sorted by most recent first (descending date order)
+- **Deduplication**: When querying multiple players/teams, duplicate games are automatically removed
+- **Result Limiting**: Default limit of 50 games, applied after sorting and deduplication
+
 ## Example Queries
 
 ### Using Convenience Tools
@@ -200,6 +227,13 @@ node dist/index.js --http
 
 "What are Connor McDavid's career stats?"
 → Use search_entities to find player ID, then get_player_stats
+
+"Show me Connor McDavid's recent games with shots data"
+→ Use search_entities to find player ID, then get_games with playerId
+   (includes homeTeamShots and visitingTeamShots when available)
+
+"Show me games between Toronto and Montreal this season"
+→ Use search_entities to find team IDs, then get_games with teamIds array
 
 "Show me the SHL standings"
 → Use get_league_standings with leagueSlug: "shl"

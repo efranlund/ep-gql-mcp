@@ -16,9 +16,12 @@ export function getCommonQueriesGuide(): string {
   player(id: 296251) {
     name
     position
-    nationality
-    currentTeam {
+    nationality {
       name
+    }
+    latestStats {
+      teamName
+      leagueName
     }
   }
 }`,

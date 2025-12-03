@@ -17,10 +17,9 @@ const SEARCH_QUERIES = {
           name
           slug
           position
-          nationality
-          currentTeam {
-            name
-            slug
+          latestStats {
+            teamName
+            leagueName
           }
         }
       }
@@ -33,7 +32,10 @@ const SEARCH_QUERIES = {
           id
           name
           slug
-          country
+          country {
+            name
+            slug
+          }
           league {
             name
             slug
@@ -49,7 +51,10 @@ const SEARCH_QUERIES = {
           id
           name
           slug
-          country
+          country {
+            name
+            slug
+          }
         }
       }
     }
@@ -61,10 +66,9 @@ const SEARCH_QUERIES = {
           id
           name
           slug
-          role
-          currentTeam {
-            name
-            slug
+          latestStats {
+            role
+            teamName
           }
         }
       }
@@ -117,6 +121,8 @@ export async function handleSearchEntities(args: {
   }
 
   const results: Record<string, unknown[]> = {};
+  const errors: Record<string, string> = {};
+  const isAllTypes = entityType === "all";
 
   if (entityType === "all" || entityType === "player") {
     try {
@@ -125,7 +131,14 @@ export async function handleSearchEntities(args: {
       }>(SEARCH_QUERIES.player, { q: searchTerm, limit });
       results.players = playerResult.players?.edges || [];
     } catch (error) {
-      // Continue with other searches
+      const errorMessage = error instanceof Error ? error.message : String(error);
+      if (isAllTypes) {
+        // Log error but continue for "all" searches to allow partial results
+        errors.players = errorMessage;
+      } else {
+        // Propagate error for single entity type searches
+        throw new Error(`Failed to search players: ${errorMessage}`);
+      }
     }
   }
 
@@ -136,7 +149,12 @@ export async function handleSearchEntities(args: {
       }>(SEARCH_QUERIES.team, { q: searchTerm, limit });
       results.teams = teamResult.teams?.edges || [];
     } catch (error) {
-      // Continue with other searches
+      const errorMessage = error instanceof Error ? error.message : String(error);
+      if (isAllTypes) {
+        errors.teams = errorMessage;
+      } else {
+        throw new Error(`Failed to search teams: ${errorMessage}`);
+      }
     }
   }
 
@@ -147,7 +165,12 @@ export async function handleSearchEntities(args: {
       }>(SEARCH_QUERIES.league, { q: searchTerm, limit });
       results.leagues = leagueResult.leagues?.edges || [];
     } catch (error) {
-      // Continue with other searches
+      const errorMessage = error instanceof Error ? error.message : String(error);
+      if (isAllTypes) {
+        errors.leagues = errorMessage;
+      } else {
+        throw new Error(`Failed to search leagues: ${errorMessage}`);
+      }
     }
   }
 
@@ -158,18 +181,32 @@ export async function handleSearchEntities(args: {
       }>(SEARCH_QUERIES.staff, { q: searchTerm, limit });
       results.staff = staffResult.staff?.edges || [];
     } catch (error) {
-      // Continue with other searches
+      const errorMessage = error instanceof Error ? error.message : String(error);
+      if (isAllTypes) {
+        errors.staff = errorMessage;
+      } else {
+        throw new Error(`Failed to search staff: ${errorMessage}`);
+      }
     }
   }
 
-  return JSON.stringify(
-    {
-      searchTerm,
-      entityType,
-      results,
-      totalResults: Object.values(results).reduce((sum, arr) => sum + arr.length, 0),
-    },
-    null,
-    2
-  );
+  const response: {
+    searchTerm: string;
+    entityType: string;
+    results: Record<string, unknown[]>;
+    totalResults: number;
+    errors?: Record<string, string>;
+  } = {
+    searchTerm,
+    entityType,
+    results,
+    totalResults: Object.values(results).reduce((sum, arr) => sum + arr.length, 0),
+  };
+
+  // Include errors in response for debugging when searching all types
+  if (isAllTypes && Object.keys(errors).length > 0) {
+    response.errors = errors;
+  }
+
+  return JSON.stringify(response, null, 2);
 }

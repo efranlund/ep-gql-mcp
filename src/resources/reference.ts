@@ -13,7 +13,7 @@ import { fileURLToPath } from "url";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
-const GENERATED_DIR = join(__dirname, "../generated");
+const GENERATED_DIR = join(__dirname, "./generated");
 
 function loadReferenceData(): {
   leagues: unknown[];

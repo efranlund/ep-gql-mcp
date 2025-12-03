@@ -29,33 +29,48 @@ export interface GraphQLError extends Error {
 }
 
 /**
- * Execute a GraphQL query
+ * Execute a GraphQL query with retry logic for network errors
  */
 export async function executeQuery<T = unknown>(
   query: string,
-  variables?: Record<string, unknown>
+  variables?: Record<string, unknown>,
+  retries = 1
 ): Promise<T> {
-  try {
-    const data = await graphqlClient.request<T>(query, variables);
-    return data;
-  } catch (error) {
-    // Handle GraphQL errors
-    if (error instanceof Error) {
-      const graphqlError = error as GraphQLError;
-      if (graphqlError.response?.errors) {
-        throw new Error(
-          `GraphQL Error: ${graphqlError.response.errors.map((e) => e.message).join(", ")}`
-        );
+  let lastError: Error | undefined;
+  
+  for (let attempt = 0; attempt <= retries; attempt++) {
+    try {
+      const data = await graphqlClient.request<T>(query, variables);
+      return data;
+    } catch (error) {
+      // Handle GraphQL errors
+      if (error instanceof Error) {
+        const graphqlError = error as GraphQLError;
+        if (graphqlError.response?.errors) {
+          // GraphQL errors are not retried
+          throw new Error(
+            `GraphQL Error: ${graphqlError.response.errors.map((e) => e.message).join(", ")}`
+          );
+        }
+        // Handle network errors - retry once
+        if (error.message.includes("fetch") || error.message.includes("network")) {
+          lastError = new Error(
+            `Network error: Unable to connect to EliteProspects GraphQL API at ${EP_GQL_URL}`
+          );
+          if (attempt < retries) {
+            // Wait a bit before retrying
+            await new Promise(resolve => setTimeout(resolve, 500));
+            continue;
+          }
+        } else {
+          throw error;
+        }
       }
-      // Handle network errors
-      if (error.message.includes("fetch") || error.message.includes("network")) {
-        throw new Error(
-          `Network error: Unable to connect to EliteProspects GraphQL API at ${EP_GQL_URL}`
-        );
-      }
+      lastError = error as Error;
     }
-    throw error;
   }
+  
+  throw lastError || new Error("Query failed after retries");
 }
 
 /**

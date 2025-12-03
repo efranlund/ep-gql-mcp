@@ -15,7 +15,7 @@ import { executeQuery } from "../graphql/client.js";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
-const GENERATED_DIR = join(__dirname, "../generated");
+const GENERATED_DIR = join(__dirname, "./generated");
 
 function loadReferenceData(): {
   leagues: unknown[];
@@ -47,7 +47,7 @@ const GET_LEAGUE_SEASONS_QUERY = `
       seasons {
         edges {
           id
-          season
+          slug
         }
       }
     }
@@ -138,7 +138,7 @@ export async function handleListSeasons(args: { leagueSlug: string }): Promise<s
         id: string;
         name: string;
         slug: string;
-        seasons: { edges: Array<{ id: string; season: string }> };
+        seasons: { edges: Array<{ id: string; slug: string }> };
       };
     }>(GET_LEAGUE_SEASONS_QUERY, { slug: leagueSlug });
 
@@ -149,7 +149,7 @@ export async function handleListSeasons(args: { leagueSlug: string }): Promise<s
           name: result.league.name,
           slug: result.league.slug,
         },
-        seasons: result.league.seasons?.edges?.map((e) => e.season) || [],
+        seasons: result.league.seasons?.edges?.map((e) => e.slug) || [],
         totalSeasons: result.league.seasons?.edges?.length || 0,
       },
       null,

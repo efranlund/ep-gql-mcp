@@ -25,7 +25,10 @@ const GET_DRAFT_PICKS_QUERY = `
           name
           slug
           position
-          nationality
+          nationality {
+            name
+            slug
+          }
         }
       }
     }

@@ -130,7 +130,7 @@ function createMcpServer() {
           content: [
             {
               type: "text",
-              text: await handleGetLeagueStandings(args as { leagueSlug: string; season?: string }),
+              text: await handleGetLeagueStandings(args as { leagueSlug: string; season?: string; limit?: number }),
             },
           ],
         };
@@ -150,7 +150,17 @@ function createMcpServer() {
           content: [
             {
               type: "text",
-              text: await handleGetGames(args as { league?: string; season?: string; teamId?: string; dateFrom?: string; dateTo?: string; limit?: number }),
+              text: await handleGetGames(args as { 
+                playerId?: string; 
+                playerIds?: string[]; 
+                teamId?: string; 
+                teamIds?: string[]; 
+                league?: string; 
+                season?: string; 
+                dateFrom?: string; 
+                dateTo?: string; 
+                limit?: number 
+              }),
             },
           ],
         };

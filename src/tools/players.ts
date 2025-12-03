@@ -16,16 +16,29 @@ const GET_PLAYER_QUERY = `
       name
       slug
       position
-      nationality
-      dateOfBirth
-      placeOfBirth
-      height
-      weight
-      shoots
-      currentTeam {
-        id
+      nationality {
         name
         slug
+      }
+      dateOfBirth
+      placeOfBirth
+      height {
+        imperial
+        metrics
+      }
+      weight {
+        imperial
+        metrics
+      }
+      shoots
+      latestStats {
+        teamName
+        leagueName
+        team {
+          id
+          name
+          slug
+        }
         league {
           name
           slug
@@ -42,7 +55,9 @@ const GET_PLAYER_STATS_QUERY = `
     playerStats(player: $id, season: $season, league: $league, limit: $limit) {
       edges {
         id
-        season
+        season {
+          slug
+        }
         league {
           name
           slug
@@ -52,23 +67,22 @@ const GET_PLAYER_STATS_QUERY = `
           slug
         }
         regularStats {
-          gp
-          g
-          a
-          pts
-          pim
-          plusMinus
-          ppg
-          shg
-          gwg
-          shots
-          shotPct
+          GP
+          G
+          A
+          PTS
+          PIM
+          PM
+          PPG
+          TOI
         }
         postseasonStats {
-          gp
-          g
-          a
-          pts
+          GP
+          G
+          A
+          PTS
+          PIM
+          PM
         }
       }
     }
@@ -112,17 +126,41 @@ export async function handleGetPlayer(args: {
 
   // If name provided, search for player
   if (!id && playerName) {
-    const searchResult = await handleSearchEntities({
-      searchTerm: playerName,
-      entityType: "player",
-      limit: 1,
-    });
-    const parsed = JSON.parse(searchResult);
-    const players = parsed.results?.players || [];
-    if (players.length === 0) {
-      throw new Error(`No player found matching "${playerName}"`);
+    try {
+      const searchResult = await handleSearchEntities({
+        searchTerm: playerName,
+        entityType: "player",
+        limit: 1,
+      });
+      const parsed = JSON.parse(searchResult);
+      const players = parsed.results?.players || [];
+      
+      // Check for errors in search response
+      if (parsed.errors && parsed.errors.players) {
+        throw new Error(
+          `Search failed for player "${playerName}": ${parsed.errors.players}. ` +
+          `This may indicate a GraphQL API error or connectivity issue.`
+        );
+      }
+      
+      if (players.length === 0) {
+        throw new Error(
+          `No player found matching "${playerName}". ` +
+          `The search completed but returned no results. ` +
+          `Try a different spelling or use a player ID directly.`
+        );
+      }
+      id = (players[0] as { id: string }).id;
+    } catch (error) {
+      // Re-throw with context if it's already an Error with a message
+      if (error instanceof Error) {
+        throw error;
+      }
+      throw new Error(
+        `Failed to search for player "${playerName}": ${String(error)}. ` +
+        `This may indicate a GraphQL API error or connectivity issue.`
+      );
     }
-    id = (players[0] as { id: string }).id;
   }
 
   if (!id) {
@@ -196,17 +234,41 @@ export async function handleGetPlayerStats(args: {
 
   // If name provided, search for player
   if (!id && playerName) {
-    const searchResult = await handleSearchEntities({
-      searchTerm: playerName,
-      entityType: "player",
-      limit: 1,
-    });
-    const parsed = JSON.parse(searchResult);
-    const players = parsed.results?.players || [];
-    if (players.length === 0) {
-      throw new Error(`No player found matching "${playerName}"`);
+    try {
+      const searchResult = await handleSearchEntities({
+        searchTerm: playerName,
+        entityType: "player",
+        limit: 1,
+      });
+      const parsed = JSON.parse(searchResult);
+      const players = parsed.results?.players || [];
+      
+      // Check for errors in search response
+      if (parsed.errors && parsed.errors.players) {
+        throw new Error(
+          `Search failed for player "${playerName}": ${parsed.errors.players}. ` +
+          `This may indicate a GraphQL API error or connectivity issue.`
+        );
+      }
+      
+      if (players.length === 0) {
+        throw new Error(
+          `No player found matching "${playerName}". ` +
+          `The search completed but returned no results. ` +
+          `Try a different spelling or use a player ID directly.`
+        );
+      }
+      id = (players[0] as { id: string }).id;
+    } catch (error) {
+      // Re-throw with context if it's already an Error with a message
+      if (error instanceof Error) {
+        throw error;
+      }
+      throw new Error(
+        `Failed to search for player "${playerName}": ${String(error)}. ` +
+        `This may indicate a GraphQL API error or connectivity issue.`
+      );
     }
-    id = (players[0] as { id: string }).id;
   }
 
   if (!id) {

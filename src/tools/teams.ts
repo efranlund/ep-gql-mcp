@@ -14,7 +14,10 @@ const GET_TEAM_QUERY = `
       id
       name
       slug
-      country
+      country {
+        name
+        slug
+      }
       league {
         id
         name
@@ -39,7 +42,10 @@ const GET_TEAM_ROSTER_QUERY = `
           name
           slug
           position
-          nationality
+          nationality {
+            name
+            slug
+          }
         }
         jerseyNumber
         position

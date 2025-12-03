@@ -9,28 +9,26 @@ import { Tool } from "@modelcontextprotocol/sdk/types.js";
 import { executeQuery } from "../graphql/client.js";
 
 const GET_LEAGUE_STANDINGS_QUERY = `
-  query GetLeagueStandings($slug: String!, $season: String) {
-    league(slug: $slug) {
-      id
-      name
-      slug
-      standings(season: $season) {
-        edges {
-          id
-          team {
-            id
-            name
-            slug
-          }
-          gp
-          w
-          l
-          otl
-          points
-          gf
-          ga
-          rank
-        }
+  query GetLeagueStandings($slug: String!, $season: String, $limit: Int, $offset: Int, $sort: String) {
+    leagueStandings(slug: $slug, season: $season, limit: $limit, offset: $offset, sort: $sort) {
+      position
+      team {
+        id
+        name
+        slug
+      }
+      stats {
+        GP
+        W
+        L
+        T
+        OTW
+        OTL
+        PTS
+        GF
+        GA
+        GD
+        PPG
       }
     }
   }
@@ -38,7 +36,7 @@ const GET_LEAGUE_STANDINGS_QUERY = `
 
 const GET_LEAGUE_SKATER_LEADERS_QUERY = `
   query GetLeagueSkaterLeaders($slug: String!, $season: String, $limit: Int) {
-    leagueSkaterStats(slug: $slug, season: $season, limit: $limit, sort: "-regularStats.pts") {
+    leagueSkaterStats(slug: $slug, season: $season, limit: $limit, sort: "-regularStats.PTS") {
       edges {
         id
         player {
@@ -52,12 +50,12 @@ const GET_LEAGUE_SKATER_LEADERS_QUERY = `
           slug
         }
         regularStats {
-          gp
-          g
-          a
-          pts
-          plusMinus
-          pim
+          GP
+          G
+          A
+          PTS
+          PM
+          PIM
         }
       }
     }
@@ -66,7 +64,7 @@ const GET_LEAGUE_SKATER_LEADERS_QUERY = `
 
 const GET_LEAGUE_GOALIE_LEADERS_QUERY = `
   query GetLeagueGoalieLeaders($slug: String!, $season: String, $limit: Int) {
-    leagueGoalieStats(slug: $slug, season: $season, limit: $limit, sort: "-regularStats.w") {
+    leagueGoalieStats(slug: $slug, season: $season, limit: $limit, sort: "-regularStats.W") {
       edges {
         id
         player {
@@ -79,12 +77,12 @@ const GET_LEAGUE_GOALIE_LEADERS_QUERY = `
           slug
         }
         regularStats {
-          gp
-          w
-          l
-          gaa
-          svp
-          so
+          GP
+          W
+          L
+          GAA
+          SVP
+          SO
         }
       }
     }
@@ -93,15 +91,16 @@ const GET_LEAGUE_GOALIE_LEADERS_QUERY = `
 
 export const getLeagueStandingsTool: Tool = {
   name: "get_league_standings",
-  description: `Get current standings for any league and season.
-  
-League slugs examples:
-- NHL: "nhl"
-- AHL: "ahl"
-- SHL: "shl"
-- KHL: "khl"
+  description: `Get league standings with team records and statistics.
 
-If season is not provided, returns current season standings.`,
+Returns team standings including:
+- Record: GP (games played), W (wins), L (losses), T (ties), OTW (overtime wins), OTL (overtime losses), PTS (points)
+- Scoring: GF (goals for), GA (goals against), GD (goal differential)
+- Efficiency: PPG (points per game)
+
+Note: Shot statistics (shots for/against) are NOT available in the API.
+
+League slugs examples: "nhl", "ahl", "shl", "khl"`,
   inputSchema: {
     type: "object",
     properties: {
@@ -113,6 +112,11 @@ If season is not provided, returns current season standings.`,
         type: "string",
         description: "Season (e.g., '2023-2024'). If not provided, uses current season.",
       },
+      limit: {
+        type: "number",
+        description: "Maximum number of teams to return (default: 50)",
+        default: 50,
+      },
     },
     required: ["leagueSlug"],
   },
@@ -121,8 +125,9 @@ If season is not provided, returns current season standings.`,
 export async function handleGetLeagueStandings(args: {
   leagueSlug: string;
   season?: string;
+  limit?: number;
 }): Promise<string> {
-  const { leagueSlug, season } = args;
+  const { leagueSlug, season, limit = 50 } = args;
 
   if (!leagueSlug) {
     throw new Error("leagueSlug is required");
@@ -130,24 +135,18 @@ export async function handleGetLeagueStandings(args: {
 
   try {
     const result = await executeQuery<{
-      league: {
-        id: string;
-        name: string;
-        slug: string;
-        standings: { edges: unknown[] };
-      };
-    }>(GET_LEAGUE_STANDINGS_QUERY, { slug: leagueSlug, season });
+      leagueStandings: unknown[];
+    }>(GET_LEAGUE_STANDINGS_QUERY, { 
+      slug: leagueSlug, 
+      season, 
+      limit 
+    });
 
     return JSON.stringify(
       {
-        league: {
-          id: result.league.id,
-          name: result.league.name,
-          slug: result.league.slug,
-        },
+        league: leagueSlug,
         season: season || "current",
-        standings: result.league.standings?.edges || [],
-        totalTeams: result.league.standings?.edges?.length || 0,
+        standings: result.leagueStandings || [],
       },
       null,
       2

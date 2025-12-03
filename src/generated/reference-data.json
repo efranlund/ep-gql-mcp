@@ -1,5 +1,5356 @@
 {
-  "leagues": [],
+  "leagues": [
+    {
+      "id": "1144",
+      "slug": "13u-a",
+      "name": "13U A",
+      "country": {
+        "name": "USA",
+        "slug": "USA"
+      },
+      "teamClass": "men",
+      "leagueLevel": "bantam-minor"
+    },
+    {
+      "id": "1143",
+      "slug": "13u-aa",
+      "name": "13U AA",
+      "country": {
+        "name": "USA",
+        "slug": "USA"
+      },
+      "teamClass": "men",
+      "leagueLevel": "bantam-minor"
+    },
+    {
+      "id": "1142",
+      "slug": "13u-aaa",
+      "name": "13U AAA",
+      "country": {
+        "name": "USA",
+        "slug": "USA"
+      },
+      "teamClass": "men",
+      "leagueLevel": "bantam-minor"
+    },
+    {
+      "id": "1140",
+      "slug": "14u-a",
+      "name": "14U A",
+      "country": {
+        "name": "USA",
+        "slug": "USA"
+      },
+      "teamClass": "men",
+      "leagueLevel": "bantam"
+    },
+    {
+      "id": "1598",
+      "slug": "14u-a-w",
+      "name": "14U A (W)",
+      "country": null,
+      "teamClass": "women",
+      "leagueLevel": "bantam"
+    },
+    {
+      "id": "1139",
+      "slug": "14u-aa",
+      "name": "14U AA",
+      "country": {
+        "name": "USA",
+        "slug": "USA"
+      },
+      "teamClass": "men",
+      "leagueLevel": "bantam"
+    },
+    {
+      "id": "1150",
+      "slug": "14u-aa-w",
+      "name": "14U AA (W)",
+      "country": {
+        "name": "USA",
+        "slug": "USA"
+      },
+      "teamClass": "women",
+      "leagueLevel": "bantam"
+    },
+    {
+      "id": "1138",
+      "slug": "14u-aaa",
+      "name": "14U AAA",
+      "country": {
+        "name": "USA",
+        "slug": "USA"
+      },
+      "teamClass": "men",
+      "leagueLevel": "bantam"
+    },
+    {
+      "id": "1149",
+      "slug": "14u-aaa-w",
+      "name": "14U AAA (W)",
+      "country": {
+        "name": "USA",
+        "slug": "USA"
+      },
+      "teamClass": "women",
+      "leagueLevel": "bantam"
+    },
+    {
+      "id": "1141",
+      "slug": "14u-b",
+      "name": "14U B",
+      "country": {
+        "name": "USA",
+        "slug": "USA"
+      },
+      "teamClass": "men",
+      "leagueLevel": "bantam"
+    },
+    {
+      "id": "1137",
+      "slug": "15u-a",
+      "name": "15U A",
+      "country": {
+        "name": "USA",
+        "slug": "USA"
+      },
+      "teamClass": "men",
+      "leagueLevel": "midget"
+    },
+    {
+      "id": "1151",
+      "slug": "15u-a-w",
+      "name": "15U A (W)",
+      "country": {
+        "name": "USA",
+        "slug": "USA"
+      },
+      "teamClass": "women",
+      "leagueLevel": "bantam"
+    },
+    {
+      "id": "1136",
+      "slug": "15u-aa",
+      "name": "15U AA",
+      "country": {
+        "name": "USA",
+        "slug": "USA"
+      },
+      "teamClass": "men",
+      "leagueLevel": "midget"
+    },
+    {
+      "id": "1135",
+      "slug": "15u-aaa",
+      "name": "15U AAA",
+      "country": {
+        "name": "USA",
+        "slug": "USA"
+      },
+      "teamClass": "men",
+      "leagueLevel": "midget"
+    },
+    {
+      "id": "1399",
+      "slug": "15u-b",
+      "name": "15U B",
+      "country": {
+        "name": "USA",
+        "slug": "USA"
+      },
+      "teamClass": "men",
+      "leagueLevel": "bantam"
+    },
+    {
+      "id": "1152",
+      "slug": "15u-b-w",
+      "name": "15U B (W)",
+      "country": {
+        "name": "USA",
+        "slug": "USA"
+      },
+      "teamClass": "women",
+      "leagueLevel": "bantam"
+    },
+    {
+      "id": "1437",
+      "slug": "15u-b1",
+      "name": "15U B1",
+      "country": {
+        "name": "USA",
+        "slug": "USA"
+      },
+      "teamClass": "men",
+      "leagueLevel": "bantam"
+    },
+    {
+      "id": "1441",
+      "slug": "15u-c",
+      "name": "15U C",
+      "country": {
+        "name": "USA",
+        "slug": "USA"
+      },
+      "teamClass": "men",
+      "leagueLevel": "bantam"
+    },
+    {
+      "id": "1134",
+      "slug": "16u-a",
+      "name": "16U A",
+      "country": {
+        "name": "USA",
+        "slug": "USA"
+      },
+      "teamClass": "men",
+      "leagueLevel": "midget"
+    },
+    {
+      "id": "1133",
+      "slug": "16u-aa",
+      "name": "16U AA",
+      "country": {
+        "name": "USA",
+        "slug": "USA"
+      },
+      "teamClass": "men",
+      "leagueLevel": "midget"
+    },
+    {
+      "id": "1148",
+      "slug": "16u-aa-w",
+      "name": "16U AA (W)",
+      "country": {
+        "name": "USA",
+        "slug": "USA"
+      },
+      "teamClass": "women",
+      "leagueLevel": "midget"
+    },
+    {
+      "id": "1132",
+      "slug": "16u-aaa",
+      "name": "16U AAA",
+      "country": {
+        "name": "USA",
+        "slug": "USA"
+      },
+      "teamClass": "men",
+      "leagueLevel": "midget"
+    },
+    {
+      "id": "1147",
+      "slug": "16u-aaa-w",
+      "name": "16U AAA (W)",
+      "country": {
+        "name": "USA",
+        "slug": "USA"
+      },
+      "teamClass": "women",
+      "leagueLevel": "midget"
+    },
+    {
+      "id": "1131",
+      "slug": "18u-a",
+      "name": "18U A",
+      "country": {
+        "name": "USA",
+        "slug": "USA"
+      },
+      "teamClass": "men",
+      "leagueLevel": "midget"
+    },
+    {
+      "id": "1130",
+      "slug": "18u-aa",
+      "name": "18U AA",
+      "country": {
+        "name": "USA",
+        "slug": "USA"
+      },
+      "teamClass": "men",
+      "leagueLevel": "midget"
+    },
+    {
+      "id": "1129",
+      "slug": "18u-aaa",
+      "name": "18U AAA",
+      "country": {
+        "name": "USA",
+        "slug": "USA"
+      },
+      "teamClass": "men",
+      "leagueLevel": "midget"
+    },
+    {
+      "id": "1599",
+      "slug": "19u-a-w",
+      "name": "19U A (W)",
+      "country": null,
+      "teamClass": "women",
+      "leagueLevel": "midget"
+    },
+    {
+      "id": "1146",
+      "slug": "19u-aa-w",
+      "name": "19U AA (W)",
+      "country": {
+        "name": "USA",
+        "slug": "USA"
+      },
+      "teamClass": "women",
+      "leagueLevel": "midget"
+    },
+    {
+      "id": "1145",
+      "slug": "19u-aaa-w",
+      "name": "19U AAA (W)",
+      "country": {
+        "name": "USA",
+        "slug": "USA"
+      },
+      "teamClass": "women",
+      "leagueLevel": "midget"
+    },
+    {
+      "id": "1488",
+      "slug": "aaha",
+      "name": "AAHA",
+      "country": {
+        "name": "USA",
+        "slug": "USA"
+      },
+      "teamClass": "men",
+      "leagueLevel": "semi-professional"
+    },
+    {
+      "id": "262",
+      "slug": "aahl",
+      "name": "AAHL",
+      "country": {
+        "name": "USA",
+        "slug": "USA"
+      },
+      "teamClass": "men",
+      "leagueLevel": null
+    },
+    {
+      "id": "1202",
+      "slug": "aau",
+      "name": "AAU",
+      "country": null,
+      "teamClass": "men",
+      "leagueLevel": "college"
+    },
+    {
+      "id": "1457",
+      "slug": "aau-w",
+      "name": "AAU (W)",
+      "country": null,
+      "teamClass": "women",
+      "leagueLevel": "college"
+    },
+    {
+      "id": "1458",
+      "slug": "aau-fed",
+      "name": "AAU Fed",
+      "country": null,
+      "teamClass": "men",
+      "leagueLevel": "college"
+    },
+    {
+      "id": "1455",
+      "slug": "aau-ii",
+      "name": "AAU II",
+      "country": null,
+      "teamClass": "men",
+      "leagueLevel": "college"
+    },
+    {
+      "id": "1456",
+      "slug": "aau-iii",
+      "name": "AAU III",
+      "country": null,
+      "teamClass": "men",
+      "leagueLevel": "college"
+    },
+    {
+      "id": "1552",
+      "slug": "abshl",
+      "name": "ABSHL",
+      "country": {
+        "name": "Canada",
+        "slug": "CAN"
+      },
+      "teamClass": "men",
+      "leagueLevel": "amateur"
+    },
+    {
+      "id": "128",
+      "slug": "acac",
+      "name": "ACAC",
+      "country": {
+        "name": "Canada",
+        "slug": "CAN"
+      },
+      "teamClass": "men",
+      "leagueLevel": "college"
+    },
+    {
+      "id": "729",
+      "slug": "acac-w",
+      "name": "ACAC (W)",
+      "country": {
+        "name": "Canada",
+        "slug": "CAN"
+      },
+      "teamClass": "women",
+      "leagueLevel": "college"
+    },
+    {
+      "id": "398",
+      "slug": "ach",
+      "name": "ACH",
+      "country": {
+        "name": "Canada",
+        "slug": "CAN"
+      },
+      "teamClass": "men",
+      "leagueLevel": "semi-professional"
+    },
+    {
+      "id": "304",
+      "slug": "acha",
+      "name": "ACHA",
+      "country": {
+        "name": "USA",
+        "slug": "USA"
+      },
+      "teamClass": "men",
+      "leagueLevel": "college"
+    },
+    {
+      "id": "732",
+      "slug": "acha-w",
+      "name": "ACHA (W)",
+      "country": {
+        "name": "USA",
+        "slug": "USA"
+      },
+      "teamClass": "women",
+      "leagueLevel": "college"
+    },
+    {
+      "id": "733",
+      "slug": "acha-d2-w",
+      "name": "ACHA D2 (W)",
+      "country": {
+        "name": "USA",
+        "slug": "USA"
+      },
+      "teamClass": "women",
+      "leagueLevel": "college"
+    },
+    {
+      "id": "326",
+      "slug": "acha-ii",
+      "name": "ACHA II",
+      "country": {
+        "name": "USA",
+        "slug": "USA"
+      },
+      "teamClass": "men",
+      "leagueLevel": "college"
+    },
+    {
+      "id": "327",
+      "slug": "acha-iii",
+      "name": "ACHA III",
+      "country": {
+        "name": "USA",
+        "slug": "USA"
+      },
+      "teamClass": "men",
+      "leagueLevel": "college"
+    },
+    {
+      "id": "77",
+      "slug": "achl",
+      "name": "ACHL",
+      "country": null,
+      "teamClass": "men",
+      "leagueLevel": null
+    },
+    {
+      "id": "402",
+      "slug": "aehl",
+      "name": "AEHL",
+      "country": null,
+      "teamClass": "men",
+      "leagueLevel": null
+    },
+    {
+      "id": "328",
+      "slug": "aehl-u15",
+      "name": "AEHL U15",
+      "country": {
+        "name": "Canada",
+        "slug": "CAN"
+      },
+      "teamClass": "men",
+      "leagueLevel": "bantam"
+    },
+    {
+      "id": "1429",
+      "slug": "aehl-u15-aa",
+      "name": "AEHL U15 AA",
+      "country": {
+        "name": "Canada",
+        "slug": "CAN"
+      },
+      "teamClass": "men",
+      "leagueLevel": "bantam"
+    },
+    {
+      "id": "1430",
+      "slug": "aehl-u16-aa",
+      "name": "AEHL U16 AA",
+      "country": {
+        "name": "Canada",
+        "slug": "CAN"
+      },
+      "teamClass": "men",
+      "leagueLevel": "bantam"
+    },
+    {
+      "id": "384",
+      "slug": "aehl-u17",
+      "name": "AEHL U17",
+      "country": {
+        "name": "Canada",
+        "slug": "CAN"
+      },
+      "teamClass": "men",
+      "leagueLevel": "midget-minor"
+    },
+    {
+      "id": "207",
+      "slug": "aehl-u18",
+      "name": "AEHL U18",
+      "country": {
+        "name": "Canada",
+        "slug": "CAN"
+      },
+      "teamClass": "men",
+      "leagueLevel": "midget-major"
+    },
+    {
+      "id": "1431",
+      "slug": "aehl-u18-aa",
+      "name": "AEHL U18 AA",
+      "country": {
+        "name": "Canada",
+        "slug": "CAN"
+      },
+      "teamClass": "men",
+      "leagueLevel": "bantam"
+    },
+    {
+      "id": "1600",
+      "slug": "aejhl",
+      "name": "AEJHL",
+      "country": {
+        "name": "Canada",
+        "slug": "CAN"
+      },
+      "teamClass": "men",
+      "leagueLevel": "junior"
+    },
+    {
+      "id": "1040",
+      "slug": "aeshl",
+      "name": "AESHL",
+      "country": {
+        "name": "Canada",
+        "slug": "CAN"
+      },
+      "teamClass": "men",
+      "leagueLevel": "amateur"
+    },
+    {
+      "id": "884",
+      "slug": "afhl-u15-aa-w",
+      "name": "AFHL U15 AA (W)",
+      "country": {
+        "name": "Canada",
+        "slug": "CAN"
+      },
+      "teamClass": "women",
+      "leagueLevel": null
+    },
+    {
+      "id": "885",
+      "slug": "afhl-u18-aa-w",
+      "name": "AFHL U18 AA (W)",
+      "country": {
+        "name": "Canada",
+        "slug": "CAN"
+      },
+      "teamClass": "women",
+      "leagueLevel": null
+    },
+    {
+      "id": "886",
+      "slug": "afhl-u18-aaa-w",
+      "name": "AFHL U18 AAA (W)",
+      "country": {
+        "name": "Canada",
+        "slug": "CAN"
+      },
+      "teamClass": "women",
+      "leagueLevel": null
+    },
+    {
+      "id": "1322",
+      "slug": "aghf-14u-w",
+      "name": "AGHF 14U (W)",
+      "country": {
+        "name": "USA",
+        "slug": "USA"
+      },
+      "teamClass": "women",
+      "leagueLevel": "bantam-major"
+    },
+    {
+      "id": "1321",
+      "slug": "aghf-16u-w",
+      "name": "AGHF 16U (W)",
+      "country": {
+        "name": "USA",
+        "slug": "USA"
+      },
+      "teamClass": "women",
+      "leagueLevel": "midget-minor"
+    },
+    {
+      "id": "1320",
+      "slug": "aghf-19u-w",
+      "name": "AGHF 19U (W)",
+      "country": {
+        "name": "USA",
+        "slug": "USA"
+      },
+      "teamClass": "women",
+      "leagueLevel": "midget-major"
+    },
+    {
+      "id": "1485",
+      "slug": "aha",
+      "name": "AHA",
+      "country": {
+        "name": "USA",
+        "slug": "USA"
+      },
+      "teamClass": "men",
+      "leagueLevel": "semi-professional"
+    },
+    {
+      "id": "1540",
+      "slug": "ahf-13u",
+      "name": "AHF 13U",
+      "country": {
+        "name": "USA",
+        "slug": "USA"
+      },
+      "teamClass": "men",
+      "leagueLevel": "bantam"
+    },
+    {
+      "id": "1237",
+      "slug": "ahf-14u",
+      "name": "AHF 14U",
+      "country": {
+        "name": "USA",
+        "slug": "USA"
+      },
+      "teamClass": "men",
+      "leagueLevel": "bantam"
+    },
+    {
+      "id": "1238",
+      "slug": "ahf-15u",
+      "name": "AHF 15U",
+      "country": {
+        "name": "USA",
+        "slug": "USA"
+      },
+      "teamClass": "men",
+      "leagueLevel": "midget"
+    },
+    {
+      "id": "1222",
+      "slug": "ahf-16u",
+      "name": "AHF 16U",
+      "country": {
+        "name": "USA",
+        "slug": "USA"
+      },
+      "teamClass": "men",
+      "leagueLevel": "midget"
+    },
+    {
+      "id": "1223",
+      "slug": "ahf-18u",
+      "name": "AHF 18U",
+      "country": {
+        "name": "USA",
+        "slug": "USA"
+      },
+      "teamClass": "men",
+      "leagueLevel": "midget"
+    },
+    {
+      "id": "8",
+      "slug": "ahl",
+      "name": "AHL",
+      "country": null,
+      "teamClass": "men",
+      "leagueLevel": "professional"
+    },
+    {
+      "id": "120",
+      "slug": "aihl",
+      "name": "AIHL",
+      "country": {
+        "name": "Australia",
+        "slug": "AUS"
+      },
+      "teamClass": "men",
+      "leagueLevel": "semi-professional"
+    },
+    {
+      "id": "750",
+      "slug": "ajfhl-w",
+      "name": "AJFHL (W)",
+      "country": {
+        "name": "Canada",
+        "slug": "CAN"
+      },
+      "teamClass": "women",
+      "leagueLevel": null
+    },
+    {
+      "id": "91",
+      "slug": "ajhl",
+      "name": "AJHL",
+      "country": {
+        "name": "Canada",
+        "slug": "CAN"
+      },
+      "teamClass": "men",
+      "leagueLevel": "junior-a"
+    },
+    {
+      "id": "654",
+      "slug": "ajihl",
+      "name": "AJIHL",
+      "country": {
+        "name": "Australia",
+        "slug": "AUS"
+      },
+      "teamClass": "men",
+      "leagueLevel": "junior"
+    },
+    {
+      "id": "1583",
+      "slug": "alberta-cup",
+      "name": "Alberta Cup",
+      "country": {
+        "name": "Canada",
+        "slug": "CAN"
+      },
+      "teamClass": "men",
+      "leagueLevel": "bantam"
+    },
+    {
+      "id": "1486",
+      "slug": "all-ahl",
+      "name": "ALL-AHL",
+      "country": {
+        "name": "USA",
+        "slug": "USA"
+      },
+      "teamClass": "men",
+      "leagueLevel": "professional"
+    },
+    {
+      "id": "814",
+      "slug": "allettan-w",
+      "name": "AllEttan (W)",
+      "country": {
+        "name": "Sweden",
+        "slug": "SWE"
+      },
+      "teamClass": "women",
+      "leagueLevel": null
+    },
+    {
+      "id": "994",
+      "slug": "alliance-u14",
+      "name": "ALLIANCE U14",
+      "country": {
+        "name": "Canada",
+        "slug": "CAN"
+      },
+      "teamClass": "men",
+      "leagueLevel": "bantam-minor"
+    },
+    {
+      "id": "677",
+      "slug": "alliance-u15",
+      "name": "ALLIANCE U15",
+      "country": {
+        "name": "Canada",
+        "slug": "CAN"
+      },
+      "teamClass": "men",
+      "leagueLevel": "bantam-major"
+    },
+    {
+      "id": "438",
+      "slug": "alliance-u16",
+      "name": "ALLIANCE U16",
+      "country": {
+        "name": "Canada",
+        "slug": "CAN"
+      },
+      "teamClass": "men",
+      "leagueLevel": "midget-minor"
+    },
+    {
+      "id": "437",
+      "slug": "alliance-u18",
+      "name": "ALLIANCE U18",
+      "country": {
+        "name": "Canada",
+        "slug": "CAN"
+      },
+      "teamClass": "men",
+      "leagueLevel": "midget-major"
+    },
+    {
+      "id": "1510",
+      "slug": "alpenliga",
+      "name": "Alpenliga",
+      "country": {
+        "name": "Austria",
+        "slug": "AUT"
+      },
+      "teamClass": "men",
+      "leagueLevel": "professional"
+    },
+    {
+      "id": "863",
+      "slug": "alpshl",
+      "name": "AlpsHL",
+      "country": null,
+      "teamClass": "men",
+      "leagueLevel": "professional"
+    },
+    {
+      "id": "1592",
+      "slug": "ambaahl",
+      "name": "AMBAAHL",
+      "country": {
+        "name": "Canada",
+        "slug": "CAN"
+      },
+      "teamClass": "men",
+      "leagueLevel": "bantam"
+    },
+    {
+      "id": "1484",
+      "slug": "amerahl",
+      "name": "AmerAHL",
+      "country": {
+        "name": "USA",
+        "slug": "USA"
+      },
+      "teamClass": "men",
+      "leagueLevel": "amateur"
+    },
+    {
+      "id": "1487",
+      "slug": "amha",
+      "name": "AMHA",
+      "country": {
+        "name": "USA",
+        "slug": "USA"
+      },
+      "teamClass": "men",
+      "leagueLevel": "semi-professional"
+    },
+    {
+      "id": "763",
+      "slug": "ammfhl-w",
+      "name": "AMMFHL (W)",
+      "country": {
+        "name": "Canada",
+        "slug": "CAN"
+      },
+      "teamClass": "women",
+      "leagueLevel": null
+    },
+    {
+      "id": "332",
+      "slug": "andersen-liga-ob2",
+      "name": "Andersen Liga/OB2",
+      "country": {
+        "name": "Hungary",
+        "slug": "HUN"
+      },
+      "teamClass": "men",
+      "leagueLevel": "semi-professional"
+    },
+    {
+      "id": "1422",
+      "slug": "aphl",
+      "name": "APHL",
+      "country": {
+        "name": "USA",
+        "slug": "USA"
+      },
+      "teamClass": "men",
+      "leagueLevel": "semi-professional"
+    },
+    {
+      "id": "1207",
+      "slug": "armenia",
+      "name": "Armenia",
+      "country": {
+        "name": "Armenia",
+        "slug": "ARM"
+      },
+      "teamClass": "men",
+      "leagueLevel": "amateur"
+    },
+    {
+      "id": "147",
+      "slug": "asia-league",
+      "name": "Asia League",
+      "country": null,
+      "teamClass": "men",
+      "leagueLevel": "professional"
+    },
+    {
+      "id": "151",
+      "slug": "asia-other",
+      "name": "Asia other",
+      "country": {
+        "name": "Japan",
+        "slug": "JPN"
+      },
+      "teamClass": "men",
+      "leagueLevel": null
+    },
+    {
+      "id": "892",
+      "slug": "asian-wg",
+      "name": "Asian WG",
+      "country": null,
+      "teamClass": "men",
+      "leagueLevel": "international"
+    },
+    {
+      "id": "893",
+      "slug": "asian-wg-w",
+      "name": "Asian WG (W)",
+      "country": null,
+      "teamClass": "women",
+      "leagueLevel": "international"
+    },
+    {
+      "id": "205",
+      "slug": "atjhl",
+      "name": "AtJHL",
+      "country": {
+        "name": "USA",
+        "slug": "USA"
+      },
+      "teamClass": "men",
+      "leagueLevel": "junior-tier-iii"
+    },
+    {
+      "id": "894",
+      "slug": "auroraliiga-w",
+      "name": "Auroraliiga (W)",
+      "country": {
+        "name": "Finland",
+        "slug": "FIN"
+      },
+      "teamClass": "women",
+      "leagueLevel": "amateur"
+    },
+    {
+      "id": "1024",
+      "slug": "australia-other",
+      "name": "Australia other",
+      "country": {
+        "name": "Australia",
+        "slug": "AUS"
+      },
+      "teamClass": "men",
+      "leagueLevel": "amateur"
+    },
+    {
+      "id": "1287",
+      "slug": "australia-u15",
+      "name": "Australia U15",
+      "country": {
+        "name": "Australia",
+        "slug": "AUS"
+      },
+      "teamClass": "men",
+      "leagueLevel": "junior"
+    },
+    {
+      "id": "1303",
+      "slug": "australia-u18",
+      "name": "Australia U18",
+      "country": {
+        "name": "Australia",
+        "slug": "AUS"
+      },
+      "teamClass": "men",
+      "leagueLevel": "junior"
+    },
+    {
+      "id": "484",
+      "slug": "australia2",
+      "name": "Australia2",
+      "country": {
+        "name": "Australia",
+        "slug": "AUS"
+      },
+      "teamClass": "men",
+      "leagueLevel": "amateur"
+    },
+    {
+      "id": "58",
+      "slug": "austria",
+      "name": "Austria",
+      "country": {
+        "name": "Austria",
+        "slug": "AUT"
+      },
+      "teamClass": "men",
+      "leagueLevel": null
+    },
+    {
+      "id": "1525",
+      "slug": "austria-w",
+      "name": "Austria (W)",
+      "country": {
+        "name": "Austria",
+        "slug": "AUT"
+      },
+      "teamClass": "women",
+      "leagueLevel": "amateur"
+    },
+    {
+      "id": "198",
+      "slug": "austria-other",
+      "name": "Austria other",
+      "country": {
+        "name": "Austria",
+        "slug": "AUT"
+      },
+      "teamClass": "men",
+      "leagueLevel": null
+    },
+    {
+      "id": "1294",
+      "slug": "austria-u17",
+      "name": "Austria U17",
+      "country": {
+        "name": "Austria",
+        "slug": "AUT"
+      },
+      "teamClass": "men",
+      "leagueLevel": "junior"
+    },
+    {
+      "id": "1275",
+      "slug": "austria-u18i",
+      "name": "Austria U18i",
+      "country": {
+        "name": "Austria",
+        "slug": "AUT"
+      },
+      "teamClass": "men",
+      "leagueLevel": "junior"
+    },
+    {
+      "id": "152",
+      "slug": "austria-u20",
+      "name": "Austria U20",
+      "country": {
+        "name": "Austria",
+        "slug": "AUT"
+      },
+      "teamClass": "men",
+      "leagueLevel": null
+    },
+    {
+      "id": "1206",
+      "slug": "austria-u20i",
+      "name": "Austria U20i",
+      "country": {
+        "name": "Austria",
+        "slug": "AUT"
+      },
+      "teamClass": "men",
+      "leagueLevel": "junior"
+    },
+    {
+      "id": "107",
+      "slug": "austria2",
+      "name": "Austria2",
+      "country": {
+        "name": "Austria",
+        "slug": "AUT"
+      },
+      "teamClass": "men",
+      "leagueLevel": null
+    },
+    {
+      "id": "115",
+      "slug": "austria3",
+      "name": "Austria3",
+      "country": {
+        "name": "Austria",
+        "slug": "AUT"
+      },
+      "teamClass": "men",
+      "leagueLevel": "amateur"
+    },
+    {
+      "id": "1466",
+      "slug": "austria4",
+      "name": "Austria4",
+      "country": {
+        "name": "Austria",
+        "slug": "AUT"
+      },
+      "teamClass": "men",
+      "leagueLevel": "amateur"
+    },
+    {
+      "id": "79",
+      "slug": "awhl",
+      "name": "AWHL",
+      "country": null,
+      "teamClass": "men",
+      "leagueLevel": null
+    },
+    {
+      "id": "1481",
+      "slug": "awhl-w",
+      "name": "AWHL (W)",
+      "country": {
+        "name": "Austria",
+        "slug": "AUT"
+      },
+      "teamClass": "women",
+      "leagueLevel": "semi-professional"
+    },
+    {
+      "id": "852",
+      "slug": "awihl-w",
+      "name": "AWIHL (W)",
+      "country": {
+        "name": "Australia",
+        "slug": "AUS"
+      },
+      "teamClass": "women",
+      "leagueLevel": "amateur"
+    },
+    {
+      "id": "861",
+      "slug": "ayhl-13u",
+      "name": "AYHL 13U",
+      "country": {
+        "name": "USA",
+        "slug": "USA"
+      },
+      "teamClass": "men",
+      "leagueLevel": "bantam-minor"
+    },
+    {
+      "id": "805",
+      "slug": "ayhl-14u",
+      "name": "AYHL 14U",
+      "country": {
+        "name": "USA",
+        "slug": "USA"
+      },
+      "teamClass": "men",
+      "leagueLevel": "bantam-major"
+    },
+    {
+      "id": "668",
+      "slug": "ayhl-15u",
+      "name": "AYHL 15U",
+      "country": {
+        "name": "USA",
+        "slug": "USA"
+      },
+      "teamClass": "men",
+      "leagueLevel": "midget-minor-15"
+    },
+    {
+      "id": "651",
+      "slug": "ayhl-16u",
+      "name": "AYHL 16U",
+      "country": {
+        "name": "USA",
+        "slug": "USA"
+      },
+      "teamClass": "men",
+      "leagueLevel": "midget-minor"
+    },
+    {
+      "id": "1527",
+      "slug": "ayhl-16ua",
+      "name": "AYHL 16UA",
+      "country": {
+        "name": "USA",
+        "slug": "USA"
+      },
+      "teamClass": "men",
+      "leagueLevel": "junior"
+    },
+    {
+      "id": "652",
+      "slug": "ayhl-18u",
+      "name": "AYHL 18U",
+      "country": {
+        "name": "USA",
+        "slug": "USA"
+      },
+      "teamClass": "men",
+      "leagueLevel": "midget-major"
+    },
+    {
+      "id": "1536",
+      "slug": "ayhl-18ua",
+      "name": "AYHL 18UA",
+      "country": {
+        "name": "USA",
+        "slug": "USA"
+      },
+      "teamClass": "men",
+      "leagueLevel": "midget"
+    },
+    {
+      "id": "789",
+      "slug": "baltic-w",
+      "name": "Baltic (W)",
+      "country": {
+        "name": "Latvia",
+        "slug": "LVA"
+      },
+      "teamClass": "women",
+      "leagueLevel": "amateur"
+    },
+    {
+      "id": "1056",
+      "slug": "bantam-w",
+      "name": "Bantam (W)",
+      "country": {
+        "name": "Canada",
+        "slug": "CAN"
+      },
+      "teamClass": "women",
+      "leagueLevel": "bantam"
+    },
+    {
+      "id": "1125",
+      "slug": "bc-zone-u15",
+      "name": "BC Zone U15",
+      "country": {
+        "name": "Canada",
+        "slug": "CAN"
+      },
+      "teamClass": "men",
+      "leagueLevel": "midget"
+    },
+    {
+      "id": "1420",
+      "slug": "bc-zone-u17",
+      "name": "BC Zone U17",
+      "country": {
+        "name": "Canada",
+        "slug": "CAN"
+      },
+      "teamClass": "men",
+      "leagueLevel": "midget"
+    },
+    {
+      "id": "1126",
+      "slug": "bc-zone-u18",
+      "name": "BC Zone U18",
+      "country": {
+        "name": "Canada",
+        "slug": "CAN"
+      },
+      "teamClass": "men",
+      "leagueLevel": "midget"
+    },
+    {
+      "id": "1091",
+      "slug": "bcehl-u15",
+      "name": "BCEHL U15",
+      "country": {
+        "name": "Canada",
+        "slug": "CAN"
+      },
+      "teamClass": "men",
+      "leagueLevel": "bantam"
+    },
+    {
+      "id": "996",
+      "slug": "bcehl-u17",
+      "name": "BCEHL U17",
+      "country": {
+        "name": "Canada",
+        "slug": "CAN"
+      },
+      "teamClass": "men",
+      "leagueLevel": "midget-minor"
+    },
+    {
+      "id": "252",
+      "slug": "bcehl-u18",
+      "name": "BCEHL U18",
+      "country": {
+        "name": "Canada",
+        "slug": "CAN"
+      },
+      "teamClass": "men",
+      "leagueLevel": "midget-major"
+    },
+    {
+      "id": "1087",
+      "slug": "bcehl-u18-w",
+      "name": "BCEHL U18 (W)",
+      "country": {
+        "name": "Canada",
+        "slug": "CAN"
+      },
+      "teamClass": "women",
+      "leagueLevel": "midget"
+    },
+    {
+      "id": "92",
+      "slug": "bchl",
+      "name": "BCHL",
+      "country": {
+        "name": "Canada",
+        "slug": "CAN"
+      },
+      "teamClass": "men",
+      "leagueLevel": "junior-a"
+    },
+    {
+      "id": "446",
+      "slug": "bchshl",
+      "name": "BCHSHL",
+      "country": {
+        "name": "Canada",
+        "slug": "CAN"
+      },
+      "teamClass": "men",
+      "leagueLevel": null
+    },
+    {
+      "id": "343",
+      "slug": "bcihl",
+      "name": "BCIHL",
+      "country": {
+        "name": "Canada",
+        "slug": "CAN"
+      },
+      "teamClass": "men",
+      "leagueLevel": "college"
+    },
+    {
+      "id": "1225",
+      "slug": "bcjbhl",
+      "name": "BCJBHL",
+      "country": {
+        "name": "Canada",
+        "slug": "CAN"
+      },
+      "teamClass": "men",
+      "leagueLevel": "junior-b"
+    },
+    {
+      "id": "1001",
+      "slug": "bcshl-u16",
+      "name": "BCSHL U16",
+      "country": {
+        "name": "Canada",
+        "slug": "CAN"
+      },
+      "teamClass": "men",
+      "leagueLevel": "midget-minor"
+    },
+    {
+      "id": "1002",
+      "slug": "bcshl-u18",
+      "name": "BCSHL U18",
+      "country": {
+        "name": "Canada",
+        "slug": "CAN"
+      },
+      "teamClass": "men",
+      "leagueLevel": "midget-major"
+    },
+    {
+      "id": "1474",
+      "slug": "bd1",
+      "name": "BD1",
+      "country": {
+        "name": "U.K.",
+        "slug": "GBR"
+      },
+      "teamClass": "men",
+      "leagueLevel": "semi-professional"
+    },
+    {
+      "id": "658",
+      "slug": "bdhl",
+      "name": "BDHL",
+      "country": {
+        "name": "USA",
+        "slug": "USA"
+      },
+      "teamClass": "men",
+      "leagueLevel": "amateur"
+    },
+    {
+      "id": "1093",
+      "slug": "beast-14u",
+      "name": "BEAST 14U",
+      "country": {
+        "name": "USA",
+        "slug": "USA"
+      },
+      "teamClass": "men",
+      "leagueLevel": "bantam"
+    },
+    {
+      "id": "1092",
+      "slug": "beast-15u",
+      "name": "BEAST 15U",
+      "country": {
+        "name": "USA",
+        "slug": "USA"
+      },
+      "teamClass": "men",
+      "leagueLevel": "midget-minor-15"
+    },
+    {
+      "id": "1089",
+      "slug": "beast-16u",
+      "name": "BEAST 16U",
+      "country": {
+        "name": "USA",
+        "slug": "USA"
+      },
+      "teamClass": "men",
+      "leagueLevel": "midget"
+    },
+    {
+      "id": "1088",
+      "slug": "beast-18u",
+      "name": "BEAST 18U",
+      "country": {
+        "name": "USA",
+        "slug": "USA"
+      },
+      "teamClass": "men",
+      "leagueLevel": "midget"
+    },
+    {
+      "id": "1506",
+      "slug": "beaver-hl",
+      "name": "Beaver HL",
+      "country": {
+        "name": "Canada",
+        "slug": "CAN"
+      },
+      "teamClass": "men",
+      "leagueLevel": "amateur"
+    },
+    {
+      "id": "126",
+      "slug": "belarus",
+      "name": "Belarus",
+      "country": {
+        "name": "Belarus",
+        "slug": "BLR"
+      },
+      "teamClass": "men",
+      "leagueLevel": "professional"
+    },
+    {
+      "id": "1615",
+      "slug": "belarus-w",
+      "name": "Belarus (W)",
+      "country": {
+        "name": "Belarus",
+        "slug": "BLR"
+      },
+      "teamClass": "women",
+      "leagueLevel": "amateur"
+    },
+    {
+      "id": "294",
+      "slug": "belarus-other",
+      "name": "Belarus other",
+      "country": {
+        "name": "Belarus",
+        "slug": "BLR"
+      },
+      "teamClass": "men",
+      "leagueLevel": null
+    },
+    {
+      "id": "604",
+      "slug": "belarus-u18",
+      "name": "Belarus U18",
+      "country": {
+        "name": "Belarus",
+        "slug": "BLR"
+      },
+      "teamClass": "men",
+      "leagueLevel": null
+    },
+    {
+      "id": "999",
+      "slug": "belarus-vysshaya",
+      "name": "Belarus Vysshaya",
+      "country": {
+        "name": "Belarus",
+        "slug": "BLR"
+      },
+      "teamClass": "men",
+      "leagueLevel": "semi-professional"
+    },
+    {
+      "id": "208",
+      "slug": "belarus2",
+      "name": "Belarus2",
+      "country": {
+        "name": "Belarus",
+        "slug": "BLR"
+      },
+      "teamClass": "men",
+      "leagueLevel": "professional"
+    },
+    {
+      "id": "125",
+      "slug": "belgium",
+      "name": "Belgium",
+      "country": {
+        "name": "Belgium",
+        "slug": "BEL"
+      },
+      "teamClass": "men",
+      "leagueLevel": null
+    },
+    {
+      "id": "1462",
+      "slug": "belgium-w",
+      "name": "Belgium (W)",
+      "country": {
+        "name": "Belgium",
+        "slug": "BEL"
+      },
+      "teamClass": "women",
+      "leagueLevel": "amateur"
+    },
+    {
+      "id": "295",
+      "slug": "belgium-other",
+      "name": "Belgium other",
+      "country": {
+        "name": "Belgium",
+        "slug": "BEL"
+      },
+      "teamClass": "men",
+      "leagueLevel": null
+    },
+    {
+      "id": "1581",
+      "slug": "belgium-u16",
+      "name": "Belgium U16",
+      "country": {
+        "name": "Belgium",
+        "slug": "BEL"
+      },
+      "teamClass": "men",
+      "leagueLevel": "junior"
+    },
+    {
+      "id": "1579",
+      "slug": "belgium-u18",
+      "name": "Belgium U18",
+      "country": {
+        "name": "Belgium",
+        "slug": "BEL"
+      },
+      "teamClass": "men",
+      "leagueLevel": "junior"
+    },
+    {
+      "id": "477",
+      "slug": "belgium2",
+      "name": "Belgium2",
+      "country": {
+        "name": "Belgium",
+        "slug": "BEL"
+      },
+      "teamClass": "men",
+      "leagueLevel": "amateur"
+    },
+    {
+      "id": "1471",
+      "slug": "bhl",
+      "name": "BHL",
+      "country": {
+        "name": "U.K.",
+        "slug": "GBR"
+      },
+      "teamClass": "men",
+      "leagueLevel": "semi-professional"
+    },
+    {
+      "id": "103",
+      "slug": "blhl",
+      "name": "BLHL",
+      "country": {
+        "name": "Canada",
+        "slug": "CAN"
+      },
+      "teamClass": "men",
+      "leagueLevel": "amateur"
+    },
+    {
+      "id": "467",
+      "slug": "bosnia",
+      "name": "Bosnia",
+      "country": {
+        "name": "Bosnia",
+        "slug": "BIH"
+      },
+      "teamClass": "men",
+      "leagueLevel": null
+    },
+    {
+      "id": "417",
+      "slug": "brhl",
+      "name": "BRHL",
+      "country": {
+        "name": "Canada",
+        "slug": "CAN"
+      },
+      "teamClass": "men",
+      "leagueLevel": null
+    },
+    {
+      "id": "927",
+      "slug": "brick-invitational",
+      "name": "Brick Invitational",
+      "country": {
+        "name": "Canada",
+        "slug": "CAN"
+      },
+      "teamClass": "men",
+      "leagueLevel": "tournament"
+    },
+    {
+      "id": "557",
+      "slug": "bshl",
+      "name": "BSHL",
+      "country": {
+        "name": "Canada",
+        "slug": "CAN"
+      },
+      "teamClass": "men",
+      "leagueLevel": "amateur"
+    },
+    {
+      "id": "680",
+      "slug": "buiha",
+      "name": "BUIHA",
+      "country": {
+        "name": "U.K.",
+        "slug": "GBR"
+      },
+      "teamClass": "men",
+      "leagueLevel": "college"
+    },
+    {
+      "id": "227",
+      "slug": "bulgaria",
+      "name": "Bulgaria",
+      "country": {
+        "name": "Bulgaria",
+        "slug": "BGR"
+      },
+      "teamClass": "men",
+      "leagueLevel": "amateur"
+    },
+    {
+      "id": "587",
+      "slug": "bulgaria-u16",
+      "name": "Bulgaria U16",
+      "country": {
+        "name": "Bulgaria",
+        "slug": "BGR"
+      },
+      "teamClass": "men",
+      "leagueLevel": null
+    },
+    {
+      "id": "663",
+      "slug": "bulgaria-u18",
+      "name": "Bulgaria U18",
+      "country": {
+        "name": "Bulgaria",
+        "slug": "BGR"
+      },
+      "teamClass": "men",
+      "leagueLevel": null
+    },
+    {
+      "id": "1359",
+      "slug": "bulgaria-u20",
+      "name": "Bulgaria U20",
+      "country": {
+        "name": "Bulgaria",
+        "slug": "BGR"
+      },
+      "teamClass": "men",
+      "leagueLevel": "junior"
+    },
+    {
+      "id": "1591",
+      "slug": "cabaahl",
+      "name": "CABAAHL",
+      "country": {
+        "name": "Canada",
+        "slug": "CAN"
+      },
+      "teamClass": "men",
+      "leagueLevel": "bantam"
+    },
+    {
+      "id": "1494",
+      "slug": "cabhl",
+      "name": "CABHL",
+      "country": {
+        "name": "Canada",
+        "slug": "CAN"
+      },
+      "teamClass": "men",
+      "leagueLevel": "amateur"
+    },
+    {
+      "id": "422",
+      "slug": "cachl",
+      "name": "CACHL",
+      "country": {
+        "name": "USA",
+        "slug": "USA"
+      },
+      "teamClass": "men",
+      "leagueLevel": null
+    },
+    {
+      "id": "1493",
+      "slug": "cahl",
+      "name": "CAHL",
+      "country": {
+        "name": "Canada",
+        "slug": "CAN"
+      },
+      "teamClass": "men",
+      "leagueLevel": "amateur"
+    },
+    {
+      "id": "534",
+      "slug": "cahl-u15",
+      "name": "CAHL U15",
+      "country": {
+        "name": "Canada",
+        "slug": "CAN"
+      },
+      "teamClass": "men",
+      "leagueLevel": null
+    },
+    {
+      "id": "1387",
+      "slug": "cahl-u16",
+      "name": "CAHL U16",
+      "country": {
+        "name": "Canada",
+        "slug": "CAN"
+      },
+      "teamClass": "men",
+      "leagueLevel": "junior-u16"
+    },
+    {
+      "id": "1313",
+      "slug": "cahl-u18",
+      "name": "CAHL U18",
+      "country": {
+        "name": "Canada",
+        "slug": "CAN"
+      },
+      "teamClass": "men",
+      "leagueLevel": "junior-u18"
+    },
+    {
+      "id": "445",
+      "slug": "cahs",
+      "name": "CAHS",
+      "country": {
+        "name": "Canada",
+        "slug": "CAN"
+      },
+      "teamClass": "men",
+      "leagueLevel": "high-school"
+    },
+    {
+      "id": "794",
+      "slug": "cahs-w",
+      "name": "CAHS (W)",
+      "country": {
+        "name": "Canada",
+        "slug": "CAN"
+      },
+      "teamClass": "women",
+      "leagueLevel": null
+    },
+    {
+      "id": "990",
+      "slug": "cajaahl",
+      "name": "CAJAAHL",
+      "country": {
+        "name": "Canada",
+        "slug": "CAN"
+      },
+      "teamClass": "men",
+      "leagueLevel": "junior-b"
+    },
+    {
+      "id": "1255",
+      "slug": "cajhl",
+      "name": "CAJHL",
+      "country": null,
+      "teamClass": "men",
+      "leagueLevel": "junior"
+    },
+    {
+      "id": "1492",
+      "slug": "calhl",
+      "name": "CALHL",
+      "country": {
+        "name": "USA",
+        "slug": "USA"
+      },
+      "teamClass": "men",
+      "leagueLevel": "semi-professional"
+    },
+    {
+      "id": "1268",
+      "slug": "camp-showcase",
+      "name": "Camp/Showcase",
+      "country": {
+        "name": "Canada",
+        "slug": "CAN"
+      },
+      "teamClass": "men",
+      "leagueLevel": null
+    },
+    {
+      "id": "1495",
+      "slug": "canamhl",
+      "name": "CANAMHL",
+      "country": null,
+      "teamClass": "men",
+      "leagueLevel": "semi-professional"
+    },
+    {
+      "id": "355",
+      "slug": "capjhl",
+      "name": "CapJHL",
+      "country": {
+        "name": "Canada",
+        "slug": "CAN"
+      },
+      "teamClass": "men",
+      "leagueLevel": "junior-b"
+    },
+    {
+      "id": "922",
+      "slug": "carillonshl",
+      "name": "CarillonSHL",
+      "country": {
+        "name": "Canada",
+        "slug": "CAN"
+      },
+      "teamClass": "men",
+      "leagueLevel": "amateur"
+    },
+    {
+      "id": "1479",
+      "slug": "cashl",
+      "name": "CASHL",
+      "country": {
+        "name": "Canada",
+        "slug": "CAN"
+      },
+      "teamClass": "men",
+      "leagueLevel": "amateur"
+    },
+    {
+      "id": "563",
+      "slug": "cbhf-u15",
+      "name": "CBHF U15",
+      "country": {
+        "name": "Canada",
+        "slug": "CAN"
+      },
+      "teamClass": "men",
+      "leagueLevel": null
+    },
+    {
+      "id": "564",
+      "slug": "cbhf-u18",
+      "name": "CBHF U18",
+      "country": {
+        "name": "Canada",
+        "slug": "CAN"
+      },
+      "teamClass": "men",
+      "leagueLevel": null
+    },
+    {
+      "id": "418",
+      "slug": "cbhl-14u-a",
+      "name": "CBHL 14U A",
+      "country": {
+        "name": "USA",
+        "slug": "USA"
+      },
+      "teamClass": "men",
+      "leagueLevel": null
+    },
+    {
+      "id": "1406",
+      "slug": "cbhl-14u-aa",
+      "name": "CBHL 14U AA",
+      "country": {
+        "name": "USA",
+        "slug": "USA"
+      },
+      "teamClass": "men",
+      "leagueLevel": "bantam-major"
+    },
+    {
+      "id": "1408",
+      "slug": "cbhl-16u-a",
+      "name": "CBHL 16U A",
+      "country": {
+        "name": "USA",
+        "slug": "USA"
+      },
+      "teamClass": "men",
+      "leagueLevel": "midget-minor"
+    },
+    {
+      "id": "1407",
+      "slug": "cbhl-16u-aa",
+      "name": "CBHL 16U AA",
+      "country": {
+        "name": "USA",
+        "slug": "USA"
+      },
+      "teamClass": "men",
+      "leagueLevel": "midget-minor"
+    },
+    {
+      "id": "1409",
+      "slug": "cbhl-18u-a",
+      "name": "CBHL 18U A",
+      "country": {
+        "name": "USA",
+        "slug": "USA"
+      },
+      "teamClass": "men",
+      "leagueLevel": "midget-major"
+    },
+    {
+      "id": "1410",
+      "slug": "cbhl-18u-aa",
+      "name": "CBHL 18U AA",
+      "country": {
+        "name": "USA",
+        "slug": "USA"
+      },
+      "teamClass": "men",
+      "leagueLevel": "midget-major"
+    },
+    {
+      "id": "66",
+      "slug": "cc",
+      "name": "CC",
+      "country": null,
+      "teamClass": "men",
+      "leagueLevel": null
+    },
+    {
+      "id": "93",
+      "slug": "cchl",
+      "name": "CCHL",
+      "country": {
+        "name": "Canada",
+        "slug": "CAN"
+      },
+      "teamClass": "men",
+      "leagueLevel": "junior-a"
+    },
+    {
+      "id": "601",
+      "slug": "ccoa",
+      "name": "CCOA",
+      "country": null,
+      "teamClass": "men",
+      "leagueLevel": null
+    },
+    {
+      "id": "817",
+      "slug": "ccoa-w",
+      "name": "CCOA (W)",
+      "country": null,
+      "teamClass": "women",
+      "leagueLevel": null
+    },
+    {
+      "id": "653",
+      "slug": "ccoa-d1",
+      "name": "CCOA D1",
+      "country": null,
+      "teamClass": "men",
+      "leagueLevel": null
+    },
+    {
+      "id": "818",
+      "slug": "ccoa-d1-w",
+      "name": "CCOA D1 (W)",
+      "country": null,
+      "teamClass": "women",
+      "leagueLevel": null
+    },
+    {
+      "id": "603",
+      "slug": "ccoa-u18",
+      "name": "CCOA U18",
+      "country": null,
+      "teamClass": "men",
+      "leagueLevel": null
+    },
+    {
+      "id": "602",
+      "slug": "ccoa-u20",
+      "name": "CCOA U20",
+      "country": null,
+      "teamClass": "men",
+      "leagueLevel": null
+    },
+    {
+      "id": "1008",
+      "slug": "ccoa-u20-d1",
+      "name": "CCOA U20 D1",
+      "country": null,
+      "teamClass": "men",
+      "leagueLevel": "international"
+    },
+    {
+      "id": "172",
+      "slug": "ccyhl",
+      "name": "CCYHL",
+      "country": {
+        "name": "USA",
+        "slug": "USA"
+      },
+      "teamClass": "men",
+      "leagueLevel": null
+    },
+    {
+      "id": "883",
+      "slug": "cdhl",
+      "name": "CDHL",
+      "country": {
+        "name": "Canada",
+        "slug": "CAN"
+      },
+      "teamClass": "men",
+      "leagueLevel": null
+    },
+    {
+      "id": "703",
+      "slug": "cehl",
+      "name": "CEHL",
+      "country": {
+        "name": "Netherlands",
+        "slug": "NLD"
+      },
+      "teamClass": "men",
+      "leagueLevel": "semi-professional"
+    },
+    {
+      "id": "106",
+      "slug": "cehl-jr",
+      "name": "CEHL-Jr",
+      "country": {
+        "name": "USA",
+        "slug": "USA"
+      },
+      "teamClass": "men",
+      "leagueLevel": "junior-a"
+    },
+    {
+      "id": "1421",
+      "slug": "cehl-sr",
+      "name": "CEHL-Sr",
+      "country": {
+        "name": "Canada",
+        "slug": "CAN"
+      },
+      "teamClass": "men",
+      "leagueLevel": "semi-professional"
+    },
+    {
+      "id": "1614",
+      "slug": "cem",
+      "name": "CEM",
+      "country": {
+        "name": "USA",
+        "slug": "USA"
+      },
+      "teamClass": "men",
+      "leagueLevel": "prep"
+    },
+    {
+      "id": "1490",
+      "slug": "cenhl",
+      "name": "CenHL",
+      "country": {
+        "name": "USA",
+        "slug": "USA"
+      },
+      "teamClass": "men",
+      "leagueLevel": "professional"
+    },
+    {
+      "id": "1496",
+      "slug": "centahl",
+      "name": "CentAHL",
+      "country": null,
+      "teamClass": "men",
+      "leagueLevel": "semi-professional"
+    },
+    {
+      "id": "1491",
+      "slug": "centhl",
+      "name": "CentHL",
+      "country": {
+        "name": "USA",
+        "slug": "USA"
+      },
+      "teamClass": "men",
+      "leagueLevel": "semi-professional"
+    },
+    {
+      "id": "1504",
+      "slug": "centralphl",
+      "name": "CentralPHL",
+      "country": {
+        "name": "Canada",
+        "slug": "CAN"
+      },
+      "teamClass": "men",
+      "leagueLevel": "amateur"
+    },
+    {
+      "id": "524",
+      "slug": "cfhl-u18",
+      "name": "CFHL U18",
+      "country": {
+        "name": "Canada",
+        "slug": "CAN"
+      },
+      "teamClass": "men",
+      "leagueLevel": "midget"
+    },
+    {
+      "id": "83",
+      "slug": "cha",
+      "name": "CHA",
+      "country": {
+        "name": "Canada",
+        "slug": "CAN"
+      },
+      "teamClass": "men",
+      "leagueLevel": null
+    },
+    {
+      "id": "1519",
+      "slug": "cha-jr.-b",
+      "name": "CHA Jr. B",
+      "country": {
+        "name": "USA",
+        "slug": "USA"
+      },
+      "teamClass": "men",
+      "leagueLevel": "junior"
+    },
+    {
+      "id": "383",
+      "slug": "cha-jr.-c",
+      "name": "CHA Jr. C",
+      "country": {
+        "name": "USA",
+        "slug": "USA"
+      },
+      "teamClass": "men",
+      "leagueLevel": null
+    },
+    {
+      "id": "657",
+      "slug": "champions-hl",
+      "name": "Champions HL",
+      "country": null,
+      "teamClass": "men",
+      "leagueLevel": "tournament"
+    },
+    {
+      "id": "771",
+      "slug": "chc-w",
+      "name": "CHC (W)",
+      "country": {
+        "name": "USA",
+        "slug": "USA"
+      },
+      "teamClass": "women",
+      "leagueLevel": null
+    },
+    {
+      "id": "478",
+      "slug": "china",
+      "name": "China",
+      "country": {
+        "name": "China",
+        "slug": "CHN"
+      },
+      "teamClass": "men",
+      "leagueLevel": null
+    },
+    {
+      "id": "350",
+      "slug": "chinook-hl",
+      "name": "Chinook HL",
+      "country": {
+        "name": "Canada",
+        "slug": "CAN"
+      },
+      "teamClass": "men",
+      "leagueLevel": "semi-professional"
+    },
+    {
+      "id": "86",
+      "slug": "chl",
+      "name": "CHL",
+      "country": null,
+      "teamClass": "men",
+      "leagueLevel": null
+    },
+    {
+      "id": "1576",
+      "slug": "ciha-winter-classic",
+      "name": "CIHA Winter Classic",
+      "country": {
+        "name": "Canada",
+        "slug": "CAN"
+      },
+      "teamClass": "men",
+      "leagueLevel": "tournament"
+    },
+    {
+      "id": "1577",
+      "slug": "ciha-winter-classic-u15",
+      "name": "CIHA Winter Classic U15",
+      "country": {
+        "name": "Canada",
+        "slug": "CAN"
+      },
+      "teamClass": "men",
+      "leagueLevel": "tournament"
+    },
+    {
+      "id": "466",
+      "slug": "cihl",
+      "name": "CIHL",
+      "country": {
+        "name": "Canada",
+        "slug": "CAN"
+      },
+      "teamClass": "men",
+      "leagueLevel": "amateur"
+    },
+    {
+      "id": "648",
+      "slug": "cihl-hk",
+      "name": "CIHL HK",
+      "country": {
+        "name": "Hong Kong",
+        "slug": "HKG"
+      },
+      "teamClass": "men",
+      "leagueLevel": "amateur"
+    },
+    {
+      "id": "1508",
+      "slug": "circle-k-classic",
+      "name": "Circle K Classic",
+      "country": {
+        "name": "Canada",
+        "slug": "CAN"
+      },
+      "teamClass": "men",
+      "leagueLevel": "midget"
+    },
+    {
+      "id": "414",
+      "slug": "cisaa",
+      "name": "CISAA",
+      "country": {
+        "name": "Canada",
+        "slug": "CAN"
+      },
+      "teamClass": "men",
+      "leagueLevel": null
+    },
+    {
+      "id": "878",
+      "slug": "cjhl-u16",
+      "name": "CJHL U16",
+      "country": null,
+      "teamClass": "men",
+      "leagueLevel": null
+    },
+    {
+      "id": "356",
+      "slug": "cojchl",
+      "name": "COJCHL",
+      "country": {
+        "name": "Canada",
+        "slug": "CAN"
+      },
+      "teamClass": "men",
+      "leagueLevel": null
+    },
+    {
+      "id": "1224",
+      "slug": "cojhl",
+      "name": "COJHL",
+      "country": {
+        "name": "Canada",
+        "slug": "CAN"
+      },
+      "teamClass": "men",
+      "leagueLevel": "junior-b"
+    },
+    {
+      "id": "529",
+      "slug": "conjhl",
+      "name": "ConJHL",
+      "country": null,
+      "teamClass": "men",
+      "leagueLevel": null
+    },
+    {
+      "id": "848",
+      "slug": "continental-cup",
+      "name": "Continental Cup",
+      "country": null,
+      "teamClass": "men",
+      "leagueLevel": null
+    },
+    {
+      "id": "880",
+      "slug": "cpjhl",
+      "name": "CPJHL",
+      "country": {
+        "name": "Canada",
+        "slug": "CAN"
+      },
+      "teamClass": "men",
+      "leagueLevel": "junior"
+    },
+    {
+      "id": "1610",
+      "slug": "cpsha",
+      "name": "CPSHA",
+      "country": {
+        "name": "Canada",
+        "slug": "CAN"
+      },
+      "teamClass": "men",
+      "leagueLevel": "prep"
+    },
+    {
+      "id": "1438",
+      "slug": "crhl",
+      "name": "CRHL",
+      "country": {
+        "name": "Canada",
+        "slug": "CAN"
+      },
+      "teamClass": "men",
+      "leagueLevel": "amateur"
+    },
+    {
+      "id": "1003",
+      "slug": "crjhl",
+      "name": "CRJHL",
+      "country": {
+        "name": "Canada",
+        "slug": "CAN"
+      },
+      "teamClass": "men",
+      "leagueLevel": "junior-b"
+    },
+    {
+      "id": "121",
+      "slug": "croatia",
+      "name": "Croatia",
+      "country": {
+        "name": "Croatia",
+        "slug": "HRV"
+      },
+      "teamClass": "men",
+      "leagueLevel": null
+    },
+    {
+      "id": "296",
+      "slug": "croatia-other",
+      "name": "Croatia other",
+      "country": {
+        "name": "Croatia",
+        "slug": "HRV"
+      },
+      "teamClass": "men",
+      "leagueLevel": null
+    },
+    {
+      "id": "660",
+      "slug": "croatia-u18",
+      "name": "Croatia U18",
+      "country": {
+        "name": "Croatia",
+        "slug": "HRV"
+      },
+      "teamClass": "men",
+      "leagueLevel": null
+    },
+    {
+      "id": "661",
+      "slug": "croatia-u19",
+      "name": "Croatia U19",
+      "country": {
+        "name": "Croatia",
+        "slug": "HRV"
+      },
+      "teamClass": "men",
+      "leagueLevel": null
+    },
+    {
+      "id": "482",
+      "slug": "croatia-u20",
+      "name": "Croatia U20",
+      "country": {
+        "name": "Croatia",
+        "slug": "HRV"
+      },
+      "teamClass": "men",
+      "leagueLevel": null
+    },
+    {
+      "id": "1265",
+      "slug": "csdhl-14u",
+      "name": "CSDHL 14U",
+      "country": {
+        "name": "USA",
+        "slug": "USA"
+      },
+      "teamClass": "men",
+      "leagueLevel": "bantam"
+    },
+    {
+      "id": "991",
+      "slug": "csdhl-15u",
+      "name": "CSDHL 15U",
+      "country": {
+        "name": "USA",
+        "slug": "USA"
+      },
+      "teamClass": "men",
+      "leagueLevel": "midget-minor-15"
+    },
+    {
+      "id": "992",
+      "slug": "csdhl-16u",
+      "name": "CSDHL 16U",
+      "country": {
+        "name": "USA",
+        "slug": "USA"
+      },
+      "teamClass": "men",
+      "leagueLevel": "midget-minor"
+    },
+    {
+      "id": "1423",
+      "slug": "csdhl-16up",
+      "name": "CSDHL 16UP",
+      "country": {
+        "name": "USA",
+        "slug": "USA"
+      },
+      "teamClass": "men",
+      "leagueLevel": "midget-minor"
+    },
+    {
+      "id": "993",
+      "slug": "csdhl-18u",
+      "name": "CSDHL 18U",
+      "country": {
+        "name": "USA",
+        "slug": "USA"
+      },
+      "teamClass": "men",
+      "leagueLevel": "midget-major"
+    },
+    {
+      "id": "1478",
+      "slug": "cshl",
+      "name": "CSHL",
+      "country": {
+        "name": "USA",
+        "slug": "USA"
+      },
+      "teamClass": "men",
+      "leagueLevel": "junior-tier-iii"
+    },
+    {
+      "id": "1243",
+      "slug": "cskrtb",
+      "name": "CSKRTB",
+      "country": {
+        "name": "Canada",
+        "slug": "CAN"
+      },
+      "teamClass": "men",
+      "leagueLevel": "amateur"
+    },
+    {
+      "id": "689",
+      "slug": "csshl-u15",
+      "name": "CSSHL U15",
+      "country": {
+        "name": "Canada",
+        "slug": "CAN"
+      },
+      "teamClass": "men",
+      "leagueLevel": "bantam"
+    },
+    {
+      "id": "690",
+      "slug": "csshl-u15-aaa",
+      "name": "CSSHL U15 AAA",
+      "country": {
+        "name": "Canada",
+        "slug": "CAN"
+      },
+      "teamClass": "men",
+      "leagueLevel": "bantam"
+    },
+    {
+      "id": "691",
+      "slug": "csshl-u16",
+      "name": "CSSHL U16",
+      "country": {
+        "name": "Canada",
+        "slug": "CAN"
+      },
+      "teamClass": "men",
+      "leagueLevel": "midget-minor-15"
+    },
+    {
+      "id": "692",
+      "slug": "csshl-u17",
+      "name": "CSSHL U17",
+      "country": {
+        "name": "Canada",
+        "slug": "CAN"
+      },
+      "teamClass": "men",
+      "leagueLevel": "midget"
+    },
+    {
+      "id": "1424",
+      "slug": "csshl-u17-aaa",
+      "name": "CSSHL U17 AAA",
+      "country": {
+        "name": "Canada",
+        "slug": "CAN"
+      },
+      "teamClass": "men",
+      "leagueLevel": "junior-u18"
+    },
+    {
+      "id": "503",
+      "slug": "csshl-u18",
+      "name": "CSSHL U18",
+      "country": {
+        "name": "Canada",
+        "slug": "CAN"
+      },
+      "teamClass": "men",
+      "leagueLevel": "midget"
+    },
+    {
+      "id": "839",
+      "slug": "csshl-u18-w",
+      "name": "CSSHL U18 (W)",
+      "country": {
+        "name": "Canada",
+        "slug": "CAN"
+      },
+      "teamClass": "women",
+      "leagueLevel": "prep"
+    },
+    {
+      "id": "1241",
+      "slug": "csshle-u17",
+      "name": "CSSHLE U17",
+      "country": {
+        "name": "Canada",
+        "slug": "CAN"
+      },
+      "teamClass": "men",
+      "leagueLevel": "midget"
+    },
+    {
+      "id": "1070",
+      "slug": "csshle-u18",
+      "name": "CSSHLE U18",
+      "country": {
+        "name": "Canada",
+        "slug": "CAN"
+      },
+      "teamClass": "men",
+      "leagueLevel": "prep"
+    },
+    {
+      "id": "728",
+      "slug": "cwhl-w",
+      "name": "CWHL (W)",
+      "country": {
+        "name": "Canada",
+        "slug": "CAN"
+      },
+      "teamClass": "women",
+      "leagueLevel": "professional"
+    },
+    {
+      "id": "357",
+      "slug": "cwjhl",
+      "name": "CWJHL",
+      "country": {
+        "name": "Canada",
+        "slug": "CAN"
+      },
+      "teamClass": "men",
+      "leagueLevel": null
+    },
+    {
+      "id": "427",
+      "slug": "cwshl",
+      "name": "CWSHL",
+      "country": {
+        "name": "Canada",
+        "slug": "CAN"
+      },
+      "teamClass": "men",
+      "leagueLevel": "amateur"
+    },
+    {
+      "id": "962",
+      "slug": "czech-cup",
+      "name": "Czech Cup",
+      "country": {
+        "name": "Czechia",
+        "slug": "CZE"
+      },
+      "teamClass": "men",
+      "leagueLevel": "tournament"
+    },
+    {
+      "id": "11",
+      "slug": "czechia",
+      "name": "Czechia",
+      "country": {
+        "name": "Czechia",
+        "slug": "CZE"
+      },
+      "teamClass": "men",
+      "leagueLevel": "professional"
+    },
+    {
+      "id": "825",
+      "slug": "czechia-w",
+      "name": "Czechia (W)",
+      "country": {
+        "name": "Czechia",
+        "slug": "CZE"
+      },
+      "teamClass": "women",
+      "leagueLevel": "amateur"
+    },
+    {
+      "id": "456",
+      "slug": "czechia-juniors",
+      "name": "Czechia Juniors",
+      "country": {
+        "name": "Czechia",
+        "slug": "CZE"
+      },
+      "teamClass": "men",
+      "leagueLevel": null
+    },
+    {
+      "id": "158",
+      "slug": "czechia-other",
+      "name": "Czechia other",
+      "country": {
+        "name": "Czechia",
+        "slug": "CZE"
+      },
+      "teamClass": "men",
+      "leagueLevel": null
+    },
+    {
+      "id": "1308",
+      "slug": "czechia-u15",
+      "name": "Czechia U15",
+      "country": {
+        "name": "Czechia",
+        "slug": "CZE"
+      },
+      "teamClass": "men",
+      "leagueLevel": "junior"
+    },
+    {
+      "id": "1307",
+      "slug": "czechia-u15-2",
+      "name": "Czechia U15 2",
+      "country": {
+        "name": "Czechia",
+        "slug": "CZE"
+      },
+      "teamClass": "men",
+      "leagueLevel": "junior"
+    },
+    {
+      "id": "447",
+      "slug": "czechia-u16",
+      "name": "Czechia U16",
+      "country": {
+        "name": "Czechia",
+        "slug": "CZE"
+      },
+      "teamClass": "men",
+      "leagueLevel": "junior-u16"
+    },
+    {
+      "id": "1603",
+      "slug": "czechia-u16-w",
+      "name": "Czechia U16 (W)",
+      "country": {
+        "name": "Czechia",
+        "slug": "CZE"
+      },
+      "teamClass": "women",
+      "leagueLevel": "junior-u16"
+    },
+    {
+      "id": "626",
+      "slug": "czechia-u16-2",
+      "name": "Czechia U16 2",
+      "country": {
+        "name": "Czechia",
+        "slug": "CZE"
+      },
+      "teamClass": "men",
+      "leagueLevel": "junior-u16"
+    },
+    {
+      "id": "1161",
+      "slug": "czechia-u17",
+      "name": "Czechia U17",
+      "country": {
+        "name": "Czechia",
+        "slug": "CZE"
+      },
+      "teamClass": "men",
+      "leagueLevel": "junior"
+    },
+    {
+      "id": "1162",
+      "slug": "czechia-u17-2",
+      "name": "Czechia U17 2",
+      "country": {
+        "name": "Czechia",
+        "slug": "CZE"
+      },
+      "teamClass": "men",
+      "leagueLevel": "junior"
+    },
+    {
+      "id": "1264",
+      "slug": "czechia-u17-3",
+      "name": "Czechia U17 3",
+      "country": {
+        "name": "Czechia",
+        "slug": "CZE"
+      },
+      "teamClass": "men",
+      "leagueLevel": "junior"
+    },
+    {
+      "id": "162",
+      "slug": "czechia-u18",
+      "name": "Czechia U18",
+      "country": {
+        "name": "Czechia",
+        "slug": "CZE"
+      },
+      "teamClass": "men",
+      "leagueLevel": "junior-u18"
+    },
+    {
+      "id": "566",
+      "slug": "czechia-u18-2",
+      "name": "Czechia U18 2",
+      "country": {
+        "name": "Czechia",
+        "slug": "CZE"
+      },
+      "teamClass": "men",
+      "leagueLevel": null
+    },
+    {
+      "id": "696",
+      "slug": "czechia-u18-3",
+      "name": "Czechia U18 3",
+      "country": {
+        "name": "Czechia",
+        "slug": "CZE"
+      },
+      "teamClass": "men",
+      "leagueLevel": null
+    },
+    {
+      "id": "1512",
+      "slug": "czechia-u19",
+      "name": "Czechia U19",
+      "country": {
+        "name": "Czechia",
+        "slug": "CZE"
+      },
+      "teamClass": "men",
+      "leagueLevel": "junior"
+    },
+    {
+      "id": "163",
+      "slug": "czechia-u20",
+      "name": "Czechia U20",
+      "country": {
+        "name": "Czechia",
+        "slug": "CZE"
+      },
+      "teamClass": "men",
+      "leagueLevel": "junior-u20"
+    },
+    {
+      "id": "567",
+      "slug": "czechia-u20-2",
+      "name": "Czechia U20 2",
+      "country": {
+        "name": "Czechia",
+        "slug": "CZE"
+      },
+      "teamClass": "men",
+      "leagueLevel": null
+    },
+    {
+      "id": "695",
+      "slug": "czechia-u20-3",
+      "name": "Czechia U20 3",
+      "country": {
+        "name": "Czechia",
+        "slug": "CZE"
+      },
+      "teamClass": "men",
+      "leagueLevel": null
+    },
+    {
+      "id": "123",
+      "slug": "czechia2",
+      "name": "Czechia2",
+      "country": {
+        "name": "Czechia",
+        "slug": "CZE"
+      },
+      "teamClass": "men",
+      "leagueLevel": "professional"
+    },
+    {
+      "id": "1038",
+      "slug": "czechia2-w",
+      "name": "Czechia2 (W)",
+      "country": {
+        "name": "Czechia",
+        "slug": "CZE"
+      },
+      "teamClass": "women",
+      "leagueLevel": "amateur"
+    },
+    {
+      "id": "138",
+      "slug": "czechia3",
+      "name": "Czechia3",
+      "country": {
+        "name": "Czechia",
+        "slug": "CZE"
+      },
+      "teamClass": "men",
+      "leagueLevel": "semi-professional"
+    },
+    {
+      "id": "1039",
+      "slug": "czechia3-w",
+      "name": "Czechia3 (W)",
+      "country": {
+        "name": "Czechia",
+        "slug": "CZE"
+      },
+      "teamClass": "women",
+      "leagueLevel": "amateur"
+    },
+    {
+      "id": "457",
+      "slug": "czechia4",
+      "name": "Czechia4",
+      "country": {
+        "name": "Czechia",
+        "slug": "CZE"
+      },
+      "teamClass": "men",
+      "leagueLevel": null
+    },
+    {
+      "id": "627",
+      "slug": "czechia5",
+      "name": "Czechia5",
+      "country": {
+        "name": "Czechia",
+        "slug": "CZE"
+      },
+      "teamClass": "men",
+      "leagueLevel": "amateur"
+    },
+    {
+      "id": "1085",
+      "slug": "czechia6",
+      "name": "Czechia6",
+      "country": {
+        "name": "Czechia",
+        "slug": "CZE"
+      },
+      "teamClass": "men",
+      "leagueLevel": "amateur"
+    },
+    {
+      "id": "1086",
+      "slug": "czechia7",
+      "name": "Czechia7",
+      "country": {
+        "name": "Czechia",
+        "slug": "CZE"
+      },
+      "teamClass": "men",
+      "leagueLevel": "amateur"
+    },
+    {
+      "id": "1470",
+      "slug": "czechoslovakia",
+      "name": "Czechoslovakia",
+      "country": {
+        "name": "Czechia",
+        "slug": "CZE"
+      },
+      "teamClass": "men",
+      "leagueLevel": "professional"
+    },
+    {
+      "id": "1503",
+      "slug": "ddr-oberliga",
+      "name": "DDR-Oberliga",
+      "country": {
+        "name": "East Germany",
+        "slug": "DDR"
+      },
+      "teamClass": "men",
+      "leagueLevel": "semi-professional"
+    },
+    {
+      "id": "780",
+      "slug": "debl-w",
+      "name": "DEBL (W)",
+      "country": {
+        "name": "Austria",
+        "slug": "AUT"
+      },
+      "teamClass": "women",
+      "leagueLevel": "amateur"
+    },
+    {
+      "id": "813",
+      "slug": "debl2-w",
+      "name": "DEBL2 (W)",
+      "country": {
+        "name": "Austria",
+        "slug": "AUT"
+      },
+      "teamClass": "women",
+      "leagueLevel": "amateur"
+    },
+    {
+      "id": "1180",
+      "slug": "debl3-w",
+      "name": "DEBL3 (W)",
+      "country": {
+        "name": "Austria",
+        "slug": "AUT"
+      },
+      "teamClass": "women",
+      "leagueLevel": "amateur"
+    },
+    {
+      "id": "26",
+      "slug": "del",
+      "name": "DEL",
+      "country": {
+        "name": "Germany",
+        "slug": "DEU"
+      },
+      "teamClass": "men",
+      "leagueLevel": "professional"
+    },
+    {
+      "id": "29",
+      "slug": "del2",
+      "name": "DEL2",
+      "country": {
+        "name": "Germany",
+        "slug": "DEU"
+      },
+      "teamClass": "men",
+      "leagueLevel": "professional"
+    },
+    {
+      "id": "16",
+      "slug": "denmark",
+      "name": "Denmark",
+      "country": {
+        "name": "Denmark",
+        "slug": "DNK"
+      },
+      "teamClass": "men",
+      "leagueLevel": "professional"
+    },
+    {
+      "id": "790",
+      "slug": "denmark-w",
+      "name": "Denmark (W)",
+      "country": {
+        "name": "Denmark",
+        "slug": "DNK"
+      },
+      "teamClass": "women",
+      "leagueLevel": "amateur"
+    },
+    {
+      "id": "154",
+      "slug": "denmark-other",
+      "name": "Denmark other",
+      "country": {
+        "name": "Denmark",
+        "slug": "DNK"
+      },
+      "teamClass": "men",
+      "leagueLevel": null
+    },
+    {
+      "id": "581",
+      "slug": "denmark-u17",
+      "name": "Denmark U17",
+      "country": {
+        "name": "Denmark",
+        "slug": "DNK"
+      },
+      "teamClass": "men",
+      "leagueLevel": null
+    },
+    {
+      "id": "1348",
+      "slug": "denmark-u18",
+      "name": "Denmark U18",
+      "country": {
+        "name": "Denmark",
+        "slug": "DNK"
+      },
+      "teamClass": "men",
+      "leagueLevel": "junior-u18"
+    },
+    {
+      "id": "242",
+      "slug": "denmark-u20",
+      "name": "Denmark U20",
+      "country": {
+        "name": "Denmark",
+        "slug": "DNK"
+      },
+      "teamClass": "men",
+      "leagueLevel": "junior-u20"
+    },
+    {
+      "id": "112",
+      "slug": "denmark2",
+      "name": "Denmark2",
+      "country": {
+        "name": "Denmark",
+        "slug": "DNK"
+      },
+      "teamClass": "men",
+      "leagueLevel": "amateur"
+    },
+    {
+      "id": "1244",
+      "slug": "denmark2-w",
+      "name": "Denmark2 (W)",
+      "country": {
+        "name": "Denmark",
+        "slug": "DNK"
+      },
+      "teamClass": "women",
+      "leagueLevel": "amateur"
+    },
+    {
+      "id": "430",
+      "slug": "denmark3",
+      "name": "Denmark3",
+      "country": {
+        "name": "Denmark",
+        "slug": "DNK"
+      },
+      "teamClass": "men",
+      "leagueLevel": null
+    },
+    {
+      "id": "736",
+      "slug": "dfel-w",
+      "name": "DFEL (W)",
+      "country": {
+        "name": "Germany",
+        "slug": "DEU"
+      },
+      "teamClass": "women",
+      "leagueLevel": "semi-professional"
+    },
+    {
+      "id": "1017",
+      "slug": "dhl-cup",
+      "name": "DHL Cup",
+      "country": {
+        "name": "Czechia",
+        "slug": "CZE"
+      },
+      "teamClass": "men",
+      "leagueLevel": "midget"
+    },
+    {
+      "id": "4",
+      "slug": "division-2",
+      "name": "Division 2",
+      "country": {
+        "name": "Sweden",
+        "slug": "SWE"
+      },
+      "teamClass": "men",
+      "leagueLevel": "semi-professional"
+    },
+    {
+      "id": "712",
+      "slug": "division-2-w",
+      "name": "Division 2 (W)",
+      "country": {
+        "name": "Sweden",
+        "slug": "SWE"
+      },
+      "teamClass": "women",
+      "leagueLevel": "amateur"
+    },
+    {
+      "id": "5",
+      "slug": "division-3",
+      "name": "Division 3",
+      "country": {
+        "name": "Sweden",
+        "slug": "SWE"
+      },
+      "teamClass": "men",
+      "leagueLevel": "amateur"
+    },
+    {
+      "id": "1357",
+      "slug": "division-3-w",
+      "name": "Division 3 (W)",
+      "country": {
+        "name": "Sweden",
+        "slug": "SWE"
+      },
+      "teamClass": "women",
+      "leagueLevel": "amateur"
+    },
+    {
+      "id": "75",
+      "slug": "division-4",
+      "name": "Division 4",
+      "country": {
+        "name": "Sweden",
+        "slug": "SWE"
+      },
+      "teamClass": "men",
+      "leagueLevel": "amateur"
+    },
+    {
+      "id": "665",
+      "slug": "division-5",
+      "name": "Division 5",
+      "country": {
+        "name": "Sweden",
+        "slug": "SWE"
+      },
+      "teamClass": "men",
+      "leagueLevel": "amateur"
+    },
+    {
+      "id": "666",
+      "slug": "division-6",
+      "name": "Division 6",
+      "country": {
+        "name": "Sweden",
+        "slug": "SWE"
+      },
+      "teamClass": "men",
+      "leagueLevel": "amateur"
+    },
+    {
+      "id": "226",
+      "slug": "dnl",
+      "name": "DNL",
+      "country": {
+        "name": "Germany",
+        "slug": "DEU"
+      },
+      "teamClass": "men",
+      "leagueLevel": null
+    },
+    {
+      "id": "974",
+      "slug": "dnl-u20",
+      "name": "DNL U20",
+      "country": {
+        "name": "Germany",
+        "slug": "DEU"
+      },
+      "teamClass": "men",
+      "leagueLevel": "junior-u20"
+    },
+    {
+      "id": "975",
+      "slug": "dnl-u20-2",
+      "name": "DNL U20 2",
+      "country": {
+        "name": "Germany",
+        "slug": "DEU"
+      },
+      "teamClass": "men",
+      "leagueLevel": "junior-u20"
+    },
+    {
+      "id": "976",
+      "slug": "dnl-u20-3",
+      "name": "DNL U20 3",
+      "country": {
+        "name": "Germany",
+        "slug": "DEU"
+      },
+      "teamClass": "men",
+      "leagueLevel": "junior-u20"
+    },
+    {
+      "id": "659",
+      "slug": "dnl2",
+      "name": "DNL2",
+      "country": {
+        "name": "Germany",
+        "slug": "DEU"
+      },
+      "teamClass": "men",
+      "leagueLevel": null
+    },
+    {
+      "id": "774",
+      "slug": "dwhl-w",
+      "name": "DWHL (W)",
+      "country": {
+        "name": "USA",
+        "slug": "USA"
+      },
+      "teamClass": "women",
+      "leagueLevel": null
+    },
+    {
+      "id": "1036",
+      "slug": "e9hl-u14",
+      "name": "E9HL U14",
+      "country": {
+        "name": "USA",
+        "slug": "USA"
+      },
+      "teamClass": "men",
+      "leagueLevel": "bantam"
+    },
+    {
+      "id": "1037",
+      "slug": "e9hl-u16",
+      "name": "E9HL U16",
+      "country": {
+        "name": "USA",
+        "slug": "USA"
+      },
+      "teamClass": "men",
+      "leagueLevel": "midget"
+    },
+    {
+      "id": "1514",
+      "slug": "eahl",
+      "name": "EAHL",
+      "country": {
+        "name": "USA",
+        "slug": "USA"
+      },
+      "teamClass": "men",
+      "leagueLevel": "semi-professional"
+    },
+    {
+      "id": "778",
+      "slug": "eastcshl",
+      "name": "EastCSHL",
+      "country": {
+        "name": "Canada",
+        "slug": "CAN"
+      },
+      "teamClass": "men",
+      "leagueLevel": "amateur"
+    },
+    {
+      "id": "197",
+      "slug": "eastmanhl",
+      "name": "EastmanHL",
+      "country": {
+        "name": "Canada",
+        "slug": "CAN"
+      },
+      "teamClass": "men",
+      "leagueLevel": null
+    },
+    {
+      "id": "370",
+      "slug": "ebjchl",
+      "name": "EBJCHL",
+      "country": {
+        "name": "Canada",
+        "slug": "CAN"
+      },
+      "teamClass": "men",
+      "leagueLevel": null
+    },
+    {
+      "id": "439",
+      "slug": "ec",
+      "name": "EC",
+      "country": null,
+      "teamClass": "men",
+      "leagueLevel": null
+    },
+    {
+      "id": "806",
+      "slug": "ec-w",
+      "name": "EC (W)",
+      "country": null,
+      "teamClass": "women",
+      "leagueLevel": null
+    },
+    {
+      "id": "762",
+      "slug": "ecafhl-u18-w",
+      "name": "ECAFHL U18 (W)",
+      "country": {
+        "name": "Canada",
+        "slug": "CAN"
+      },
+      "teamClass": "women",
+      "leagueLevel": "midget-minor"
+    },
+    {
+      "id": "842",
+      "slug": "ecel-14u",
+      "name": "ECEL 14U",
+      "country": {
+        "name": "USA",
+        "slug": "USA"
+      },
+      "teamClass": "men",
+      "leagueLevel": null
+    },
+    {
+      "id": "1080",
+      "slug": "ecel-15u",
+      "name": "ECEL 15U",
+      "country": {
+        "name": "USA",
+        "slug": "USA"
+      },
+      "teamClass": "men",
+      "leagueLevel": "midget-minor-15"
+    },
+    {
+      "id": "368",
+      "slug": "ecel-16u",
+      "name": "ECEL 16U",
+      "country": {
+        "name": "USA",
+        "slug": "USA"
+      },
+      "teamClass": "men",
+      "leagueLevel": "midget-minor"
+    },
+    {
+      "id": "707",
+      "slug": "ecel-18u",
+      "name": "ECEL 18U",
+      "country": {
+        "name": "USA",
+        "slug": "USA"
+      },
+      "teamClass": "men",
+      "leagueLevel": "midget-major"
+    },
+    {
+      "id": "10",
+      "slug": "echl",
+      "name": "ECHL",
+      "country": null,
+      "teamClass": "men",
+      "leagueLevel": "professional"
+    },
+    {
+      "id": "358",
+      "slug": "echshl",
+      "name": "ECHSHL",
+      "country": {
+        "name": "Canada",
+        "slug": "CAN"
+      },
+      "teamClass": "men",
+      "leagueLevel": "high-school"
+    },
+    {
+      "id": "1450",
+      "slug": "ecmhl-u15",
+      "name": "ECMHL U15",
+      "country": {
+        "name": "Canada",
+        "slug": "CAN"
+      },
+      "teamClass": "men",
+      "leagueLevel": "bantam"
+    },
+    {
+      "id": "1451",
+      "slug": "ecmhl-u18",
+      "name": "ECMHL U18",
+      "country": {
+        "name": "Canada",
+        "slug": "CAN"
+      },
+      "teamClass": "men",
+      "leagueLevel": "midget"
+    },
+    {
+      "id": "465",
+      "slug": "ecsl",
+      "name": "ECSL",
+      "country": {
+        "name": "Australia",
+        "slug": "AUS"
+      },
+      "teamClass": "men",
+      "leagueLevel": "amateur"
+    },
+    {
+      "id": "1489",
+      "slug": "edmjhl",
+      "name": "EdmJHL",
+      "country": {
+        "name": "Canada",
+        "slug": "CAN"
+      },
+      "teamClass": "men",
+      "leagueLevel": "junior"
+    },
+    {
+      "id": "87",
+      "slug": "eehl",
+      "name": "EEHL",
+      "country": null,
+      "teamClass": "men",
+      "leagueLevel": null
+    },
+    {
+      "id": "1051",
+      "slug": "ehf-15u-elite",
+      "name": "EHF 15U Elite",
+      "country": {
+        "name": "USA",
+        "slug": "USA"
+      },
+      "teamClass": "men",
+      "leagueLevel": "midget-minor-15"
+    },
+    {
+      "id": "1050",
+      "slug": "ehf-16u",
+      "name": "EHF 16U",
+      "country": {
+        "name": "USA",
+        "slug": "USA"
+      },
+      "teamClass": "men",
+      "leagueLevel": "midget-minor"
+    },
+    {
+      "id": "1049",
+      "slug": "ehf-16u-elite",
+      "name": "EHF 16U Elite",
+      "country": {
+        "name": "USA",
+        "slug": "USA"
+      },
+      "teamClass": "men",
+      "leagueLevel": "midget-minor"
+    },
+    {
+      "id": "1048",
+      "slug": "ehf-18u",
+      "name": "EHF 18U",
+      "country": {
+        "name": "USA",
+        "slug": "USA"
+      },
+      "teamClass": "men",
+      "leagueLevel": "midget"
+    },
+    {
+      "id": "1047",
+      "slug": "ehf-18u-elite",
+      "name": "EHF 18U Elite",
+      "country": {
+        "name": "USA",
+        "slug": "USA"
+      },
+      "teamClass": "men",
+      "leagueLevel": "midget"
+    },
+    {
+      "id": "605",
+      "slug": "ehl",
+      "name": "EHL",
+      "country": {
+        "name": "USA",
+        "slug": "USA"
+      },
+      "teamClass": "men",
+      "leagueLevel": "junior-tier-ii"
+    },
+    {
+      "id": "1472",
+      "slug": "ehl-sr.",
+      "name": "EHL-Sr.",
+      "country": {
+        "name": "USA",
+        "slug": "USA"
+      },
+      "teamClass": "men",
+      "leagueLevel": "professional"
+    },
+    {
+      "id": "815",
+      "slug": "ehlp",
+      "name": "EHLP",
+      "country": {
+        "name": "USA",
+        "slug": "USA"
+      },
+      "teamClass": "men",
+      "leagueLevel": "junior-tier-iii"
+    },
+    {
+      "id": "351",
+      "slug": "eht",
+      "name": "EHT",
+      "country": null,
+      "teamClass": "men",
+      "leagueLevel": null
+    },
+    {
+      "id": "105",
+      "slug": "eihl",
+      "name": "EIHL",
+      "country": {
+        "name": "U.K.",
+        "slug": "GBR"
+      },
+      "teamClass": "men",
+      "leagueLevel": "professional"
+    },
+    {
+      "id": "62",
+      "slug": "ejc-18",
+      "name": "EJC-18",
+      "country": null,
+      "teamClass": "men",
+      "leagueLevel": null
+    },
+    {
+      "id": "1509",
+      "slug": "ejepl-13u",
+      "name": "EJEPL 13U",
+      "country": {
+        "name": "USA",
+        "slug": "USA"
+      },
+      "teamClass": "men",
+      "leagueLevel": "bantam"
+    },
+    {
+      "id": "1027",
+      "slug": "ejepl-14u",
+      "name": "EJEPL 14U",
+      "country": {
+        "name": "USA",
+        "slug": "USA"
+      },
+      "teamClass": "men",
+      "leagueLevel": "bantam"
+    },
+    {
+      "id": "1247",
+      "slug": "ejepl-15u",
+      "name": "EJEPL 15U",
+      "country": {
+        "name": "USA",
+        "slug": "USA"
+      },
+      "teamClass": "men",
+      "leagueLevel": "midget"
+    },
+    {
+      "id": "400",
+      "slug": "ejepl-16u",
+      "name": "EJEPL 16U",
+      "country": {
+        "name": "USA",
+        "slug": "USA"
+      },
+      "teamClass": "men",
+      "leagueLevel": "midget-minor"
+    },
+    {
+      "id": "592",
+      "slug": "ejepl-18u",
+      "name": "EJEPL 18U",
+      "country": {
+        "name": "USA",
+        "slug": "USA"
+      },
+      "teamClass": "men",
+      "leagueLevel": "midget-major"
+    },
+    {
+      "id": "82",
+      "slug": "ejhl",
+      "name": "EJHL",
+      "country": null,
+      "teamClass": "men",
+      "leagueLevel": "junior-tier-iii"
+    },
+    {
+      "id": "532",
+      "slug": "ejhl-south",
+      "name": "EJHL South",
+      "country": {
+        "name": "USA",
+        "slug": "USA"
+      },
+      "teamClass": "men",
+      "leagueLevel": null
+    },
+    {
+      "id": "1593",
+      "slug": "emhabaa",
+      "name": "EMHABAA",
+      "country": {
+        "name": "Canada",
+        "slug": "CAN"
+      },
+      "teamClass": "men",
+      "leagueLevel": "bantam"
+    },
+    {
+      "id": "170",
+      "slug": "emjhl",
+      "name": "EmJHL",
+      "country": null,
+      "teamClass": "men",
+      "leagueLevel": "junior-tier-iii"
+    },
+    {
+      "id": "709",
+      "slug": "england-u15",
+      "name": "England U15",
+      "country": {
+        "name": "England",
+        "slug": "ENG"
+      },
+      "teamClass": "men",
+      "leagueLevel": "junior-tier-i"
+    },
+    {
+      "id": "867",
+      "slug": "england-u15-2",
+      "name": "England U15 2",
+      "country": {
+        "name": "England",
+        "slug": "ENG"
+      },
+      "teamClass": "men",
+      "leagueLevel": "junior-tier-ii"
+    },
+    {
+      "id": "915",
+      "slug": "england-u15-3",
+      "name": "England U15 3",
+      "country": {
+        "name": "England",
+        "slug": "ENG"
+      },
+      "teamClass": "men",
+      "leagueLevel": "junior-tier-iii"
+    },
+    {
+      "id": "593",
+      "slug": "england-u16",
+      "name": "England U16",
+      "country": {
+        "name": "England",
+        "slug": "ENG"
+      },
+      "teamClass": "men",
+      "leagueLevel": "junior-u16"
+    },
+    {
+      "id": "682",
+      "slug": "england-u16-2",
+      "name": "England U16 2",
+      "country": {
+        "name": "England",
+        "slug": "ENG"
+      },
+      "teamClass": "men",
+      "leagueLevel": "junior-u16"
+    },
+    {
+      "id": "458",
+      "slug": "england-u18",
+      "name": "England U18",
+      "country": {
+        "name": "England",
+        "slug": "ENG"
+      },
+      "teamClass": "men",
+      "leagueLevel": "junior-u18"
+    },
+    {
+      "id": "683",
+      "slug": "england-u18-2",
+      "name": "England U18 2",
+      "country": {
+        "name": "England",
+        "slug": "ENG"
+      },
+      "teamClass": "men",
+      "leagueLevel": "junior-tier-ii"
+    },
+    {
+      "id": "866",
+      "slug": "england-u18-3",
+      "name": "England U18 3",
+      "country": {
+        "name": "England",
+        "slug": "ENG"
+      },
+      "teamClass": "men",
+      "leagueLevel": "junior-tier-iii"
+    },
+    {
+      "id": "459",
+      "slug": "england-u19",
+      "name": "England U19",
+      "country": {
+        "name": "England",
+        "slug": "ENG"
+      },
+      "teamClass": "men",
+      "leagueLevel": "junior-tier-i"
+    },
+    {
+      "id": "1502",
+      "slug": "england-u19-2",
+      "name": "England U19 2",
+      "country": {
+        "name": "England",
+        "slug": "ENG"
+      },
+      "teamClass": "men",
+      "leagueLevel": "junior-tier-ii"
+    },
+    {
+      "id": "260",
+      "slug": "england-u19-3",
+      "name": "England U19 3",
+      "country": {
+        "name": "England",
+        "slug": "ENG"
+      },
+      "teamClass": "men",
+      "leagueLevel": "junior-tier-iii"
+    },
+    {
+      "id": "708",
+      "slug": "england-u20",
+      "name": "England U20",
+      "country": {
+        "name": "England",
+        "slug": "ENG"
+      },
+      "teamClass": "men",
+      "leagueLevel": "junior-u20"
+    },
+    {
+      "id": "705",
+      "slug": "eojhl",
+      "name": "EOJHL",
+      "country": {
+        "name": "Canada",
+        "slug": "CAN"
+      },
+      "teamClass": "men",
+      "leagueLevel": "junior-b"
+    },
+    {
+      "id": "1258",
+      "slug": "ep-cup-series-14u",
+      "name": "EP Cup Series 14U",
+      "country": {
+        "name": "USA",
+        "slug": "USA"
+      },
+      "teamClass": "men",
+      "leagueLevel": "bantam"
+    },
+    {
+      "id": "1261",
+      "slug": "ep-cup-series-15o",
+      "name": "EP Cup Series 15O",
+      "country": {
+        "name": "USA",
+        "slug": "USA"
+      },
+      "teamClass": "men",
+      "leagueLevel": "midget-minor-15"
+    },
+    {
+      "id": "1262",
+      "slug": "ep-cup-series-16u",
+      "name": "EP Cup Series 16U",
+      "country": {
+        "name": "USA",
+        "slug": "USA"
+      },
+      "teamClass": "men",
+      "leagueLevel": "midget-minor"
+    },
+    {
+      "id": "1263",
+      "slug": "ep-cup-series-18u",
+      "name": "EP Cup Series 18U",
+      "country": {
+        "name": "USA",
+        "slug": "USA"
+      },
+      "teamClass": "men",
+      "leagueLevel": "midget-major"
+    },
+    {
+      "id": "1257",
+      "slug": "ep-invitational",
+      "name": "EP Invitational",
+      "country": {
+        "name": "USA",
+        "slug": "USA"
+      },
+      "teamClass": "men",
+      "leagueLevel": "tournament"
+    },
+    {
+      "id": "1388",
+      "slug": "ep-premium-14u",
+      "name": "EP Premium 14U",
+      "country": {
+        "name": "USA",
+        "slug": "USA"
+      },
+      "teamClass": "men",
+      "leagueLevel": "bantam"
+    },
+    {
+      "id": "1389",
+      "slug": "ep-premium-16u",
+      "name": "EP Premium 16U",
+      "country": {
+        "name": "USA",
+        "slug": "USA"
+      },
+      "teamClass": "men",
+      "leagueLevel": "midget"
+    },
+    {
+      "id": "1390",
+      "slug": "ep-premium-18u",
+      "name": "EP Premium 18U",
+      "country": {
+        "name": "USA",
+        "slug": "USA"
+      },
+      "teamClass": "men",
+      "leagueLevel": "midget"
+    },
+    {
+      "id": "222",
+      "slug": "ephl",
+      "name": "EPHL",
+      "country": {
+        "name": "Canada",
+        "slug": "CAN"
+      },
+      "teamClass": "men",
+      "leagueLevel": null
+    },
+    {
+      "id": "1465",
+      "slug": "ephl-us",
+      "name": "EPHL-US",
+      "country": {
+        "name": "USA",
+        "slug": "USA"
+      },
+      "teamClass": "men",
+      "leagueLevel": "semi-professional"
+    },
+    {
+      "id": "193",
+      "slug": "epihl",
+      "name": "EPIHL",
+      "country": {
+        "name": "England",
+        "slug": "ENG"
+      },
+      "teamClass": "men",
+      "leagueLevel": "semi-professional"
+    },
+    {
+      "id": "561",
+      "slug": "epl",
+      "name": "EPL",
+      "country": {
+        "name": "USA",
+        "slug": "USA"
+      },
+      "teamClass": "men",
+      "leagueLevel": null
+    },
+    {
+      "id": "464",
+      "slug": "erste-liga",
+      "name": "Erste Liga",
+      "country": {
+        "name": "Hungary",
+        "slug": "HUN"
+      },
+      "teamClass": "men",
+      "leagueLevel": "professional"
+    },
+    {
+      "id": "345",
+      "slug": "eshl",
+      "name": "ESHL",
+      "country": {
+        "name": "USA",
+        "slug": "USA"
+      },
+      "teamClass": "men",
+      "leagueLevel": null
+    },
+    {
+      "id": "19",
+      "slug": "estonia",
+      "name": "Estonia",
+      "country": {
+        "name": "Estonia",
+        "slug": "EST"
+      },
+      "teamClass": "men",
+      "leagueLevel": "amateur"
+    },
+    {
+      "id": "1178",
+      "slug": "estonia-w",
+      "name": "Estonia (W)",
+      "country": {
+        "name": "Estonia",
+        "slug": "EST"
+      },
+      "teamClass": "women",
+      "leagueLevel": "amateur"
+    },
+    {
+      "id": "297",
+      "slug": "estonia-other",
+      "name": "Estonia other",
+      "country": {
+        "name": "Estonia",
+        "slug": "EST"
+      },
+      "teamClass": "men",
+      "leagueLevel": null
+    },
+    {
+      "id": "1538",
+      "slug": "estonia-u18",
+      "name": "Estonia U18",
+      "country": {
+        "name": "Estonia",
+        "slug": "EST"
+      },
+      "teamClass": "men",
+      "leagueLevel": "junior"
+    },
+    {
+      "id": "1543",
+      "slug": "estonia-u20",
+      "name": "Estonia U20",
+      "country": {
+        "name": "Estonia",
+        "slug": "EST"
+      },
+      "teamClass": "men",
+      "leagueLevel": "junior"
+    },
+    {
+      "id": "479",
+      "slug": "estonia2",
+      "name": "Estonia2",
+      "country": {
+        "name": "Estonia",
+        "slug": "EST"
+      },
+      "teamClass": "men",
+      "leagueLevel": null
+    },
+    {
+      "id": "440",
+      "slug": "et",
+      "name": "ET",
+      "country": null,
+      "teamClass": "men",
+      "leagueLevel": null
+    },
+    {
+      "id": "1028",
+      "slug": "etahl-u14",
+      "name": "ETAHL U14",
+      "country": {
+        "name": "Canada",
+        "slug": "CAN"
+      },
+      "teamClass": "men",
+      "leagueLevel": "bantam-minor"
+    },
+    {
+      "id": "798",
+      "slug": "etahl-u15",
+      "name": "ETAHL U15",
+      "country": {
+        "name": "Canada",
+        "slug": "CAN"
+      },
+      "teamClass": "men",
+      "leagueLevel": "bantam"
+    },
+    {
+      "id": "612",
+      "slug": "etahl-u16",
+      "name": "ETAHL U16",
+      "country": {
+        "name": "Canada",
+        "slug": "CAN"
+      },
+      "teamClass": "men",
+      "leagueLevel": "midget-minor"
+    },
+    {
+      "id": "486",
+      "slug": "etahl-u18",
+      "name": "ETAHL U18",
+      "country": {
+        "name": "Canada",
+        "slug": "CAN"
+      },
+      "teamClass": "men",
+      "leagueLevel": "midget-major"
+    },
+    {
+      "id": "984",
+      "slug": "etahl-u21",
+      "name": "ETAHL U21",
+      "country": {
+        "name": "Canada",
+        "slug": "CAN"
+      },
+      "teamClass": "men",
+      "leagueLevel": "junior"
+    },
+    {
+      "id": "837",
+      "slug": "euhl",
+      "name": "EUHL",
+      "country": null,
+      "teamClass": "men",
+      "leagueLevel": "college"
+    },
+    {
+      "id": "735",
+      "slug": "ewcc-w",
+      "name": "EWCC (W)",
+      "country": null,
+      "teamClass": "women",
+      "leagueLevel": null
+    },
+    {
+      "id": "775",
+      "slug": "ewhc-w",
+      "name": "EWHC (W)",
+      "country": {
+        "name": "USA",
+        "slug": "USA"
+      },
+      "teamClass": "women",
+      "leagueLevel": null
+    },
+    {
+      "id": "812",
+      "slug": "ewhl-w",
+      "name": "EWHL (W)",
+      "country": null,
+      "teamClass": "women",
+      "leagueLevel": "amateur"
+    },
+    {
+      "id": "1427",
+      "slug": "ewhl-ec-w",
+      "name": "EWHL EC (W)",
+      "country": null,
+      "teamClass": "women",
+      "leagueLevel": "amateur"
+    },
+    {
+      "id": "1000",
+      "slug": "exhibition",
+      "name": "Exhibition",
+      "country": null,
+      "teamClass": "men",
+      "leagueLevel": "professional"
+    },
+    {
+      "id": "685",
+      "slug": "eyof",
+      "name": "EYOF",
+      "country": null,
+      "teamClass": "men",
+      "leagueLevel": null
+    },
+    {
+      "id": "1259",
+      "slug": "eyof-w",
+      "name": "EYOF (W)",
+      "country": null,
+      "teamClass": "women",
+      "leagueLevel": "junior"
+    },
+    {
+      "id": "1370",
+      "slug": "fcaa",
+      "name": "FCAA",
+      "country": {
+        "name": "Finland",
+        "slug": "FIN"
+      },
+      "teamClass": "men",
+      "leagueLevel": "college"
+    },
+    {
+      "id": "608",
+      "slug": "fchl",
+      "name": "FCHL",
+      "country": {
+        "name": "Canada",
+        "slug": "CAN"
+      },
+      "teamClass": "men",
+      "leagueLevel": "amateur"
+    },
+    {
+      "id": "900",
+      "slug": "fhl-xl-w",
+      "name": "FHL XL (W)",
+      "country": {
+        "name": "Sweden",
+        "slug": "SWE"
+      },
+      "teamClass": "women",
+      "leagueLevel": "junior"
+    },
+    {
+      "id": "1021",
+      "slug": "finland-other",
+      "name": "Finland other",
+      "country": {
+        "name": "Finland",
+        "slug": "FIN"
+      },
+      "teamClass": "men",
+      "leagueLevel": "amateur"
+    },
+    {
+      "id": "164",
+      "slug": "finnish-juniors",
+      "name": "Finnish Juniors",
+      "country": {
+        "name": "Finland",
+        "slug": "FIN"
+      },
+      "teamClass": "men",
+      "leagueLevel": null
+    },
+    {
+      "id": "419",
+      "slug": "flhl",
+      "name": "FLHL",
+      "country": {
+        "name": "Canada",
+        "slug": "CAN"
+      },
+      "teamClass": "men",
+      "leagueLevel": null
+    },
+    {
+      "id": "761",
+      "slug": "fmaaa-w",
+      "name": "FMAAA (W)",
+      "country": {
+        "name": "Canada",
+        "slug": "CAN"
+      },
+      "teamClass": "women",
+      "leagueLevel": null
+    },
+    {
+      "id": "342",
+      "slug": "fphl",
+      "name": "FPHL",
+      "country": null,
+      "teamClass": "men",
+      "leagueLevel": "professional"
+    },
+    {
+      "id": "533",
+      "slug": "fpshl",
+      "name": "FPSHL",
+      "country": {
+        "name": "USA",
+        "slug": "USA"
+      },
+      "teamClass": "men",
+      "leagueLevel": null
+    },
+    {
+      "id": "782",
+      "slug": "france-w",
+      "name": "France (W)",
+      "country": {
+        "name": "France",
+        "slug": "FRA"
+      },
+      "teamClass": "women",
+      "leagueLevel": "amateur"
+    },
+    {
+      "id": "157",
+      "slug": "france-other",
+      "name": "France other",
+      "country": {
+        "name": "France",
+        "slug": "FRA"
+      },
+      "teamClass": "men",
+      "leagueLevel": null
+    },
+    {
+      "id": "872",
+      "slug": "france-u17",
+      "name": "France U17",
+      "country": {
+        "name": "France",
+        "slug": "FRA"
+      },
+      "teamClass": "men",
+      "leagueLevel": "junior-u18"
+    },
+    {
+      "id": "334",
+      "slug": "france-u18",
+      "name": "France U18",
+      "country": {
+        "name": "France",
+        "slug": "FRA"
+      },
+      "teamClass": "men",
+      "leagueLevel": "junior-u18"
+    },
+    {
+      "id": "502",
+      "slug": "france-u18-2",
+      "name": "France U18 2",
+      "country": {
+        "name": "France",
+        "slug": "FRA"
+      },
+      "teamClass": "men",
+      "leagueLevel": "junior-u18"
+    },
+    {
+      "id": "504",
+      "slug": "france-u18-3",
+      "name": "France U18 3",
+      "country": {
+        "name": "France",
+        "slug": "FRA"
+      },
+      "teamClass": "men",
+      "leagueLevel": null
+    },
+    {
+      "id": "873",
+      "slug": "france-u20",
+      "name": "France U20",
+      "country": {
+        "name": "France",
+        "slug": "FRA"
+      },
+      "teamClass": "men",
+      "leagueLevel": "junior-u20"
+    },
+    {
+      "id": "1435",
+      "slug": "france-u20-2",
+      "name": "France U20 2",
+      "country": {
+        "name": "France",
+        "slug": "FRA"
+      },
+      "teamClass": "men",
+      "leagueLevel": "junior"
+    },
+    {
+      "id": "335",
+      "slug": "france-u22",
+      "name": "France U22",
+      "country": {
+        "name": "France",
+        "slug": "FRA"
+      },
+      "teamClass": "men",
+      "leagueLevel": null
+    },
+    {
+      "id": "501",
+      "slug": "france-u22-2",
+      "name": "France U22 2",
+      "country": {
+        "name": "France",
+        "slug": "FRA"
+      },
+      "teamClass": "men",
+      "leagueLevel": null
+    },
+    {
+      "id": "20",
+      "slug": "france2",
+      "name": "France2",
+      "country": {
+        "name": "France",
+        "slug": "FRA"
+      },
+      "teamClass": "men",
+      "leagueLevel": "semi-professional"
+    },
+    {
+      "id": "1612",
+      "slug": "france2-w",
+      "name": "France2 (W)",
+      "country": {
+        "name": "France",
+        "slug": "FRA"
+      },
+      "teamClass": "women",
+      "leagueLevel": "amateur"
+    },
+    {
+      "id": "114",
+      "slug": "france3",
+      "name": "France3",
+      "country": {
+        "name": "France",
+        "slug": "FRA"
+      },
+      "teamClass": "men",
+      "leagueLevel": "amateur"
+    },
+    {
+      "id": "146",
+      "slug": "france4",
+      "name": "France4",
+      "country": {
+        "name": "France",
+        "slug": "FRA"
+      },
+      "teamClass": "men",
+      "leagueLevel": "amateur"
+    },
+    {
+      "id": "1452",
+      "slug": "fsl-14u-w",
+      "name": "FSL 14U (W)",
+      "country": {
+        "name": "Canada",
+        "slug": "CAN"
+      },
+      "teamClass": "women",
+      "leagueLevel": "bantam"
+    },
+    {
+      "id": "1574",
+      "slug": "fsl-16u-w",
+      "name": "FSL 16U (W)",
+      "country": {
+        "name": "Canada",
+        "slug": "CAN"
+      },
+      "teamClass": "women",
+      "leagueLevel": "bantam"
+    },
+    {
+      "id": "744",
+      "slug": "fwha-w",
+      "name": "FWHA (W)",
+      "country": {
+        "name": "USA",
+        "slug": "USA"
+      },
+      "teamClass": "women",
+      "leagueLevel": null
+    },
+    {
+      "id": "751",
+      "slug": "gbwhl-w",
+      "name": "GBWHL (W)",
+      "country": {
+        "name": "Canada",
+        "slug": "CAN"
+      },
+      "teamClass": "women",
+      "leagueLevel": null
+    },
+    {
+      "id": "1006",
+      "slug": "georgia",
+      "name": "Georgia",
+      "country": {
+        "name": "Georgia",
+        "slug": "GEO"
+      },
+      "teamClass": "men",
+      "leagueLevel": null
+    },
+    {
+      "id": "291",
+      "slug": "germany-other",
+      "name": "Germany (other)",
+      "country": {
+        "name": "Germany",
+        "slug": "DEU"
+      },
+      "teamClass": "men",
+      "leagueLevel": null
+    },
+    {
+      "id": "1183",
+      "slug": "germany-u15",
+      "name": "Germany U15",
+      "country": {
+        "name": "Germany",
+        "slug": "DEU"
+      },
+      "teamClass": "men",
+      "leagueLevel": "junior"
+    },
+    {
+      "id": "1187",
+      "slug": "germany-u15-other",
+      "name": "Germany U15 (other)",
+      "country": {
+        "name": "Germany",
+        "slug": "DEU"
+      },
+      "teamClass": "men",
+      "leagueLevel": "junior"
+    },
+    {
+      "id": "1184",
+      "slug": "germany-u15-2",
+      "name": "Germany U15 2",
+      "country": {
+        "name": "Germany",
+        "slug": "DEU"
+      },
+      "teamClass": "men",
+      "leagueLevel": "junior"
+    },
+    {
+      "id": "1185",
+      "slug": "germany-u15-3",
+      "name": "Germany U15 3",
+      "country": {
+        "name": "Germany",
+        "slug": "DEU"
+      },
+      "teamClass": "men",
+      "leagueLevel": "junior"
+    },
+    {
+      "id": "1186",
+      "slug": "germany-u15-4",
+      "name": "Germany U15 4",
+      "country": {
+        "name": "Germany",
+        "slug": "DEU"
+      },
+      "teamClass": "men",
+      "leagueLevel": "junior"
+    },
+    {
+      "id": "688",
+      "slug": "germany-u16-other",
+      "name": "Germany U16 (other)",
+      "country": {
+        "name": "Germany",
+        "slug": "DEU"
+      },
+      "teamClass": "men",
+      "leagueLevel": null
+    },
+    {
+      "id": "496",
+      "slug": "germany-u16-2",
+      "name": "Germany U16 2",
+      "country": {
+        "name": "Germany",
+        "slug": "DEU"
+      },
+      "teamClass": "men",
+      "leagueLevel": null
+    },
+    {
+      "id": "497",
+      "slug": "germany-u16-3",
+      "name": "Germany U16 3",
+      "country": {
+        "name": "Germany",
+        "slug": "DEU"
+      },
+      "teamClass": "men",
+      "leagueLevel": null
+    },
+    {
+      "id": "498",
+      "slug": "germany-u16-4",
+      "name": "Germany U16 4",
+      "country": {
+        "name": "Germany",
+        "slug": "DEU"
+      },
+      "teamClass": "men",
+      "leagueLevel": null
+    },
+    {
+      "id": "979",
+      "slug": "germany-u17",
+      "name": "Germany U17",
+      "country": {
+        "name": "Germany",
+        "slug": "DEU"
+      },
+      "teamClass": "men",
+      "leagueLevel": "junior"
+    },
+    {
+      "id": "1193",
+      "slug": "germany-u17-other",
+      "name": "Germany U17 (other)",
+      "country": {
+        "name": "Germany",
+        "slug": "DEU"
+      },
+      "teamClass": "men",
+      "leagueLevel": "junior"
+    },
+    {
+      "id": "980",
+      "slug": "germany-u17-2",
+      "name": "Germany U17 2",
+      "country": {
+        "name": "Germany",
+        "slug": "DEU"
+      },
+      "teamClass": "men",
+      "leagueLevel": "junior"
+    },
+    {
+      "id": "981",
+      "slug": "germany-u17-3",
+      "name": "Germany U17 3",
+      "country": {
+        "name": "Germany",
+        "slug": "DEU"
+      },
+      "teamClass": "men",
+      "leagueLevel": "junior"
+    },
+    {
+      "id": "982",
+      "slug": "germany-u17-4",
+      "name": "Germany U17 4",
+      "country": {
+        "name": "Germany",
+        "slug": "DEU"
+      },
+      "teamClass": "men",
+      "leagueLevel": "junior"
+    },
+    {
+      "id": "983",
+      "slug": "germany-u17-5",
+      "name": "Germany U17 5",
+      "country": {
+        "name": "Germany",
+        "slug": "DEU"
+      },
+      "teamClass": "men",
+      "leagueLevel": "junior"
+    },
+    {
+      "id": "493",
+      "slug": "germany-u19-3",
+      "name": "Germany U19 3",
+      "country": {
+        "name": "Germany",
+        "slug": "DEU"
+      },
+      "teamClass": "men",
+      "leagueLevel": null
+    },
+    {
+      "id": "494",
+      "slug": "germany-u19-4",
+      "name": "Germany U19 4",
+      "country": {
+        "name": "Germany",
+        "slug": "DEU"
+      },
+      "teamClass": "men",
+      "leagueLevel": null
+    },
+    {
+      "id": "495",
+      "slug": "germany-u19-5",
+      "name": "Germany U19 5",
+      "country": {
+        "name": "Germany",
+        "slug": "DEU"
+      },
+      "teamClass": "men",
+      "leagueLevel": null
+    },
+    {
+      "id": "977",
+      "slug": "germany-u20-4",
+      "name": "Germany U20 4",
+      "country": {
+        "name": "Germany",
+        "slug": "DEU"
+      },
+      "teamClass": "men",
+      "leagueLevel": "junior"
+    },
+    {
+      "id": "978",
+      "slug": "germany-u20-5",
+      "name": "Germany U20 5",
+      "country": {
+        "name": "Germany",
+        "slug": "DEU"
+      },
+      "teamClass": "men",
+      "leagueLevel": "junior"
+    },
+    {
+      "id": "1546",
+      "slug": "germany-u21",
+      "name": "Germany U21",
+      "country": {
+        "name": "Germany",
+        "slug": "DEU"
+      },
+      "teamClass": "men",
+      "leagueLevel": "junior"
+    },
+    {
+      "id": "822",
+      "slug": "germany-u22",
+      "name": "Germany U22",
+      "country": {
+        "name": "Germany",
+        "slug": "DEU"
+      },
+      "teamClass": "men",
+      "leagueLevel": null
+    },
+    {
+      "id": "823",
+      "slug": "germany-u23",
+      "name": "Germany U23",
+      "country": {
+        "name": "Germany",
+        "slug": "DEU"
+      },
+      "teamClass": "men",
+      "leagueLevel": null
+    },
+    {
+      "id": "745",
+      "slug": "germany2-w",
+      "name": "Germany2 (W)",
+      "country": {
+        "name": "Germany",
+        "slug": "DEU"
+      },
+      "teamClass": "women",
+      "leagueLevel": "amateur"
+    },
+    {
+      "id": "90",
+      "slug": "germany3",
+      "name": "Germany3",
+      "country": {
+        "name": "Germany",
+        "slug": "DEU"
+      },
+      "teamClass": "men",
+      "leagueLevel": "professional"
+    },
+    {
+      "id": "746",
+      "slug": "germany3-w",
+      "name": "Germany3 (W)",
+      "country": {
+        "name": "Germany",
+        "slug": "DEU"
+      },
+      "teamClass": "women",
+      "leagueLevel": "amateur"
+    },
+    {
+      "id": "72",
+      "slug": "germany4",
+      "name": "Germany4",
+      "country": {
+        "name": "Germany",
+        "slug": "DEU"
+      },
+      "teamClass": "men",
+      "leagueLevel": "amateur"
+    },
+    {
+      "id": "747",
+      "slug": "germany4-w",
+      "name": "Germany4 (W)",
+      "country": {
+        "name": "Germany",
+        "slug": "DEU"
+      },
+      "teamClass": "women",
+      "leagueLevel": null
+    },
+    {
+      "id": "110",
+      "slug": "germany5",
+      "name": "Germany5",
+      "country": {
+        "name": "Germany",
+        "slug": "DEU"
+      },
+      "teamClass": "men",
+      "leagueLevel": null
+    },
+    {
+      "id": "153",
+      "slug": "germany6",
+      "name": "Germany6",
+      "country": {
+        "name": "Germany",
+        "slug": "DEU"
+      },
+      "teamClass": "men",
+      "leagueLevel": null
+    },
+    {
+      "id": "824",
+      "slug": "germany7",
+      "name": "Germany7",
+      "country": {
+        "name": "Germany",
+        "slug": "DEU"
+      },
+      "teamClass": "men",
+      "leagueLevel": null
+    },
+    {
+      "id": "1230",
+      "slug": "ghl",
+      "name": "GHL",
+      "country": {
+        "name": "Canada",
+        "slug": "CAN"
+      },
+      "teamClass": "men",
+      "leagueLevel": "junior-b"
+    },
+    {
+      "id": "175",
+      "slug": "glhl",
+      "name": "GLHL",
+      "country": {
+        "name": "USA",
+        "slug": "USA"
+      },
+      "teamClass": "men",
+      "leagueLevel": "amateur"
+    },
+    {
+      "id": "372",
+      "slug": "gljchl",
+      "name": "GLJCHL",
+      "country": {
+        "name": "Canada",
+        "slug": "CAN"
+      },
+      "teamClass": "men",
+      "leagueLevel": null
+    },
+    {
+      "id": "319",
+      "slug": "gljhl",
+      "name": "GLJHL",
+      "country": {
+        "name": "USA",
+        "slug": "USA"
+      },
+      "teamClass": "men",
+      "leagueLevel": null
+    },
+    {
+      "id": "1436",
+      "slug": "glphl",
+      "name": "GLPHL",
+      "country": null,
+      "teamClass": "men",
+      "leagueLevel": "prep"
+    },
+    {
+      "id": "1620",
+      "slug": "glphlv",
+      "name": "GLPHLV",
+      "country": null,
+      "teamClass": "men",
+      "leagueLevel": "prep"
+    },
+    {
+      "id": "177",
+      "slug": "gmhl",
+      "name": "GMHL",
+      "country": {
+        "name": "Canada",
+        "slug": "CAN"
+      },
+      "teamClass": "men",
+      "leagueLevel": "junior-a"
+    },
+    {
+      "id": "371",
+      "slug": "gmohl",
+      "name": "GMOHL",
+      "country": {
+        "name": "Canada",
+        "slug": "CAN"
+      },
+      "teamClass": "men",
+      "leagueLevel": null
+    },
+    {
+      "id": "403",
+      "slug": "gnu18l",
+      "name": "GNU18L",
+      "country": {
+        "name": "Canada",
+        "slug": "CAN"
+      },
+      "teamClass": "men",
+      "leagueLevel": "midget"
+    },
+    {
+      "id": "1232",
+      "slug": "gohl",
+      "name": "GOHL",
+      "country": {
+        "name": "Canada",
+        "slug": "CAN"
+      },
+      "teamClass": "men",
+      "leagueLevel": "junior-b"
+    },
+    {
+      "id": "180",
+      "slug": "gojhl",
+      "name": "GOJHL",
+      "country": {
+        "name": "Canada",
+        "slug": "CAN"
+      },
+      "teamClass": "men",
+      "leagueLevel": "junior-b"
+    },
+    {
+      "id": "628",
+      "slug": "gphl",
+      "name": "GPHL",
+      "country": {
+        "name": "South Africa",
+        "slug": "ZAF"
+      },
+      "teamClass": "men",
+      "leagueLevel": null
+    },
+    {
+      "id": "473",
+      "slug": "greece",
+      "name": "Greece",
+      "country": {
+        "name": "Greece",
+        "slug": "GRC"
+      },
+      "teamClass": "men",
+      "leagueLevel": null
+    },
+    {
+      "id": "404",
+      "slug": "gshl",
+      "name": "GSHL",
+      "country": {
+        "name": "Canada",
+        "slug": "CAN"
+      },
+      "teamClass": "men",
+      "leagueLevel": null
+    },
+    {
+      "id": "1004",
+      "slug": "gthl-u14",
+      "name": "GTHL U14",
+      "country": {
+        "name": "Canada",
+        "slug": "CAN"
+      },
+      "teamClass": "men",
+      "leagueLevel": "bantam-minor"
+    },
+    {
+      "id": "1318",
+      "slug": "gthl-u14-aa",
+      "name": "GTHL U14 AA",
+      "country": {
+        "name": "Canada",
+        "slug": "CAN"
+      },
+      "teamClass": "men",
+      "leagueLevel": "bantam"
+    },
+    {
+      "id": "615",
+      "slug": "gthl-u15",
+      "name": "GTHL U15",
+      "country": {
+        "name": "Canada",
+        "slug": "CAN"
+      },
+      "teamClass": "men",
+      "leagueLevel": "bantam"
+    },
+    {
+      "id": "1094",
+      "slug": "gthl-u15-aa",
+      "name": "GTHL U15 AA",
+      "country": {
+        "name": "Canada",
+        "slug": "CAN"
+      },
+      "teamClass": "men",
+      "leagueLevel": "bantam-major"
+    },
+    {
+      "id": "613",
+      "slug": "gthl-u16",
+      "name": "GTHL U16",
+      "country": {
+        "name": "Canada",
+        "slug": "CAN"
+      },
+      "teamClass": "men",
+      "leagueLevel": "midget-minor"
+    },
+    {
+      "id": "1095",
+      "slug": "gthl-u16-aa",
+      "name": "GTHL U16 AA",
+      "country": {
+        "name": "Canada",
+        "slug": "CAN"
+      },
+      "teamClass": "men",
+      "leagueLevel": "midget-minor"
+    },
+    {
+      "id": "1341",
+      "slug": "gthl-u17-aa",
+      "name": "GTHL U17 AA",
+      "country": {
+        "name": "Canada",
+        "slug": "CAN"
+      },
+      "teamClass": "men",
+      "leagueLevel": "junior"
+    },
+    {
+      "id": "405",
+      "slug": "gthl-u18",
+      "name": "GTHL U18",
+      "country": {
+        "name": "Canada",
+        "slug": "CAN"
+      },
+      "teamClass": "men",
+      "leagueLevel": "midget-major"
+    },
+    {
+      "id": "1096",
+      "slug": "gthl-u18-aa",
+      "name": "GTHL U18 AA",
+      "country": {
+        "name": "Canada",
+        "slug": "CAN"
+      },
+      "teamClass": "men",
+      "leagueLevel": "midget-major"
+    },
+    {
+      "id": "453",
+      "slug": "gthl-u21",
+      "name": "GTHL U21",
+      "country": {
+        "name": "Canada",
+        "slug": "CAN"
+      },
+      "teamClass": "men",
+      "leagueLevel": "juvenile"
+    },
+    {
+      "id": "354",
+      "slug": "hc-u21",
+      "name": "HC U21",
+      "country": {
+        "name": "Canada",
+        "slug": "CAN"
+      },
+      "teamClass": "men",
+      "leagueLevel": "junior-b"
+    },
+    {
+      "id": "367",
+      "slug": "hc-u21c",
+      "name": "HC U21C",
+      "country": {
+        "name": "Canada",
+        "slug": "CAN"
+      },
+      "teamClass": "men",
+      "leagueLevel": "junior"
+    },
+    {
+      "id": "578",
+      "slug": "hcaa-u15",
+      "name": "HCAA U15",
+      "country": {
+        "name": "Canada",
+        "slug": "CAN"
+      },
+      "teamClass": "men",
+      "leagueLevel": "bantam"
+    },
+    {
+      "id": "1192",
+      "slug": "hcaa-u16",
+      "name": "HCAA U16",
+      "country": {
+        "name": "Canada",
+        "slug": "CAN"
+      },
+      "teamClass": "men",
+      "leagueLevel": "midget-minor"
+    },
+    {
+      "id": "518",
+      "slug": "hcaa-u18",
+      "name": "HCAA U18",
+      "country": {
+        "name": "Canada",
+        "slug": "CAN"
+      },
+      "teamClass": "men",
+      "leagueLevel": "midget"
+    },
+    {
+      "id": "650",
+      "slug": "heo-u14",
+      "name": "HEO U14",
+      "country": {
+        "name": "Canada",
+        "slug": "CAN"
+      },
+      "teamClass": "men",
+      "leagueLevel": "bantam-minor"
+    },
+    {
+      "id": "802",
+      "slug": "heo-u14-aa",
+      "name": "HEO U14 AA",
+      "country": {
+        "name": "Canada",
+        "slug": "CAN"
+      },
+      "teamClass": "men",
+      "leagueLevel": "bantam-minor"
+    },
+    {
+      "id": "649",
+      "slug": "heo-u15",
+      "name": "HEO U15",
+      "country": {
+        "name": "Canada",
+        "slug": "CAN"
+      },
+      "teamClass": "men",
+      "leagueLevel": "bantam-major"
+    },
+    {
+      "id": "803",
+      "slug": "heo-u15-aa",
+      "name": "HEO U15 AA",
+      "country": {
+        "name": "Canada",
+        "slug": "CAN"
+      },
+      "teamClass": "men",
+      "leagueLevel": "bantam-major"
+    },
+    {
+      "id": "1349",
+      "slug": "heo-u16",
+      "name": "HEO U16",
+      "country": {
+        "name": "Canada",
+        "slug": "CAN"
+      },
+      "teamClass": "men",
+      "leagueLevel": "midget-minor"
+    },
+    {
+      "id": "856",
+      "slug": "heo-u16-aa",
+      "name": "HEO U16 AA",
+      "country": {
+        "name": "Canada",
+        "slug": "CAN"
+      },
+      "teamClass": "men",
+      "leagueLevel": "midget-minor"
+    },
+    {
+      "id": "706",
+      "slug": "heo-u18",
+      "name": "HEO U18",
+      "country": {
+        "name": "Canada",
+        "slug": "CAN"
+      },
+      "teamClass": "men",
+      "leagueLevel": "midget"
+    },
+    {
+      "id": "855",
+      "slug": "heo-u18-aa",
+      "name": "HEO U18 AA",
+      "country": {
+        "name": "Canada",
+        "slug": "CAN"
+      },
+      "teamClass": "men",
+      "leagueLevel": "midget-major"
+    },
+    {
+      "id": "769",
+      "slug": "hgh-w",
+      "name": "HGH (W)",
+      "country": {
+        "name": "USA",
+        "slug": "USA"
+      },
+      "teamClass": "women",
+      "leagueLevel": null
+    },
+    {
+      "id": "415",
+      "slug": "hhl",
+      "name": "HHL",
+      "country": {
+        "name": "Canada",
+        "slug": "CAN"
+      },
+      "teamClass": "men",
+      "leagueLevel": "amateur"
+    }
+  ],
   "countries": [
     {
       "slug": "AFG",

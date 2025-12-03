@@ -49,8 +49,9 @@ export async function handleExecuteGraphQL(args: {
   }
 
   // Check for basic GraphQL syntax
-  if (!query.trim().startsWith("{")) {
-    throw new Error("Query must be a valid GraphQL query (should start with '{')");
+  const trimmedQuery = query.trim();
+  if (!trimmedQuery.startsWith("{") && !trimmedQuery.startsWith("query") && !trimmedQuery.startsWith("mutation") && !trimmedQuery.startsWith("subscription")) {
+    throw new Error("Query must be a valid GraphQL query (should start with '{', 'query', 'mutation', or 'subscription')");
   }
 
   try {
